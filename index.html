@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8">
+  <title>Chess Evolved Online Piece Maker</title>
+  <!--[if IE]>
+    <script>window.location = "https://www.mozilla.org/en-US/";</script>
+  <![endif]-->
+  <script src="scripts/browser.js"></script>
+  <script src="scripts/paper.js"></script>
+  <script src="scripts/jquery.js"></script>
+  <script src="scripts/sketch.js"></script>
+  <script src="scripts/rasterizeHTML.allinone.js"></script>
+  <script src="scripts/lodash.js"></script>
+  <script src="scripts/definitions.js"></script>
+  <script defer src="scripts/rewrite.js"></script>
+  <script defer src="scripts/main.js"></script>
+<style type="text/css">
+:root #content > #center > .dose > .dosesingle,
+:root #content > #right > .dose > .dosesingle
+{ display: none !important; }</style></head>
+
+<body mode="active">
+  <div id="boards">
+    <svg id="mydefs">
+    <div id="style">
+      <link rel="stylesheet" href="style/style.css">
+    </div>
+
+  <div id="contents">
+    <section id="base">
+      <canvas id="c" class="c" width="200" height="140" style="-webkit-user-drag: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas>
+      <div id="name" class="name" contenteditable="true" tabindex="1">PieceName</div>
+      <svg width="258" height="258" id="svg0" class="board" draggable="false" xmlns="http://www.w3.org/2000/svg">
+      <div class="cost">Cost:
+        <input value="1" type="number" tabindex="2">
+      </div>
+      <div>
+
+        <ul id="moves" class="moves"></ul>
+        <div class="passives" contenteditable="" tabindex="6"></div>
+        <div class="info">[<span class="rank">Minion</span>]-[<span class="faction">Basic</span>]-[<span class="rarity">Common</span>]</div>
+      </div>
+
+    </section>
+    <section id="plus">
+
+
+      <canvas class="c mirror" data-shadow="rgb(201,38,249)" width="200" height="140"></canvas>
+      <div class="name">PieceName+</div>
+
+      <svg width="258" height="258" id="svg1" class="board" draggable="false" xmlns="http://www.w3.org/2000/svg">
+      <div class="cost">Cost:
+        <input value="2" type="number" tabindex="3">
+      </div>
+      <div>
+        <ul class="moves">
+</ul>
+        <div class="passives" contenteditable="" tabindex="7"></div>
+        <div class="info">[<span class="rank">Minion</span>]-[<span class="faction">Basic</span>]-[<span class="rarity">Common</span>]</div>
+      </div>
+
+    </section>
+    <section id="plusplus">
+
+      <canvas class="c mirror" data-shadow="rgb(201,84,24)" width="200" height="140"></canvas>
+      <div class="name">PieceName++</div>
+
+      <svg width="258" height="258" id="svg2" class="board" draggable="false" xmlns="http://www.w3.org/2000/svg">
+      <div class="cost">Cost:
+        <input value="3" type="number" tabindex="4">
+      </div>
+      <div>
+        <ul class="moves">
+</ul>
+        <div class="passives" contenteditable="" tabindex="8"></div>
+        <div class="info">[<span class="rank">Minion</span>]-[<span class="faction">Basic</span>]-[<span class="rarity">Common</span>]</div>
+      </div>
+
+    </section>
+    <section id="plusplusplus">
+
+      <canvas class="c mirror" data-shadow="rgb(252,13,57)" width="200" height="140"></canvas>
+      <div class="name">PieceName+++</div>
+
+      <svg width="258" height="258" id="svg3" class="board" draggable="false" xmlns="http://www.w3.org/2000/svg">
+      <div class="cost">Cost:
+        <input value="4" type="number" tabindex="5">
+      </div>
+      <div>
+        <ul class="moves">
+</ul>
+        <div class="passives" contenteditable="" tabindex="9"></div>
+        <div class="info">[<span class="rank">Minion</span>]-[<span class="faction">Basic</span>]-[<span class="rarity">Common</span>]</div>
+      </div>
+
+    </section>
+    <div id="controls" class="panel">
+      <div id="hidebutton"></div>
+      <nav>
+        <a mode="active">Actions</a><a mode="passive">Passive</a><a mode="tools">Tools</a><a mode="share">Share</a>
+      </nav>
+      <div mode="share">
+    <button id="saveimage">Save Image to Computer</button>
+    <div class="note">
+      <input id="savenoimage" type="checkbox">Hide image
+      <input id="savenoinfo" type="checkbox">Hide categories<br>
+      <input id="savefirst" type="checkbox">First Tier only
+      <input id="savecompact" type="checkbox">Compact View<br>
+      Note: Not all features work. These features will never be fixed. Switch to firefax. If that doesn't work switch to chrome. If that doesn't work switch to some other shitty browser.</div><hr>
+    <div class="note"><button id="exj">Export</button><button id="exjh">Export as URL</button><button id="imj">Import</button><br><textarea id="code" cols="36" rows="4"></textarea></div>
+  </div>
+  <div mode="tools">
+    Drawing Tools
+    <div class="left">Tool Size</div>
+      <nav>
+        <a id="ts0" href="#c" data-size="2">Thin</a>
+        <a id="ts1" href="#c" data-size="3">Medium</a>
+        <a id="ts2" href="#c" data-size="5">Thick</a>
+        <a id="ts3" href="#c" data-size="10">Rly Thick</a>
+      </nav>
+    <div class="left">Fill Color (Shape only)</div>
+      <nav>
+        <a id="tf0" href="#c" data-fill="0">Base</a>
+        <a id="tf1" href="#c" data-fill="1">Support</a>
+        <a id="tf2" href="#c" data-fill="2">Head</a>
+        <a id="tf3" href="#c" data-fill="3">Grey</a>
+      </nav>    
+    <div class="left">Tool Type</div>
+      <nav>
+        <a id="tt0" href="#c" data-tool="marker">Marker</a>
+        <a id="tt1" href="#c" data-tool="line">Line</a>
+        <a id="tt2" href="#c" data-tool="vector">Path</a>
+      </nav>
+      <nav>
+        <a id="tt3" href="#c" data-tool="eraser">Eraser</a>
+        <a id="tt4" href="#c" data-tool="leraser">Line Eraser</a>
+        <a id="tt5" href="#c" data-tool="vshape">Shape</a>
+      </nav>
+    <div class="left">Operations</div>
+      <nav>
+        <a id="do0" href="#c" data-operation="undo">Undo</a>
+        <a id="do1" href="#c" data-operation="redo">Redo</a>
+        <a id="do2" href="#c" data-download="png">Download</a>
+      </nav>
+      <nav>
+        <a id="do3" href="#c" data-operation="clear">Clear</a>
+      </nav>
+    <div class="hintwrap">
+      <div class="round panel hint" id="toolinfo">Mouse over Tools for descriptions!</div>
+    </div>
+  </div>
+  <div mode="active">
+    <button id="shactive">Show Unused/Unofficial</button>
+    <ul id="action" class="moves gallery">
+</ul>
+  </div>
+  <div mode="passive">
+    <ul id="passives">
+      <li class="ctrl" id="ctrlclear">(Clear All)</li>
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+<div class="modalwrapper" style="display: none;">
+  
+  <div class="cusmodal round panel" style="width: 500px; height: 330px;">
+
+    <h2>Custom Spell Editor</h2><div class="cusmodalbody">
+      <svg class="giant">
+      <div>Border Color: <input id="color11" min="0" max="255" type="number"><input id="color12" min="0" max="255" type="number"><input id="color13" min="0" max="255" type="number"><input id="nobox" type="checkbox">No Box
+        <br>
+        Fill Color: <input id="color21" min="0" max="255" type="number"><input id="color22" min="0" max="255" type="number"><input id="color23" min="0" max="255" type="number"><input id="colour2" type="checkbox">Unset
+        <br>
+        Symbol 1 Color: <input id="color31" min="0" max="255" type="number"><input id="color32" min="0" max="255" type="number"><input id="color33" min="0" max="255" type="number"><input id="colour3" type="checkbox">Unset
+        <br>
+        Symbol 2 Color: <input id="color41" min="0" max="255" type="number"><input id="color42" min="0" max="255" type="number"><input id="color43" min="0" max="255" type="number"><input id="colour4" type="checkbox">Unset
+        <br>
+        Symbol 1: <input id="symbol1" pattern="." class="short"> Symbol 2: <input id="symbol2" pattern="." class="short">
+        <br>
+        U+<input id="unicode" pattern="[0-9A-Fa-f]{4,5}" class="short" maxlength="5" placeholder="EC00"> =&gt; <input id="uniprev" class="short" placeholder="" readonly>
+        <br>
+        Description: <textarea id="text" cols="40" rows="4"></textarea>
+        <button id="menuclose">Close</button>
+      </div>
+    </div>
+  </div>
+  <div class="cusmodal round panel vertical-scroll" style="width: 300px; height: 330px;">
+
+    <h2>Presets</h2><div class="cusmodalbody">
+      <div>
+        <ul class="moves gallery"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="bgproc" style="visibility:hidden;position:absolute;"></div>
+<div id="tooltip">Yolo<br>buddy<br>how's<br>life?</div>
+</body></html>
