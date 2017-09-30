@@ -547,8 +547,10 @@ MOVES = [{
    "text": "Rush enemy, moving towards and pushing it up to 3 spaces away from this unit and destroying the enemy if it collides with any unit or the field edge.",
    "color": [255,0,0],
    "color2": [255,255,255],
-   "color3": [0,0,0],
-   "symbol1": "\u25cc"
+   "color3": [189, 189, 189],
+   "color4": [0, 0, 0],
+   "symbol1": "\u2b24",
+   "symbol2": "\u25cc",
 },{
    "id": "53",
    "cat": "official",
