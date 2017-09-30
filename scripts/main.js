@@ -471,7 +471,7 @@ function setDisplay(level, cls) {
   DATA[level].moves[MOVES[SMOVE[cls]].id] = DATA[level].moves[MOVES[SMOVE[cls]].id] || "";
   $("#" + level + " .moves svg." + cls).css("display", "inline");
   var svgMove = $("#" + level + " .moves svg." + cls)[0];
-  if (svgMove.nextSibling && svgMove.nextSibling.tagName.toLowerCase() == "svg") {
+  if (!svgMove.nextSibling || svgMove.nextSibling.tagName.toLowerCase() == "svg") {
     svgMove.insertAdjacentHTML("afterend", "<p>" + svgMove.dataset.description + "</p>");
   }
 }
