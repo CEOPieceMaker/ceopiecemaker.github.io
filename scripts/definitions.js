@@ -59,7 +59,7 @@ LTE = ["meleedeath", "death", "start", "end", "status", "targeted"];
 // Especially those requiring more complex explanation.
 // Current listed items:
 // (RANDOM), (ENCHANT), (CAN-REVIVE), (RANGE), (AWAY), (KING), (LOSEABILITY),
-// (MOVETOGETHER), (RANDOMMINION), (LOSEIMMUNE), (REFLECT), (REMOVE), (EXILE)
+// (MOVETOGETHER), (RANDOMMINION), (LOSEIMMUNE), (REFLECT), (ALLYUNBLOCKABLE), (TOHOME)
 //
 // #Away: # Square away from the caster, if unspecified, assume infinity.
 // #Range: Squares of range #, if unspecified, assume 1.
@@ -127,7 +127,7 @@ MOVES = [{
    "cat": "official",
    "name": "jumpswap",
    "long": "b]mu:move/attack/swap",
-   "text": "(Unblockable) Move, Attack or Swap places with ally.",
+   "text": "(Unblockable) Move, Attack, or swap places with ally.",
    "color": [255,210,0]
 },{
    "id": "6",
@@ -354,7 +354,7 @@ MOVES = [{
    "cat": "official",
    "name": "teleportswap",
    "long": "b]mu:move/swap",
-   "text": "(Unblockable) Teleport or Swap places with an Ally.",
+   "text": "(Unblockable) Teleport or swap places with ally.",
    "color": [121,19,153],
    "color3": [0,0,0],
    "symbol1": "\u{1f5d8}"
@@ -399,7 +399,7 @@ MOVES = [{
    "cat": "official",
    "name": "freezeexplosion",
    "long": "st]:death?minion?freeze#flag@3-move",
-   "text": "(Trigger) On Death: Freeze enemy minions in trigger area.",
+   "text": "(Trigger) On Death: Freeze enemy minions in this area.",
    "color": [107,205,253],
    "symbol1": "\u25fc"
 },{
@@ -407,7 +407,7 @@ MOVES = [{
    "cat": "official",
    "name": "freezestrike",
    "long": "bs]ru:thisattack&freeze#flag@3-move",
-   "text": "(Magic) Destroy self at target location and Freeze enemy unit, making them unable to Move or Attack for 3 turns.",
+   "text": "(Magic) Destroy self at target location and Freeze enemy unit for 3 turns, making them unable to act.",
    "color": [107,205,253],
    "color3": [181,230,254],
    "color4": [107,205,253],
@@ -417,7 +417,7 @@ MOVES = [{
    "cat": "official",
    "name": "bat",
    "long": "p]mz:thisset@type=BAT&move",
-   "text": "(Unstoppable) Transform into Bat and fly to this location.",
+   "text": "(Unstoppable) Transform into Bat and fly to location.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\ue903"
@@ -434,8 +434,8 @@ MOVES = [{
    "id": "40",
    "cat": "official",
    "name": "thunder",
-   "long": "m]:flag@4&(ru:attack)",
-   "text": "Mark location to be destroyed by Magic 4 turns after activating.",
+   "long": "1m]:flag@4&(ru:attack)",
+   "text": "[Pay 1]: Mark location to be destroyed by Magic 4 turns after activating.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u26a1"
@@ -619,7 +619,7 @@ MOVES = [{
    "cat": "variation",
    "name": "protosorcerattack",
    "long": "3cs]ru:sorcerize#flag@2(2(RANGE)/@+(mu:attack))",
-   "text": "[Pay 3]: (Magic) Sorcerize target, making them prone to melee attack from any caster's ally piece in Range 2, for 2 turns.",
+   "text": "[Pay 3]: (Magic) Sorcerize enemy unit, making them prone to melee attack from any caster's ally piece in Range 2, for 2 turns.",
    "color": [255,0,0],
    "color2": [0,0,0],
    "symbol1": "\uffec",
@@ -629,7 +629,7 @@ MOVES = [{
    "cat": "variation",
    "name": "protosorcerdeimmune",
    "long": "2s]:sorcerize#flag@2(LOSEIMMUNE)",
-   "text": "[Pay 2]: Sorcerize target, making them lose any immunity for 2 turns.",
+   "text": "[Pay 2]: Sorcerize enemy unit, making them lose any immunity for 2 turns.",
    "color": [0,178,255],
    "color2": [0,64,127],
    "color3": [0,255,255],
@@ -640,7 +640,7 @@ MOVES = [{
    "cat": "variation",
    "name": "protosorcerenchant",
    "long": "2cs]ru:sorcerize#flag@2(t]:death?enchant#flag@2(ENCHANT))",
-   "text": "[Pay 2]: (Magic) Sorcerize target, making them enchant attacker on Death in 2 turns.",
+   "text": "[Pay 2]: (Magic) Sorcerize enemy unit, making them enchant attacker on Death in 2 turns.",
    "color": [0,178,255],
    "color2": [0,0,0],
    "color3": [0,255,255],
@@ -651,7 +651,7 @@ MOVES = [{
    "cat": "variation",
    "name": "protosorcerdetarget",
    "long": "s]ru:sorcerize#flag@3-target",
-   "text": "(Magic) Sorcerize target, making them unable to target units for 3 turns.",
+   "text": "(Magic) Sorcerize enemy unit, making them unable to target units for 3 turns.",
    "color": [0,178,255],
    "color2": [0,0,0],
    "color3": [0,255,255],
@@ -723,7 +723,7 @@ MOVES = [{
    "cat": "variation",
    "name": "moveswap",
    "long": "b]mn:move/swap",
-   "text": "Move or Swap places with ally.",
+   "text": "Move or swap places with ally.",
    "color": [0,0,255],
    "color3": [0,0,0],
    "symbol1": "\u{1f5d8}",
@@ -773,7 +773,7 @@ MOVES = [{
    "cat": "variation",
    "name": "explosion",
    "long": "bt]:death?minion?attack",
-   "text": "(Trigger) On Death: Destroy enemy minions in trigger area.",
+   "text": "(Trigger) On Death: Destroy enemy minions in this area.",
    "color": [255,102,0],
    "symbol1": "\u25fc",
    "hide": true
@@ -952,7 +952,7 @@ MOVES = [{
    "cat": "adoption",
    "name": "backtech",
    "long": "1cs]ru:flag@3(t](\targeted)?mn:move@1(TOHOME))",
-   "text": "[Pay 1]: (Magic) Back-tech target, making them move 1 square backwards after targeting enemy for 3 turns.",
+   "text": "[Pay 1]: (Magic) Back-tech unit, making them move 1 square backwards after targeting enemy for 3 turns.",
    "color": [127,127,191],
    "color3": [64,64,95],
    "symbol1": "\u25cc",
