@@ -94,70 +94,71 @@ MOVESORT = ["canonical"];
  * text: In-game description.
  * Others self-explanatory.
  */
-MOVES = [{
+MOVES = [
+ {
    "id": "1",
    "cat": "official",
    "name": "moveattack",
    "long": "b]mn:move/attack",
    "text": "Move or Attack.",
    "color": [0,0,0]
-},{
+ }, {
    "id": "2",
    "cat": "official",
    "name": "move",
    "long": "b]mn:move",
    "text": "Move only.",
    "color": [0,0,255]
-},{
+ }, {
    "id": "3",
    "cat": "official",
    "name": "attack",
    "long": "b]mn:attack",
    "text": "Attack only.",
    "color": [252,13,27]
-},{
+ }, {
    "id": "4",
    "cat": "official",
    "name": "jump",
    "long": "b]mu:move/attack",
    "text": "(Unblockable) Move or Attack.",
    "color": [20,151,24]
-},{
+ }, {
    "id": "5",
    "cat": "official",
    "name": "jumpswap",
    "long": "b]mu:move/attack/swap",
-   "text": "(Unblockable) Move, Attack or Swap places with ally.",
+   "text": "(Unblockable) Move, Attack, or swap places with ally.",
    "color": [255,210,0]
-},{
+ }, {
    "id": "6",
    "cat": "official",
    "name": "teleport",
    "long": "b]mu:move",
    "text": "(Unblockable) Teleport.",
    "color": [121,19,153]
-},{
+ }, {
    "id": "7",
    "cat": "official",
    "name": "magic",
    "long": "b]ru:attack",
    "text": "(Magic) Destroy target.",
    "color": [253,117,34]
-},{
+ }, {
    "id": "8",
    "cat": "official",
    "name": "plant",
    "long": "2p]ru:transform@SAPLING/summon@SAPLING",
    "text": "[Pay 2]: (Magic) Summon Sapling or transform enemy into ally Sapling.",
    "color": [0,101,24]
-},{
+ }, {
    "id": "9",
    "cat": "official",
    "name": "charm",
    "long": "c]ru:minion?charm#set@ally",
    "text": "(Magic) Charm enemy minion.",
    "color": [255,0,255]
-},{
+ }, {
    "id": "10",
    "cat": "official",
    "name": "skeleton",
@@ -166,7 +167,7 @@ MOVES = [{
    "color": [102,102,102],
    "color3": [0,0,0],
    "symbol1": "\u26e7"
-},{
+ }, {
    "id": "11",
    "cat": "official",
    "name": "movestart",
@@ -174,7 +175,7 @@ MOVES = [{
    "text": "Move from starting position.",
    "color": [11,36,251],
    "symbol1": "\u274b"
-},{
+ }, {
    "id": "12",
    "cat": "official",
    "name": "poison",
@@ -182,7 +183,7 @@ MOVES = [{
    "text": "(Magic) Poison enemy unit, destroying them in 3 turns.",
    "color": [0,101,24],
    "symbol1": "\u00d7"
-},{
+ }, {
    "id": "13",
    "cat": "official",
    "name": "freeze",
@@ -190,7 +191,7 @@ MOVES = [{
    "text": "(Magic) Freeze enemy unit for 3 turns, making them unable to act.",
    "color": [107,205,253],
    "symbol1": "\u00d7"
-},{
+ }, {
    "id": "14",
    "cat": "official",
    "name": "petrify",
@@ -198,7 +199,7 @@ MOVES = [{
    "text": "(Ranged) Petrify enemy unit for 5 turns, making them unable to act.",
    "color": [94,94,94],
    "symbol1": "\u00d7"
-},{
+ }, {
    "id": "15",
    "cat": "official",
    "name": "polymorph",
@@ -207,7 +208,7 @@ MOVES = [{
    "color": [255,0,255],
    "symbol1": "\u00d7",
    "hide": true
-},{
+ }, {
    "id": "16",
    "cat": "official",
    "name": "haul",
@@ -216,7 +217,7 @@ MOVES = [{
    "color": [102,0,102],
    "symbol1": "\ufe56",
    "hide": true
-},{
+ }, {
    "id": "17",
    "cat": "official",
    "name": "teleportmasshaul",
@@ -226,7 +227,7 @@ MOVES = [{
    "symbol1": "\ufe56",
    "symbol2": "\u2747",
    "hide": true
-},{
+ }, {
    "id": "18",
    "cat": "official",
    "name": "sorcer",
@@ -236,7 +237,7 @@ MOVES = [{
    "color2": [127,0,0],
    "symbol1": "\uffec",
    "hide": true
-},{
+ }, {
    "id": "19",
    "cat": "official",
    "name": "enchant",
@@ -246,7 +247,7 @@ MOVES = [{
    "color2": [0,0,0],
    "color3": [0,255,255],
    "symbol1": "\u25cb"
-},{
+ }, {
    "id": "20",
    "cat": "official",
    "name": "soulkeep",
@@ -256,7 +257,7 @@ MOVES = [{
    "color2": [255,255,255],
    "color3": [0,0,0],
    "symbol1": "\ue900"
-},{
+ }, {
    "id": "21",
    "cat": "official",
    "name": "teleportstart",
@@ -264,7 +265,7 @@ MOVES = [{
    "text": "(Unblockable) Teleport from starting position.",
    "color": [121,19,153],
    "symbol1": "\u274b"
-},{
+ }, {
    "id": "22",
    "cat": "official",
    "name": "slime",
@@ -274,7 +275,7 @@ MOVES = [{
    "color2": [255,255,255],
    "color3": [0,204,0],
    "symbol1": "\ue902"
-},{
+ }, {
    "id": "23",
    "cat": "official",
    "name": "moon",
@@ -283,7 +284,7 @@ MOVES = [{
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u263d"
-},{
+ }, {
    "id": "24",
    "cat": "official",
    "name": "jumpattackminion",
@@ -293,7 +294,7 @@ MOVES = [{
    "color2": [255,255,255],
    "color3": [195,63,63],
    "symbol1": "\u239a"
-},{
+ }, {
    "id": "25",
    "cat": "official",
    "name": "triggerattack",
@@ -303,7 +304,7 @@ MOVES = [{
    "color2": [255,255,255],
    "color3": [255,0,0],
    "symbol1": "\u25c7"
-},{
+ }, {
    "id": "26",
    "cat": "official",
    "name": "abilitytarget",
@@ -312,7 +313,7 @@ MOVES = [{
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u2609"
-},{
+ }, {
    "id": "27",
    "cat": "official",
    "name": "portal",
@@ -321,7 +322,7 @@ MOVES = [{
    "color": [155,20,208],
    "color2": [255,255,255],
    "symbol1": "\u2609"
-},{
+ }, {
    "id": "28",
    "cat": "official",
    "name": "push",
@@ -330,7 +331,7 @@ MOVES = [{
    "color": [87,218,40],
    "color2": [255,255,255],
    "symbol1": "\u25cc"
-},{
+ }, {
    "id": "29",
    "cat": "official",
    "name": "gemini",
@@ -339,7 +340,7 @@ MOVES = [{
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u264a"
-},{
+ }, {
    "id": "30",
    "cat": "official",
    "name": "teleportking",
@@ -349,16 +350,16 @@ MOVES = [{
    "color2": [255,255,255],
    "symbol1": "\u25c7",
    "symbol2": "\u25fd"
-},{
+ }, {
    "id": "31",
    "cat": "official",
    "name": "teleportswap",
    "long": "b]mu:move/swap",
-   "text": "(Unblockable) Teleport or Swap places with an Ally.",
+   "text": "(Unblockable) Teleport or swap places with ally.",
    "color": [121,19,153],
    "color3": [0,0,0],
    "symbol1": "\u{1f5d8}"
-},{
+ }, {
    "id": "32",
    "cat": "official",
    "name": "lifestone",
@@ -367,7 +368,7 @@ MOVES = [{
    "color": [0,0,0],
    "color2": [58,233,93],
    "symbol1": "\uea42"
-},{
+ }, {
    "id": "33",
    "cat": "official",
    "name": "heal",
@@ -376,7 +377,7 @@ MOVES = [{
    "color": [0,0,0],
    "color2": [58,233,93],
    "symbol1": "\uea43"
-},{
+ }, {
    "id": "34",
    "cat": "official",
    "name": "necromance",
@@ -385,7 +386,7 @@ MOVES = [{
    "color": [0,0,0],
    "color2": [227,0,0],
    "symbol1": "\ue901"
-},{
+ }, {
    "id": "35",
    "cat": "official",
    "name": "moveattackblock",
@@ -394,34 +395,34 @@ MOVES = [{
    "color": [0,0,0],
    "color3": [255,255,255],
    "symbol1": "\u2219"
-},{
+ }, {
    "id": "36",
    "cat": "official",
    "name": "freezeexplosion",
    "long": "st]:death?minion?freeze#flag@3-move",
-   "text": "(Trigger) On Death: Freeze enemy minions in trigger area.",
+   "text": "(Trigger) On Death: Freeze enemy minions in this area.",
    "color": [107,205,253],
    "symbol1": "\u25fc"
-},{
+ }, {
    "id": "37",
    "cat": "official",
    "name": "freezestrike",
    "long": "bs]ru:thisattack&freeze#flag@3-move",
-   "text": "(Magic) Destroy self at target location and Freeze enemy unit, making them unable to Move or Attack for 3 turns.",
+   "text": "(Magic) Destroy self at target location and Freeze enemy unit for 3 turns, making them unable to act.",
    "color": [107,205,253],
    "color3": [181,230,254],
    "color4": [107,205,253],
    "symbol2": "\u2738"
-},{
+ }, {
    "id": "38",
    "cat": "official",
    "name": "bat",
    "long": "p]mz:thisset@type=BAT&move",
-   "text": "(Unstoppable) Transform into Bat and fly to this location.",
+   "text": "(Unstoppable) Transform into Bat and fly to location.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\ue903"
-},{
+ }, {
    "id": "39",
    "cat": "official",
    "name": "castle",
@@ -430,16 +431,16 @@ MOVES = [{
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u2656"
-},{
+ }, {
    "id": "40",
    "cat": "official",
    "name": "thunder",
-   "long": "m]:flag@4&(ru:attack)",
-   "text": "Mark location to be destroyed by Magic 4 turns after activating.",
+   "long": "1m]:flag@4&(ru:attack)",
+   "text": "[Pay 1]: Mark location to be destroyed by Magic 4 turns after activating.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u26a1"
-},{
+ }, {
    "id": "41",
    "cat": "official",
    "name": "attract",
@@ -448,7 +449,7 @@ MOVES = [{
    "color": [255,63,255],
    "color2": [255,255,255],
    "symbol1": "\u25c7"
-},{
+ }, {
    "id": "42",
    "cat": "official",
    "name": "shoot",
@@ -457,7 +458,7 @@ MOVES = [{
    "color": [255,0,0],
    "color2": [255,255,255],
    "symbol1": "\u2316"
-},{
+ }, {
    "id": "43",
    "cat": "official",
    "name": "beacon",
@@ -466,7 +467,7 @@ MOVES = [{
    "color": [155,20,208],
    "color2": [255,255,255],
    "symbol1": "\u25ef"
-},{
+ }, {
    "id": "44",
    "cat": "official",
    "name": "gravity",
@@ -475,7 +476,7 @@ MOVES = [{
    "color": [0,63,255],
    "color2": [255,255,255],
    "symbol1": "\u25ef"
-},{
+ }, {
    "id": "45",
    "cat": "official",
    "name": "omnishield",
@@ -484,7 +485,7 @@ MOVES = [{
    "color": [0,0,153],
    "color2": [153,255,255],
    "symbol1": "\ue905"
-},{
+ }, {
    "id": "46",
    "cat": "official",
    "name": "envy",
@@ -494,7 +495,7 @@ MOVES = [{
    "color2": [255,255,255],
    "color3": [0,0,0],
    "symbol1": "\u2b50"
-},{
+ }, {
    "id": "47",
    "cat": "official",
    "name": "splash",
@@ -503,7 +504,7 @@ MOVES = [{
    "color": [0,153,255],
    "color2": [255,255,255],
    "symbol1": "\ue904"
-},{
+ }, {
    "id": "48",
    "cat": "official",
    "name": "pike",
@@ -513,7 +514,7 @@ MOVES = [{
    "color2": [255,255,255],
    "color3": [255,0,0],
    "symbol1": "\uEA5E"
-},{
+ }, {
    "id": "49",
    "cat": "official",
    "name": "magicpush",
@@ -523,7 +524,7 @@ MOVES = [{
    "color2": [200,255,200],
    "symbol1": "\u25cb",
    "symbol2": "\u2742"
-},{
+ }, {
    "id": "50",
    "cat": "official",
    "name": "compel",
@@ -532,7 +533,7 @@ MOVES = [{
    "color": [255,63,255],
    "color2": [255,255,255],
    "symbol1": "\u2661"
-},{
+ }, {
    "id": "51",
    "cat": "official",
    "name": "butterfly",
@@ -540,18 +541,18 @@ MOVES = [{
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\uE906"
-},{
+ }, {
    "id": "52",
    "cat": "official",
    "name": "rush",
    "text": "Rush enemy, moving towards and pushing it up to 3 spaces away from this unit and destroying the enemy if it collides with any unit or the field edge.",
    "color": [255,0,0],
    "color2": [255,255,255],
-   "color3": [189, 189, 189],
-   "color4": [0, 0, 0],
+   "color3": [189,189,189],
+   "color4": [0,0,0],
    "symbol1": "\u2b24",
-   "symbol2": "\u25cc",
-},{
+   "symbol2": "\u25cc"
+ }, {
    "id": "53",
    "cat": "official",
    "name": "jumpattack",
@@ -559,8 +560,8 @@ MOVES = [{
    "text": "(Unblockable) Attack only.",
    "color": [255,0,0],
    "color2": [127,0,0],
-   "hide": true,
-},{
+   "hide": true
+ }, {
    "id": "54",
    "cat": "official",
    "name": "stone",
@@ -570,7 +571,7 @@ MOVES = [{
    "color4": [0,0,0],
    "symbol1": "\u25ae",
    "symbol2": "\u25af"
-},{
+ }, {
    "id": "0a",
    "cat": "variation",
    "name": "swap",
@@ -578,7 +579,7 @@ MOVES = [{
    "text": "(Unblockable) Swap places with ally.",
    "color": [127,108,0],
    "hide": true
-},{
+ }, {
    "id": "0b",
    "cat": "variation",
    "name": "swapenemy",
@@ -586,7 +587,7 @@ MOVES = [{
    "text": "(Unblockable) Swap places with enemy.",
    "color": [208,108,108],
    "hide": true
-},{
+ }, {
    "id": "0c",
    "cat": "variation",
    "name": "swapall",
@@ -595,7 +596,7 @@ MOVES = [{
    "color": [127,108,0],
    "symbol1": "\ufe62",
    "hide": true
-},{
+ }, {
    "id": "15a",
    "cat": "variation",
    "name": "charmall",
@@ -604,7 +605,7 @@ MOVES = [{
    "color": [255,0,255],
    "symbol1": "\ufe62",
    "hide": true
-},{
+ }, {
    "id": "15a",
    "cat": "variation",
    "name": "polymorphall",
@@ -614,50 +615,50 @@ MOVES = [{
    "symbol1": "\ufe62",
    "symbol2": "\u00d7",
    "hide": true
-},{
+ }, {
    "id": "18a",
    "cat": "variation",
    "name": "protosorcerattack",
    "long": "3cs]ru:sorcerize#flag@2(2(RANGE)/@+(mu:attack))",
-   "text": "[Pay 3]: (Magic) Sorcerize target, making them prone to melee attack from any caster's ally piece in Range 2, for 2 turns.",
+   "text": "[Pay 3]: (Magic) Sorcerize enemy unit, making them prone to melee attack from any caster's ally piece in Range 2, for 2 turns.",
    "color": [255,0,0],
    "color2": [0,0,0],
    "symbol1": "\uffec",
    "hide": true
-},{
+ }, {
    "id": "18b",
    "cat": "variation",
    "name": "protosorcerdeimmune",
    "long": "2s]:sorcerize#flag@2(LOSEIMMUNE)",
-   "text": "[Pay 2]: Sorcerize target, making them lose any immunity for 2 turns.",
+   "text": "[Pay 2]: Sorcerize enemy unit, making them lose any immunity for 2 turns.",
    "color": [0,178,255],
    "color2": [0,64,127],
    "color3": [0,255,255],
    "symbol1": "\uffec",
    "hide": true
-},{
+ }, {
    "id": "18c",
    "cat": "variation",
    "name": "protosorcerenchant",
    "long": "2cs]ru:sorcerize#flag@2(t]:death?enchant#flag@2(ENCHANT))",
-   "text": "[Pay 2]: (Magic) Sorcerize target, making them enchant attacker on Death in 2 turns.",
+   "text": "[Pay 2]: (Magic) Sorcerize enemy unit, making them enchant attacker on Death in 2 turns.",
    "color": [0,178,255],
    "color2": [0,0,0],
    "color3": [0,255,255],
    "symbol1": "\uffec",
    "hide": true
-},{
+ }, {
    "id": "18d",
    "cat": "variation",
    "name": "protosorcerdetarget",
    "long": "s]ru:sorcerize#flag@3-target",
-   "text": "(Magic) Sorcerize target, making them unable to target units for 3 turns.",
+   "text": "(Magic) Sorcerize enemy unit, making them unable to target units for 3 turns.",
    "color": [0,178,255],
    "color2": [0,0,0],
    "color3": [0,255,255],
    "symbol1": "\u00d7",
    "hide": true
-},{
+ }, {
    "id": "19a",
    "cat": "variation",
    "name": "magicenchant",
@@ -668,7 +669,7 @@ MOVES = [{
    "color3": [255,178,0],
    "symbol1": "\u25cb",
    "hide": true
-},{
+ }, {
    "id": "19b",
    "cat": "variation",
    "name": "omnienchant",
@@ -679,7 +680,7 @@ MOVES = [{
    "color3": [255,255,255],
    "symbol1": "\u25cb",
    "hide": true
-},{
+ }, {
    "id": "25a",
    "cat": "variation",
    "name": "burn",
@@ -688,7 +689,7 @@ MOVES = [{
    "color": [253,117,34],
    "symbol1": "\u25b3",
    "hide": true
-},{
+ }, {
    "id": "25b",
    "cat": "variation",
    "name": "frostburn",
@@ -697,7 +698,7 @@ MOVES = [{
    "color": [107,205,253],
    "symbol1": "\u25bd",
    "hide": true
-},{
+ }, {
    "id": "27a",
    "cat": "variation",
    "name": "magicportal",
@@ -707,7 +708,7 @@ MOVES = [{
    "color2": [255,255,255],
    "symbol1": "\u2609",
    "hide": true
-},{
+ }, {
    "id": "49a",
    "cat": "variation",
    "name": "magicpull",
@@ -718,17 +719,17 @@ MOVES = [{
    "symbol1": "\u25cb",
    "symbol2": "\u2742",
    "hide": true
-},{
+ }, {
    "id": "31a",
    "cat": "variation",
    "name": "moveswap",
    "long": "b]mn:move/swap",
-   "text": "Move or Swap places with ally.",
+   "text": "Move or swap places with ally.",
    "color": [0,0,255],
    "color3": [0,0,0],
    "symbol1": "\u{1f5d8}",
    "hide": true
-},{
+ }, {
    "id": "34a",
    "cat": "variation",
    "name": "downgradenecromance",
@@ -738,7 +739,7 @@ MOVES = [{
    "color2": [227,227,0],
    "symbol1": "\ue901",
    "hide": true
-},{
+ }, {
    "id": "34b",
    "cat": "variation",
    "name": "destroynecromance",
@@ -748,7 +749,7 @@ MOVES = [{
    "color2": [227,113,0],
    "symbol1": "\ue901",
    "hide": true
-},{
+ }, {
    "id": "35a",
    "cat": "variation",
    "name": "moveblock",
@@ -758,7 +759,7 @@ MOVES = [{
    "color3": [255,255,255],
    "symbol1": "\u2219",
    "hide": true
-},{
+ }, {
    "id": "35b",
    "cat": "variation",
    "name": "rangedblock",
@@ -768,7 +769,7 @@ MOVES = [{
    "color3": [127,255,127],
    "symbol1": "\u2219",
    "hide": true
-},{
+ }, {
    "id": "37a",
    "cat": "variation",
    "name": "explosion",
@@ -777,7 +778,7 @@ MOVES = [{
    "color": [255,102,0],
    "symbol1": "\u25fc",
    "hide": true
-},{
+ }, {
    "id": "41a",
    "cat": "variation",
    "name": "unattract",
@@ -787,7 +788,7 @@ MOVES = [{
    "color2": [255,255,255],
    "symbol1": "\u25c7",
    "hide": true
-},{
+ }, {
    "id": "43a",
    "cat": "variation",
    "name": "beaconally",
@@ -798,7 +799,7 @@ MOVES = [{
    "symbol1": "\u25ef",
    "symbol2": "\u25c7",
    "hide": true
-},{
+ }, {
    "id": "44a",
    "cat": "variation",
    "name": "antigravity",
@@ -808,7 +809,7 @@ MOVES = [{
    "color2": [255,255,255],
    "symbol1": "\u25cc",
    "hide": true
-},{
+ }, {
    "id": "44b",
    "cat": "variation",
    "name": "gravityfreeze",
@@ -818,7 +819,7 @@ MOVES = [{
    "color2": [255,255,255],
    "symbol1": "\u25ef",
    "hide": true
-},{
+ }, {
    "id": "45a",
    "cat": "variation",
    "name": "meleeshieldall",
@@ -829,7 +830,7 @@ MOVES = [{
    "symbol1": "\ue905",
    "symbol2": "\ufe62",
    "hide": true
-},{
+ }, {
    "id": "45b",
    "cat": "variation",
    "name": "spellshieldall",
@@ -840,7 +841,7 @@ MOVES = [{
    "symbol1": "\ue905",
    "symbol2": "\ufe62",
    "hide": true
-},{
+ }, {
    "id": "45c",
    "cat": "variation",
    "name": "omnishieldall",
@@ -851,7 +852,7 @@ MOVES = [{
    "symbol1": "\ue905",
    "symbol2": "\ufe62",
    "hide": true
-},{
+ }, {
    "id": "45d",
    "cat": "variation",
    "name": "spellshield",
@@ -861,7 +862,7 @@ MOVES = [{
    "color2": [255,255,153],
    "symbol1": "\ue905",
    "hide": true
-},{
+ }, {
    "id": "48a",
    "cat": "variation",
    "name": "wisp",
@@ -872,7 +873,7 @@ MOVES = [{
    "color3": [255,0,0],
    "symbol1": "\uEA14",
    "hide": true
-},{
+ }, {
    "id": "31b",
    "cat": "limbo",
    "name": "ximaera",
@@ -880,16 +881,16 @@ MOVES = [{
    "text": "(Unblockable) Teleport or swap places with unit.",
    "color": [19,121,153],
    "hide": true
-},{
+ }, {
    "id": "a1",
    "cat": "adoption",
    "name": "flirt",
-   "long": "cs]rn:flag@3&charm#set@ally",
+   "long": "cs]ru:flag@3&charm#set@ally",
    "text": "(Magic) Flirt with enemy minion, charming them in 3 turns.",
    "color": [255,0,255],
    "symbol1": "\u2665",
    "hide": true
-},{
+ }, {
    "id": "a2",
    "cat": "adoption",
    "name": "mutualpoison",
@@ -898,7 +899,7 @@ MOVES = [{
    "color": [0,101,24],
    "symbol1": "\uea27",
    "hide": true
-},{
+ }, {
    "id": "a3",
    "cat": "adoption",
    "name": "levitate",
@@ -908,7 +909,7 @@ MOVES = [{
    "color3": [255,255,0],
    "symbol1": "^",
    "hide": true
-},{
+ }, {
    "id": "a4",
    "cat": "adoption",
    "name": "notarget",
@@ -918,7 +919,7 @@ MOVES = [{
    "color2": [255,255,255],
    "symbol1": "\u2300",
    "hide": true
-},{
+ }, {
    "id": "a5",
    "cat": "adoption",
    "name": "replaceabilitytarget",
@@ -928,16 +929,17 @@ MOVES = [{
    "color2": [127,127,255],
    "symbol1": "\u2609",
    "hide": true
-},{
+ }, {
    "id": "a6",
    "cat": "adoption",
    "name": "jumpallymoveattack",
    "long": "b]m(ALLYUNBLOCKABLE)n:move/attack",
    "text": "Move or Attack. Cannot be blocked by Ally units.",
    "color": [0,0,0],
-   "symbol1": "\u274b",
+   "symbol1": "\u25e0",
+   "symbol2": "\u25e6",
    "hide": true
-},{
+ }, {
    "id": "a7",
    "cat": "adoption",
    "name": "demote",
@@ -947,17 +949,17 @@ MOVES = [{
    "color2": [241,241,140],
    "symbol1": "\uffec",
    "hide": true
-},{
+ }, {
    "id": "a8",
    "cat": "adoption",
    "name": "backtech",
    "long": "1cs]ru:flag@3(t](\targeted)?mn:move@1(TOHOME))",
-   "text": "[Pay 1]: (Magic) Back-tech target, making them move 1 square backwards after targeting enemy for 3 turns.",
+   "text": "[Pay 1]: (Magic) Back-tech unit, making them move 1 square in the opposite direction of target after targeting enemy for 3 turns.",
    "color": [127,127,191],
    "color3": [64,64,95],
    "symbol1": "\u25cc",
    "hide": true
-},{
+ }, {
    "id": "a9",
    "cat": "adoption",
    "name": "destroysplash",
@@ -967,7 +969,7 @@ MOVES = [{
    "color2": [255,255,255],
    "symbol1": "\u2747",
    "hide": true
-},{
+ }, {
    "id": "c1",
    "cat": "custom",
    "name": "custom1",
@@ -975,7 +977,7 @@ MOVES = [{
    "text": "Custom spell 1 (Double Click Menu Icon to Edit)",
    "color": [227,25,25],
    "symbol1": "1"
-},{
+ }, {
    "id": "c2",
    "cat": "custom",
    "name": "custom2",
@@ -983,7 +985,7 @@ MOVES = [{
    "text": "Custom spell 2 (Double Click Menu Icon to Edit)",
    "color": [227,126,25],
    "symbol1": "2"
-},{
+ }, {
    "id": "c3",
    "cat": "custom",
    "name": "custom3",
@@ -991,7 +993,7 @@ MOVES = [{
    "text": "Custom spell 3 (Double Click Menu Icon to Edit)",
    "color": [227,227,25],
    "symbol1": "3"
-},{
+ }, {
    "id": "c4",
    "cat": "custom",
    "name": "custom4",
@@ -999,7 +1001,7 @@ MOVES = [{
    "text": "Custom spell 4 (Double Click Menu Icon to Edit)",
    "color": [126,227,25],
    "symbol1": "4"
-},{
+ }, {
    "id": "c5",
    "cat": "custom",
    "name": "custom5",
@@ -1007,7 +1009,7 @@ MOVES = [{
    "text": "Custom spell 5 (Double Click Menu Icon to Edit)",
    "color": [25,227,25],
    "symbol1": "5"
-},{
+ }, {
    "id": "c6",
    "cat": "custom",
    "name": "custom6",
@@ -1015,7 +1017,7 @@ MOVES = [{
    "text": "Custom spell 6 (Double Click Menu Icon to Edit)",
    "color": [25,227,126],
    "symbol1": "6"
-},{
+ }, {
    "id": "c7",
    "cat": "custom",
    "name": "custom7",
@@ -1023,7 +1025,7 @@ MOVES = [{
    "text": "Custom spell 7 (Double Click Menu Icon to Edit)",
    "color": [25,227,227],
    "symbol1": "7"
-},{
+ }, {
    "id": "c8",
    "cat": "custom",
    "name": "custom8",
@@ -1031,7 +1033,7 @@ MOVES = [{
    "text": "Custom spell 8 (Double Click Menu Icon to Edit)",
    "color": [25,126,227],
    "symbol1": "8"
-}];
+ }];
 
 /* Self reminder
 \\ when creating an ability of slightly different properties, prefer these changes:
@@ -1050,8 +1052,9 @@ PASSIVES = ["Does not block movement.",
     "(Magic-Immune)",
     "(Status-Immune)",
     "(Trigger-Immune)",
-    "(Reaction-Immune)",
-    "(Location-Immune)"
+    "(Displacement-Immune)",
+    "Promotes to PieceName[+].",
+    "On Death: Lose 2[+1] morale."
 ];
 LABELS = {
     rank: ["Minion", "Champion", "Boss", "King", "Capymon"],
