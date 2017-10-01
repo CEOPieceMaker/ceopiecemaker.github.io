@@ -165,7 +165,7 @@ MOVES = [{
    "text": "[Pay 4]: (Magic) Summon Value 0 Skeleton.",
    "color": [102,102,102],
    "color3": [0,0,0],
-   "symbol1": "h26e7"
+   "symbol1": "\u26e7"
 },{
    "id": "11",
    "cat": "official",
