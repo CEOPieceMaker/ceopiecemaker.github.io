@@ -558,7 +558,8 @@ MOVES = [{
    "long": "b]mu:attack",
    "text": "(Unblockable) Attack only.",
    "color": [255,0,0],
-   "color2": [127,0,0]
+   "color2": [127,0,0],
+   "hide": true,
 },{
    "id": "54",
    "cat": "official",
