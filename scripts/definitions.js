@@ -94,8 +94,7 @@ MOVESORT = ["canonical"];
  * text: In-game description.
  * Others self-explanatory.
  */
-MOVES = [
- {
+MOVES = [{
    "id": "1",
    "cat": "official",
    "name": "moveattack",
@@ -1057,9 +1056,9 @@ PASSIVES = ["Does not block movement.",
     "On Death: Lose 2[+1] morale."
 ];
 LABELS = {
-    rank: ["Minion", "Champion", "Boss", "King", "Capymon"],
-    faction: ["Basic", "Clan", "Arcane", "Forest", "AG", "Ubers", "OU", "UU", "NU", "RU", "PU"],
-    rarity: ["Common", "Rare", "Epic", "Legendary", "Ultra Beast"]
+    rank: ["Minion", "Champion"],
+    faction: ["Basic", "Clan", "Arcane", "Forest"],
+    rarity: ["Common", "Rare", "Epic", "Legendary"]
 }
 LEVELS = ["base", "plus", "plusplus", "plusplusplus"];
 
