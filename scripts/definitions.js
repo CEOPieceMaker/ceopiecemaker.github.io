@@ -318,9 +318,12 @@ MOVES = [{
    "name": "portal",
    "long": "u]:Aset@pos=\this",
    "text": "Teleport Ability Target to this empty location.",
-   "color": [155,20,208],
+   "color": [102,0,154],
    "color2": [255,255,255],
-   "symbol1": "\u2609"
+   "color3": [192,0,255],
+   "color4": [0,0,0],
+   "symbol1": "\u25cf",
+   "symbol2": "\u25e6"
  }, {
    "id": "28",
    "cat": "official",
@@ -796,7 +799,7 @@ MOVES = [{
    "color": [155,20,208],
    "color2": [255,255,255],
    "symbol1": "\u25ef",
-   "symbol2": "\u25c7",
+   "symbol2": "\u25e6",
    "hide": true
  }, {
    "id": "44a",
