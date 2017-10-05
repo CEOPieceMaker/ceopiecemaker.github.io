@@ -251,7 +251,7 @@ function cusLoadEdit(moves) {
       }
     }
     if (this.id.startsWith("symbol")) {
-      if (this.checkValidity()) {
+      if (_.every($("[id^=symbol]"), elm => elm.checkValidity())) {
         config.symbol1 = sy1.val();
         config.symbol2 = sy2.val();
         updateCustom();

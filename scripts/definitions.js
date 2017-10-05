@@ -579,7 +579,9 @@ MOVES = [{
    "name": "swap",
    "long": "b]mu:swap",
    "text": "(Unblockable) Swap places with ally.",
-   "color": [127,108,0],
+   "color": [127,127,127],
+   "color2": [255,255,255],
+   "symbol1": "\u{1f5d8}",
    "hide": true
  }, {
    "id": "0b",
@@ -587,7 +589,7 @@ MOVES = [{
    "name": "swapenemy",
    "long": "b]mu:!ally?swap",
    "text": "(Unblockable) Swap places with enemy.",
-   "color": [208,108,108],
+   "color": [127,0,59],
    "hide": true
  }, {
    "id": "0c",
@@ -595,8 +597,7 @@ MOVES = [{
    "name": "swapall",
    "long": "b]mu:*ally?swap",
    "text": "(Unblockable) Swap places with unit.",
-   "color": [127,108,0],
-   "symbol1": "\ufe62",
+   "color": [127,105,0],
    "hide": true
  }, {
    "id": "15a",
@@ -689,7 +690,8 @@ MOVES = [{
    "long": "bt]ru:start?attack",
    "text": "(Magic, Trigger) Enemy Unit: Instantly destroy this target at the start of your turn.",
    "color": [253,117,34],
-   "symbol1": "\u25b3",
+   "color3": [127,59,17],
+   "symbol1": "\uea15",
    "hide": true
  }, {
    "id": "25b",
@@ -698,17 +700,20 @@ MOVES = [{
    "long": "st]ru:start?attack#flag@1-move",
    "text": "(Magic, Trigger) Enemy Unit: Instantly freeze this target for 1 turn at the start of your turn.",
    "color": [107,205,253],
-   "symbol1": "\u25bd",
+   "color3": [59,108,127],
+   "symbol1": "\uea21",
    "hide": true
  }, {
    "id": "27a",
    "cat": "variation",
-   "name": "magicportal",
-   "long": "pu]ru:Aset@pos=\this",
-   "text": "(Magic) Ability Target is teleported to this empty location.",
+   "name": "swapportal",
+   "long": "pu]ru:A\\swap",
+   "text": "(Magic) Target Unit is swapped with Ability Target.",
    "color": [155,20,208],
    "color2": [255,255,255],
+   "color4": [0,0,0],
    "symbol1": "\u2609",
+   "symbol2": "\u{1f5d8}",
    "hide": true
  }, {
    "id": "49a",
