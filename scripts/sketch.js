@@ -245,7 +245,7 @@ paper.install(window);
 			for(var action of this.actions){
 				if (action.match(/^set/)) {
 					var params = action.replace(/set([0-9]+)(#[0-9a-f]{3,4})([a-z]+)/,(_,a,b,c)=>[a,b,c].join(",")).split(",");
-					if (params[1].length == 5) this.fill = +params[1][params[1].length-1], params[1] = params[1].slice(1,-1);
+					if (params[1].length == 5) this.fill = +params[1][4], params[1] = params[1].slice(0,-1);
 					this.size = params[0], this.color = params[1], this.tool = params[2], $.sketch.tools[params[2]].activate();
 				} else {
 					$.sketch.tools[this.tool].draw.call(sketch, action);

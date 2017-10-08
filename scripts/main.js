@@ -1,7 +1,7 @@
 var CUSTOM = 0;
 var mysvg;
 var config = {};
-//Declare functions so they can be used without definition
+/* Declare functions so they can be used without definition
 // function updateSVG() {}
 
 // function getSpell() {}
@@ -19,6 +19,17 @@ function makeSVGTag(tagName, properties) {
   ret += "/>";
   return ret;
 }
+
+function makeSVGTagContent(tagName, properties, content) {
+  var keys = Object.keys(properties);
+  var ret = "<" + tagName;
+  for (var i = 0; i < keys.length; i++) {
+    ret += " " + keys[i] + '="' + properties[keys[i]] + '"';
+  }
+  ret += ">" + content.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") + "</" + tagName + ">";
+  return ret;
+}
+*/
 
 if (window.location.search && URLSearchParams) {
   var qS = new URLSearchParams(window.location.search);
@@ -47,16 +58,6 @@ if (window.location.search && URLSearchParams) {
 
 initializeBoards();
 makeLookup();
-
-function makeSVGTagContent(tagName, properties, content) {
-  var keys = Object.keys(properties);
-  var ret = "<" + tagName;
-  for (var i = 0; i < keys.length; i++) {
-    ret += " " + keys[i] + '="' + properties[keys[i]] + '"';
-  }
-  ret += ">" + content.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;") + "</" + tagName + ">";
-  return ret;
-}
 
 // Create stylesheet element
 var style = document.createElement("style");

@@ -233,6 +233,7 @@ function changeSpell(i, l) {
   updateSVG(+l+1);
   var nextMove = getSpell(i);
   if (! curMove.dataset && ! nextMove.dataset ) changeSpell(i, +l+1);
+  else if (! curMove.dataset || ! nextMove.dataset) return;
   else if (curMove.dataset.id == nextMove.dataset.id) changeSpell(i, +l+1);
 }
 
