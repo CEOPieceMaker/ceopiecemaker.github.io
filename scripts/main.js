@@ -679,7 +679,8 @@ function screensave() {
   // replace canvas with image; put correct number in for cost (using input not working)
   _.forEach(LEVELS, function(level) {
     var c = $("#" + level + " canvas")[0];
-    $b.find("#" + level + " canvas").replaceWith("<img class=\"c\" width=\"" + $(c).width() + "\" height=\"" + $(c).height() + "\" src=\"" + c.toDataURL("image/png") + "\"/>");
+    $b.find("#" + level + " canvas").replaceWith("<img class=\"c\" width=\"" + $(c).width() + "\" height=\"" + $(c).height() + "\" style=\"background: url(" + c.toDataURL("image/png") + ")\"/>");
+    // NOTE: Probably revert to using src when the bug is fixed
     $b.find("#" + level + " .cost input").replaceWith("" + DATA[level].cost);
     //replace passives::after with passives. Used to circumvent whitespace bugs.
     $b.find(".passives").each(function(a, b) {
@@ -691,7 +692,7 @@ function screensave() {
   $b.css("width", "auto");
   $b.appendTo($("#bgproc"));
   if ($("#savenoimage")[0].checked) {
-    $b.find("img").remove();
+    $b.find("img, canvas").remove();
   }
   if ($("#savenoinfo")[0].checked) {
     $b.find(".info").remove();
@@ -714,7 +715,7 @@ function screensave() {
       "width": "auto",
       "margin-bottom": "0px"
     });
-    $b.find("img").css("margin", "90px 0");
+    $b.find("img, canvas").css("margin", "90px 0");
     $b.find(".cost+div").each(function() {
       $(this).find(".passives").each(function() {
         if (this.innerHTML !== "") this.innerHTML += "\n";
