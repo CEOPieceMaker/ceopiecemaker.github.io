@@ -1,8 +1,9 @@
 # CEO Piece Maker
 The current official PieceMaker until one of us gets tired and deletes everything again.
 
-A Clone of James's Clone of Aplet's Clone of ACB's V2 of ACB's V2 of tony2's Piecemaker.
-Will not link the old PieceMakers as most of them are dead.
+A __Clone__ of James's __Clone__ of Aplet's __Clone__ of ACB's __V2__ of ACB's __V2__ of tony2's Piecemaker.
+
+Will not link the old PieceMakers as most of them are dead or deleted.
 
 Co-developed by Aplet123 and ACB.
 

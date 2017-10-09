@@ -679,8 +679,10 @@ function screensave() {
   // replace canvas with image; put correct number in for cost (using input not working)
   _.forEach(LEVELS, function(level) {
     var c = $("#" + level + " canvas")[0];
-    $b.find("#" + level + " canvas").replaceWith("<img class=\"c\" width=\"" + $(c).width() + "\" height=\"" + $(c).height() + "\" style=\"background: url(" + c.toDataURL("image/png") + ")\"/>");
+    
     // NOTE: Probably revert to using src when the bug is fixed
+    $b.find("#" + level + " canvas").replaceWith("<img class=\"c\" width=\"" + $(c).width() + "\" height=\"" + $(c).height() + "\" style=\"background: url(" + c.toDataURL("image/png") + ")\"/>");
+
     $b.find("#" + level + " .cost input").replaceWith("" + DATA[level].cost);
     //replace passives::after with passives. Used to circumvent whitespace bugs.
     $b.find(".passives").each(function(a, b) {
