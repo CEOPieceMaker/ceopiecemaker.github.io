@@ -134,6 +134,7 @@ function initializeBoards() {
   });
 
   $(".tile").on("contextmenu", function () {
+    mouse.mode = "remove";
     return false;
   });
 
