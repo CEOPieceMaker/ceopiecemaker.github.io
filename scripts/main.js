@@ -353,7 +353,7 @@ $("#passives li:not([id])").click(function() {
   appendPassive(text);
 });
 $("#ctrlclear").click(function() {
-  $("div.passives").text("").keyup();
+  $("div.passives").text("").attr("data-raw", "").attr("data-description", "").keyup();
 });
 
 function appendPassive(text) {
