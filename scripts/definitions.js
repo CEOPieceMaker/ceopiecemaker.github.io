@@ -600,7 +600,7 @@ MOVES = [{
    "color": [127,105,0],
    "hide": true
  }, {
-   "id": "15a",
+   "id": "9a",
    "cat": "variation",
    "name": "charmall",
    "long": "c]ru:*minion?charm#set@ally",
