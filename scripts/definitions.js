@@ -561,13 +561,12 @@ MOVES = [{
    "long": "b]mu:attack",
    "text": "(Unblockable) Attack only.",
    "color": [255,0,0],
-   "color2": [127,0,0],
-   "hide": true
+   "color2": [127,0,0]
  }, {
    "id": "54",
    "cat": "official",
    "name": "stone",
-   "text": "(Magic) Create StonePillar in this empty location, or petrify enemy for 3 turns, making them unable to act.",
+   "text": "[Pay 1]: (Magic) Create StonePillar in this empty location, or petrify enemy for 4 turns, making them unable to act.",
    "color": [94,94,94],
    "color3": [59,59,59],
    "color4": [0,0,0],
