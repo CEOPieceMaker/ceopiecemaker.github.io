@@ -760,7 +760,7 @@ MOVES = [{
    "cat": "variation",
    "name": "moveblock",
    "long": "bv]:block@(mn:attack)&(LOSEABILTY)/(mn:move)",
-   "text": "(Passive) Block one melee attack from this location, and lose this ability. \n(Active) Move only.",
+   "text": "(Passive) Block one normal attack from this location, and lose this ability. \n(Active) Move only.",
    "color": [0,0,255],
    "color3": [255,255,255],
    "symbol1": "\u2219",
