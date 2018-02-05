@@ -320,7 +320,7 @@ MOVES = [{
    "text": "Teleport Ability Target to this empty location.",
    "color": [102,0,154],
    "color2": [255,255,255],
-   "color3": [192,0,255],
+   "color3": [233,155,255],
    "color4": [0,0,0],
    "symbol1": "\u25cf",
    "symbol2": "\u25e6"
@@ -465,7 +465,7 @@ MOVES = [{
    "cat": "official",
    "name": "beacon",
    "long": "cu]ru:set@pos=Athis",
-   "text": "(Magic) Target unit is teleported to Ability Target.",
+   "text": "(Magic) Teleport unit to Ability Target.",
    "color": [155,20,208],
    "color2": [255,255,255],
    "symbol1": "\u25ef"
@@ -531,7 +531,7 @@ MOVES = [{
    "cat": "official",
    "name": "compel",
    "long": "cs]rn:compel#flag@2(ct]start?mn:move@-1(AWAY)",
-   "text": "(Ranged) Compel enemy unit, making them move in the direction of this ability at the start of each turn, for 3 turns.",
+   "text": "(Ranged) Compel enemy unit, making them move in the direction of this ability at the start of their turn, for 3 turns.",
    "color": [255,63,255],
    "color2": [255,255,255],
    "symbol1": "\u2661"
@@ -561,13 +561,12 @@ MOVES = [{
    "long": "b]mu:attack",
    "text": "(Unblockable) Attack only.",
    "color": [255,0,0],
-   "color2": [127,0,0],
-   "hide": true
+   "color2": [127,0,0]
  }, {
    "id": "54",
    "cat": "official",
    "name": "stone",
-   "text": "(Magic) Create StonePillar in this empty location, or petrify enemy for 3 turns, making them unable to act.",
+   "text": "[Pay 1]: (Magic) Create StonePillar in this empty location, or petrify enemy for 4 turns, making them unable to act.",
    "color": [94,94,94],
    "color3": [59,59,59],
    "color4": [0,0,0],
@@ -761,7 +760,7 @@ MOVES = [{
    "cat": "variation",
    "name": "moveblock",
    "long": "bv]:block@(mn:attack)&(LOSEABILTY)/(mn:move)",
-   "text": "(Passive) Block one melee attack from this location, and lose this ability. \n(Active) Move only.",
+   "text": "(Passive) Block one normal attack from this location, and lose this ability. \n(Active) Move only.",
    "color": [0,0,255],
    "color3": [255,255,255],
    "symbol1": "\u2219",
@@ -800,11 +799,21 @@ MOVES = [{
    "cat": "variation",
    "name": "beaconally",
    "long": "cu]ru:set@pos=Athis",
-   "text": "(Magic) Target ally is teleported to Ability Target.",
+   "text": "(Magic) Teleport ally to Ability Target.",
    "color": [155,20,208],
    "color2": [255,255,255],
    "symbol1": "\u25ef",
    "symbol2": "\u25e6",
+   "hide": true
+ }, {
+   "id": "43b",
+   "cat": "variation",
+   "name": "rangedbeacon",
+   "long": "cu]rn:set@pos=Athis",
+   "text": "(Ranged) Teleport unit to Ability Target.",
+   "color": [155,20,208],
+   "color2": [255,255,255],
+   "symbol1": "\u2316",
    "hide": true
  }, {
    "id": "44a",
