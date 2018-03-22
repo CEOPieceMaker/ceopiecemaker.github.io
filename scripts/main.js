@@ -42,7 +42,7 @@ if (window.location.search && URLSearchParams) {
         "id": "c" + i,
         "cat": "custom",
         "long": "z]",
-        "text": "Custom spell " + i + " (Double Click Menu Icon to Edit)",
+        "text": "Custom ability " + i + " (Double Click Menu Icon to Edit)",
         "color": [108, 108, 25],
         "symbol1": "0"
       });

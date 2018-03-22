@@ -209,7 +209,7 @@ function changeSpell(i, l) {
   if (curMove.dataset) {
     var id = curMove.dataset.id;
 
-    // If painting over the same spell, skip everything.
+    // If painting over the same ability, skip everything.
     if (mouse.mode == "add" && id == config.id) return; 
 
     // Assuming levMoves[id] exists. If it doesn't, this section shouldn't run to begin with.

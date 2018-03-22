@@ -320,7 +320,7 @@ MOVES = [{
    "text": "Teleport Ability Target to this empty location.",
    "color": [102,0,154],
    "color2": [255,255,255],
-   "color3": [192,0,255],
+   "color3": [233,155,255],
    "color4": [0,0,0],
    "symbol1": "\u25cf",
    "symbol2": "\u25e6"
@@ -465,7 +465,7 @@ MOVES = [{
    "cat": "official",
    "name": "beacon",
    "long": "cu]ru:set@pos=Athis",
-   "text": "(Magic) Target unit is teleported to Ability Target.",
+   "text": "(Magic) Teleport unit to Ability Target.",
    "color": [155,20,208],
    "color2": [255,255,255],
    "symbol1": "\u25ef"
@@ -531,7 +531,7 @@ MOVES = [{
    "cat": "official",
    "name": "compel",
    "long": "cs]rn:compel#flag@2(ct]start?mn:move@-1(AWAY)",
-   "text": "(Ranged) Compel enemy unit, making them move in the direction of this ability at the start of each turn, for 3 turns.",
+   "text": "(Ranged) Compel enemy unit, making them move in the direction of this ability at the start of their turn, for 3 turns.",
    "color": [255,63,255],
    "color2": [255,255,255],
    "symbol1": "\u2661"
@@ -760,7 +760,7 @@ MOVES = [{
    "cat": "variation",
    "name": "moveblock",
    "long": "bv]:block@(mn:attack)&(LOSEABILTY)/(mn:move)",
-   "text": "(Passive) Block one melee attack from this location, and lose this ability. \n(Active) Move only.",
+   "text": "(Passive) Block one normal attack from this location, and lose this ability. \n(Active) Move only.",
    "color": [0,0,255],
    "color3": [255,255,255],
    "symbol1": "\u2219",
@@ -799,11 +799,21 @@ MOVES = [{
    "cat": "variation",
    "name": "beaconally",
    "long": "cu]ru:set@pos=Athis",
-   "text": "(Magic) Target ally is teleported to Ability Target.",
+   "text": "(Magic) Teleport ally to Ability Target.",
    "color": [155,20,208],
    "color2": [255,255,255],
    "symbol1": "\u25ef",
    "symbol2": "\u25e6",
+   "hide": true
+ }, {
+   "id": "43b",
+   "cat": "variation",
+   "name": "rangedbeacon",
+   "long": "cu]rn:set@pos=Athis",
+   "text": "(Ranged) Teleport unit to Ability Target.",
+   "color": [155,20,208],
+   "color2": [255,255,255],
+   "symbol1": "\u2316",
    "hide": true
  }, {
    "id": "44a",
@@ -980,7 +990,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom1",
    "long": "z]",
-   "text": "Custom spell 1 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 1 (Double Click Menu Icon to Edit)",
    "color": [227,25,25],
    "symbol1": "1"
  }, {
@@ -988,7 +998,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom2",
    "long": "z]",
-   "text": "Custom spell 2 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 2 (Double Click Menu Icon to Edit)",
    "color": [227,126,25],
    "symbol1": "2"
  }, {
@@ -996,7 +1006,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom3",
    "long": "z]",
-   "text": "Custom spell 3 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 3 (Double Click Menu Icon to Edit)",
    "color": [227,227,25],
    "symbol1": "3"
  }, {
@@ -1004,7 +1014,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom4",
    "long": "z]",
-   "text": "Custom spell 4 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 4 (Double Click Menu Icon to Edit)",
    "color": [126,227,25],
    "symbol1": "4"
  }, {
@@ -1012,7 +1022,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom5",
    "long": "z]",
-   "text": "Custom spell 5 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 5 (Double Click Menu Icon to Edit)",
    "color": [25,227,25],
    "symbol1": "5"
  }, {
@@ -1020,7 +1030,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom6",
    "long": "z]",
-   "text": "Custom spell 6 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 6 (Double Click Menu Icon to Edit)",
    "color": [25,227,126],
    "symbol1": "6"
  }, {
@@ -1028,7 +1038,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom7",
    "long": "z]",
-   "text": "Custom spell 7 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 7 (Double Click Menu Icon to Edit)",
    "color": [25,227,227],
    "symbol1": "7"
  }, {
@@ -1036,7 +1046,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom8",
    "long": "z]",
-   "text": "Custom spell 8 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 8 (Double Click Menu Icon to Edit)",
    "color": [25,126,227],
    "symbol1": "8"
  }];
