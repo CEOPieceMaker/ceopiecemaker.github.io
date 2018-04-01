@@ -4,6 +4,13 @@ function updateSVG (level) {
   mysvg = document.getElementById("svg" + level);
 }
 
+window.defs = `PieceName,,,
+
+1,Audi famam illius,1:a0a1a2a3a4a5a6a7a8a9aaabacadae04142434445464748494b4c4d4e4e5d5c5b595855545352515056575
+1,cucurrit quaeque,1:a0a1a2a3a4a5a6a7a8a9aaabacadae04142434445464748494b4c4d4e4e5d5c5b595855545352515056575
+1,tetigit destruens,1:a0a1a2a3a4a5a6a7a8a9aaabacadae04142434445464748494b4c4d4e4e5d5c5b595855545352515056575
+1,;),1:a0a1a2a3a4a5a6a7a8a9aaabacadae04142434445464748494b4c4d4e4e5d5c5b595855545352515056575`;
+
 function makeSpellSVG () {
   // StackOverflow says this should work
   var container = document.createElement('div');
