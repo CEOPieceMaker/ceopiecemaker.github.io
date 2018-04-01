@@ -31,9 +31,11 @@ function makeSVGTagContent(tagName, properties, content) {
 }
 */
 
+$("#code").val(defs);
+
 if (window.location.search && URLSearchParams) {
   var qS = new URLSearchParams(window.location.search);
-  if (qS.has("q")) $("#code").val(qS.get("q")); else $("#code").val(defs);
+  if (qS.has("q")) $("#code").val(qS.get("q"));
   if (qS.has("c")) {
     var i;
     for (i = 9; i <= +qS.get("c"); i++) {
