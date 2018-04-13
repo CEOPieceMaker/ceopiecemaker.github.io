@@ -1065,9 +1065,13 @@ var translation = ["進むや取ることができる。",
 "[コスト １]: (魔法) 「石柱」を召喚し、あるいは敵駒を石化し、４ターンまで何もできなくなる。",
 "[コスト ３]: (魔法) 位置をマークして、６ターン後でいる駒を撃って、そして隣の駒を１マスまで吹っ飛ばす。"];
 
+/* K It's over
+
 _.forEach(translation, function(m, ix) {
    MOVES[ix].text = m;
 });
+
+//*/
 
 // ORGANIZATION PURPOSE ARRAYS
 var SMOVE = {}, //Lookup key by move name
