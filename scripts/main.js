@@ -31,7 +31,7 @@ function makeSVGTagContent(tagName, properties, content) {
 }
 */
 
-$("#code").val(defs);
+// $("#code").val(defs);
 
 if (window.location.search && URLSearchParams) {
   var qS = new URLSearchParams(window.location.search);
