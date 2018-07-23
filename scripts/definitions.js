@@ -59,7 +59,7 @@ MOVES = [{
    "cat": "official",
    "name": "plant",
    "long": "2p]ru:transform@SAPLING/summon@SAPLING",
-   "text": "[Pay 2]: (Magic) Summon Sapling or transform enemy into ally Sapling.",
+   "text": "[Pay 1]: (Magic) Summon Sapling or transform enemy into ally Sapling.",
    "color": [0,101,24]
  }, {
    "id": "9",
@@ -73,7 +73,7 @@ MOVES = [{
    "cat": "official",
    "name": "skeleton",
    "long": "4p]ru:summon@SKELETON&set@value=0",
-   "text": "[Pay 4]: (Magic) Summon Value 0 Skeleton.",
+   "text": "[Pay 5]: (Magic) Summon Value 0 Skeleton.",
    "color": [102,102,102],
    "color3": [0,0,0],
    "symbol1": "\u26e7"
@@ -249,7 +249,7 @@ MOVES = [{
    "cat": "official",
    "name": "gemini",
    "long": "6cp]rn:summon@GEMINITWIN&set@tier=this&thisset@type=GEMINITWIN",
-   "text": "[Pay 6]: (Ranged) Summon GeminiTwin and transform into GeminiTwin, each having value equal to this unit.",
+   "text": "[Pay 4]: (Ranged) Summon GeminiTwin and transform into GeminiTwin, each having value equal to this unit.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u264a"
@@ -487,10 +487,98 @@ MOVES = [{
    "id": "55",
    "cat": "official",
    "name": "meteor",
-   "text": "[Pay 3]: (Magic) After 6 turns any unit in the marked location is destroyed and all adjacent units are pushed away 1 space.",
+   "text": "[Pay 2]: (Magic) After 6 turns any unit in the marked location is destroyed and all adjacent units are pushed away 1 space.",
    "color": [205,85,23],
    "color3": [0,0,0],
    "symbol1": "\uea78"
+ }, {
+   "id": "56",
+   "cat": "official",
+   "name": "verticalpathmoveattack",
+   "text": "(Path) Move or Attack.",
+   "color": [0,0,0],
+   "color3": [255,0,0],
+   "symbol1": "\ue702"
+ }, {
+   "id": "57",
+   "cat": "official",
+   "name": "horizontalpathmoveattack",
+   "text": "(Path) Move or Attack.",
+   "color": [0,0,0],
+   "color3": [255,0,0],
+   "symbol1": "\ue700"
+ }, {
+   "id": "58",
+   "cat": "official",
+   "name": "antidiagonalpathmoveattack",
+   "text": "(Path) Move or Attack.",
+   "color": [0,0,0],
+   "color3": [255,0,0],
+   "symbol1": "\ue701"
+ }, {
+   "id": "59",
+   "cat": "official",
+   "name": "diagonalpathmoveattack",
+   "text": "(Path) Move or Attack.",
+   "color": [0,0,0],
+   "color3": [255,0,0],
+   "symbol1": "\ue703"
+ }, {
+   "id": "60",
+   "cat": "official",
+   "name": "moveleapattack",
+   "text": "Move or Leap-Attack.",
+   "color": [0,0,255],
+   "color3": [255,0,0],
+   "symbol1": "\u26AB"
+ }, {
+   "id": "61",
+   "cat": "official",
+   "name": "verticalpathattack",
+   "text": "(Path) Attack only.",
+   "color": [0,0,0],
+   "color2": [153,0,0],
+   "symbol1": "\ue702"
+ }, {
+   "id": "62",
+   "cat": "official",
+   "name": "horizontalpathattack",
+   "text": "(Path) Attack only.",
+   "color": [0,0,0],
+   "color2": [153,0,0],
+   "symbol1": "\ue700"
+ }, {
+   "id": "63",
+   "cat": "official",
+   "name": "antidiagonalpathattack",
+   "text": "(Path) Attack only.",
+   "color": [0,0,0],
+   "color2": [153,0,0],
+   "symbol1": "\ue701"
+ }, {
+   "id": "64",
+   "cat": "official",
+   "name": "diagonalpathattack",
+   "text": "(Path) Attack only.",
+   "color": [0,0,0],
+   "color2": [153,0,0],
+   "symbol1": "\ue703"
+ }, {
+   "id": "65",
+   "cat": "official",
+   "name": "null",
+   "text": "(Magic) Target enemy value becomes 0.",
+   "color": [0,0,0],
+   "color2": [255,255,255],
+   "symbol1": "\ue907"
+ }, {
+   "id": "66",
+   "cat": "official",
+   "name": "void",
+   "text": "[Pay 1]: (Ranged) Convert target enemy default moveset into basic move/teleport abilities, and negate their augments, if any.",
+   "color": [0,0,0],
+   "color2": [255,255,255],
+   "symbol1": "\uea81"
  }, {
    "id": "0a",
    "cat": "variation",
@@ -799,9 +887,55 @@ MOVES = [{
    "symbol1": "\uEA14",
    "hide": true
  }, {
+   "id": "60a",
+   "cat": "variation",
+   "name": "leapattack",
+   "text": "Leap-Attack only.",
+   "color": [127,127,127],
+   "color2": [255, 255, 255],
+   "color3": [255,0,0],
+   "symbol1": "\u26AB",
+   "hide": true
+ }, {
+   "id": "61a",
+   "cat": "variation",
+   "name": "verticalpathmove",
+   "text": "(Path) Move only.",
+   "color": [0,0,255],
+   "color3": [0,0,0],
+   "symbol1": "\ue702",
+   "hide": true
+ }, {
+   "id": "62a",
+   "cat": "variation",
+   "name": "horizontalpathmove",
+   "text": "(Path) Move only.",
+   "color": [0,0,255],
+   "color3": [0,0,0],
+   "symbol1": "\ue700",
+   "hide": true
+ }, {
+   "id": "63a",
+   "cat": "variation",
+   "name": "antidiagonalpathmove",
+   "text": "(Path) Move only.",
+   "color": [0,0,255],
+   "color3": [0,0,0],
+   "symbol1": "\ue701",
+   "hide": true
+ }, {
+   "id": "64a",
+   "cat": "variation",
+   "name": "diagonalpathmove",
+   "text": "(Path) Attack only.",
+   "color": [0,0,255],
+   "color3": [0,0,0],
+   "symbol1": "\ue703",
+   "hide": true
+ }, {
    "id": "31b",
    "cat": "limbo",
-   "name": "ximaera",
+   "name": "hiroshima",
    "long": "b]mu:move/*ally?swap",
    "text": "(Unblockable) Teleport or swap places with unit.",
    "color": [19,121,153],

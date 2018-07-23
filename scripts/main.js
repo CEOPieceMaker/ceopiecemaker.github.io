@@ -43,7 +43,6 @@ if (window.location.search && URLSearchParams) {
         "name": "custom" + i,
         "id": "c" + i,
         "cat": "custom",
-        "long": "z]",
         "text": "Custom spell " + i + " (Double Click Menu Icon to Edit)",
         "color": [97, 97, 97],
         "symbol1": "0"
