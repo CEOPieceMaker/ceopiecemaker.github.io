@@ -11,8 +11,12 @@
   src: url("../fonts/myriad.woff");
 }
 @font-face {
+  font-family: "fallspac";
+  src: url("../fonts/acbfont.woff");
+}
+@font-face {
   font-family: "monospac";
-  src: url("../fonts/revised.woff");
+  src: url("../fonts/pksquare.woff");
 }
 @font-face {
   font-family: "evermono";
@@ -176,7 +180,7 @@ li::before,
   width: 12px;
   height: 12px;
   display: flex;
-  font-family: monospac, evermono;
+  font-family: monospac, fallspac, evermono;
   font-size: 17px;
   line-height: 0;
   word-break: break-all;
@@ -248,7 +252,7 @@ textarea, input {
   resize: none;
   vertical-align: 1px;
   font-size: 14px;
-  font-family: Consolis, evermono, monospac;
+  font-family: Consolis, evermono, monospac, fallspac;
   font-weight: bold;
 }
 .panel textarea, .panel input{
@@ -336,7 +340,7 @@ div.passives{
 .cost + div > ul p {
   overflow-wrap: break-word; 
   font-size: 12px;
-  font-family: Consolis, evermono, monospac;
+  font-family: Consolis, evermono, monospac, fallspac;
   font-weight: bold;
   letter-spacing: -0.5px;
   line-height: 16px;
@@ -348,7 +352,7 @@ div.passives{
   content: attr(data-description);
   overflow-wrap: break-word; 
   font-size: 12px;
-  font-family: Consolis, evermono, monospac;
+  font-family: Consolis, evermono, monospac, fallspac;
   font-weight: bold;
   letter-spacing: -0.5px;
   line-height: 16px;
@@ -563,7 +567,7 @@ text {
   pointer-events: none;
   overflow-wrap: break-word; 
   font-size: 12px;
-  font-family: Consolis, evermono, monospac;
+  font-family: Consolis, evermono, monospac, fallspac;
   font-weight: bold;
   letter-spacing: -0.5px;
   white-space: pre-wrap;

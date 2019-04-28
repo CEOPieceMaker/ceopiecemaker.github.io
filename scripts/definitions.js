@@ -234,7 +234,7 @@ MOVES = [{
    "color3": [192,0,255],
    "color4": [0,0,0],
    "symbol1": "\u25cf",
-   "symbol2": "\u25e6"
+   "symbol2": "o" /*25e6*/
  }, {
    "id": "28",
    "cat": "official",
@@ -810,7 +810,7 @@ MOVES = [{
    "color": [155,20,208],
    "color2": [255,255,255],
    "symbol1": "\u25ef",
-   "symbol2": "\u25e6",
+   "symbol2": "o" /*25e6*/,
    "hide": true
  }, {
    "id": "44a",
@@ -996,7 +996,7 @@ MOVES = [{
    "text": "Move or Attack. Cannot be blocked by Ally units.",
    "color": [0,0,0],
    "symbol1": "\u25e0",
-   "symbol2": "\u25e6",
+   "symbol2": "o" /*25e6*/,
    "hide": true
  }, {
    "id": "a7",
