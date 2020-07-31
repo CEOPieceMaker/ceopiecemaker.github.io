@@ -1187,7 +1187,7 @@ PASSIVES = ["Does not block movement.",
     "(Trigger-Immune)",
     "(Displacement-Immune)",
     "Promotes to PieceName[+].",
-    "On Death: Lose 2[+1] morale."
+    "On Death: Lose 2[+1] morale.",
     "Can't be targeted beyond Range 2."
 ];
 LABELS = {
