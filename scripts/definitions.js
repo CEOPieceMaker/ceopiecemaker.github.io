@@ -1038,6 +1038,24 @@ MOVES = [{
    "symbol1": "\uea81",
    "hide": true
  }, {
+   "id": "65a",
+   "cat": "limited",
+   "name": "newnull",
+   "text": "(Magic) Target enemy becomes unable to block movement and their value becomes 0.",
+   "color": [255,255,255],
+   "color2": [0,0,0],
+   "symbol1": "\ue907",
+   "hide": true
+ }, {
+   "id": "65b",
+   "cat": "limited",
+   "name": "newnullany",
+   "text": "(Magic) Target becomes unable to block movement and their value becomes 0.",
+   "color": [255,255,0],
+   "color2": [0,0,0],
+   "symbol1": "\ue907",
+   "hide": true
+ }, {
    "id": "53a",
    "cat": "limited",
    "name": "attackswap",
@@ -1055,6 +1073,25 @@ MOVES = [{
    "long": "b]mz:move/attack/swap",
    "text": "(Unstoppable) Move, Attack, or swap places with ally.",
    "color": [210,210,255],
+   "hide": true
+ }, {
+   "id": "35c",
+   "cat": "limited",
+   "name": "superblock",
+   "long": "bv]:block@(**:*)&(LOSEABILTY)/(mn:move/attack)",
+   "text": "(Passive) Block one ability from this location, and lose this ability. \n(Active) Move or Attack.",
+   "color": [0,0,0],
+   "color3": [255,255,0],
+   "symbol1": "\u2219",
+   "hide": true
+ }, {
+   "id": "35d",
+   "cat": "limited",
+   "name": "ventus",
+   "text": "(Passive) When targeted from this location, push enemy as far as possible away. \n(Active) Move or Attack.",
+   "color": [0,0,0],
+   "color3": [127,0,255],
+   "symbol1": "\u2219",
    "hide": true
  }, {
    "id": "e1",
@@ -1151,6 +1188,7 @@ PASSIVES = ["Does not block movement.",
     "(Displacement-Immune)",
     "Promotes to PieceName[+].",
     "On Death: Lose 2[+1] morale."
+    "Can't be targeted beyond Range 2."
 ];
 LABELS = {
     rank: ["Minion", "Champion", "Outcast"],
