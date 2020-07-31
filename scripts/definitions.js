@@ -1029,11 +1029,48 @@ MOVES = [{
    "symbol1": "\u2747",
    "hide": true
  }, {
+   "id": "66a",
+   "cat": "limited",
+   "name": "oldvoid",
+   "text": "(Magic) Convert target enemy default moveset into basic move/teleport abilities, and negate their augments, if any.",
+   "color": [255,255,255],
+   "color2": [0,0,0],
+   "symbol1": "\uea81",
+   "hide": true
+ }, {
+   "id": "53a",
+   "cat": "limited",
+   "name": "attackswap",
+   "long": "b]mu:attack/swap",
+   "text": "(Unblockable) Attack or swap places with ally.",
+   "color": [255,0,0],
+   "color2": [127,0,0],
+   "color3": [255,255,255],
+   "symbol1": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "5a",
+   "cat": "limited",
+   "name": "superjumpswap",
+   "long": "b]mz:move/attack/swap",
+   "text": "(Unstoppable) Move, Attack, or swap places with ally.",
+   "color": [255,210,0],
+   "hide": true
+ }, {
+   "id": "e1",
+   "cat": "limited",
+   "name": "annihilate",
+   "text": "(Magic) Remove target from the game, ignoring all resistances and status effects.",
+   "color": [255,210,0],
+   "color3": [253,117,34],
+   "symbol1": "*",
+   "hide": true
+ }, {
    "id": "c1",
    "cat": "custom",
    "name": "custom1",
    "long": "z]",
-   "text": "Custom spell 1 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 1 (Double Click Menu Icon to Edit)",
    "color": [245,46,46],
    "symbol1": "1"
  }, {
@@ -1041,7 +1078,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom2",
    "long": "z]",
-   "text": "Custom spell 2 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 2 (Double Click Menu Icon to Edit)",
    "color": [84,99,255],
    "symbol1": "2"
  }, {
@@ -1049,7 +1086,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom3",
    "long": "z]",
-   "text": "Custom spell 3 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 3 (Double Click Menu Icon to Edit)",
    "color": [255,199,23],
    "symbol1": "3"
  }, {
@@ -1057,7 +1094,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom4",
    "long": "z]",
-   "text": "Custom spell 4 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 4 (Double Click Menu Icon to Edit)",
    "color": [31,158,64],
    "symbol1": "4"
  }, {
@@ -1065,7 +1102,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom5",
    "long": "z]",
-   "text": "Custom spell 5 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 5 (Double Click Menu Icon to Edit)",
    "color": [255,102,25],
    "symbol1": "5"
  }, {
@@ -1073,7 +1110,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom6",
    "long": "z]",
-   "text": "Custom spell 6 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 6 (Double Click Menu Icon to Edit)",
    "color": [36,212,196],
    "symbol1": "6"
  }, {
@@ -1081,7 +1118,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom7",
    "long": "z]",
-   "text": "Custom spell 7 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 7 (Double Click Menu Icon to Edit)",
    "color": [212,28,229],
    "symbol1": "7"
  }, {
@@ -1089,7 +1126,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom8",
    "long": "z]",
-   "text": "Custom spell 8 (Double Click Menu Icon to Edit)",
+   "text": "Custom ability 8 (Double Click Menu Icon to Edit)",
    "color": [74,69,89],
    "symbol1": "8"
  }];
@@ -1116,8 +1153,8 @@ PASSIVES = ["Does not block movement.",
     "On Death: Lose 2[+1] morale."
 ];
 LABELS = {
-    rank: ["Minion", "Champion"],
-    faction: ["Basic", "Clan", "Arcane", "Forest"],
+    rank: ["Minion", "Champion", "Outcast"],
+    faction: ["Basic", "Clan", "Arcane", "Forest", "Unique", "Hero"],
     rarity: ["Common", "Rare", "Epic", "Legendary"]
 }
 LEVELS = ["base", "plus", "plusplus", "plusplusplus"];
