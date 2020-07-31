@@ -1213,22 +1213,21 @@ MOVES = [{
    "long": "z]",
    "text": "Custom ability 14 (Double Click Menu Icon to Edit)",
    "color": [0,0,255],
-   "symbol1": "D"
+   "symbol1": "E"
  }, {
    "id": "c15",
    "cat": "custom",
    "name": "custom15",
    "long": "z]",
    "text": "Custom ability 15 (Double Click Menu Icon to Edit)",
-   "color": [127,0,255],
-   "symbol1": "E"
+   "color": [255,255,0],
+   "symbol1": "F"
  }, {
    "id": "c16",
    "cat": "custom",
    "name": "custom16",
    "long": "z]",
    "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
-   "symbol1": "F"
  }];
 
 /* Self reminder
