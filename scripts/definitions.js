@@ -1097,7 +1097,7 @@ MOVES = [{
    "id": "e1",
    "cat": "limited",
    "name": "annihilate",
-   "text": "(Magic) Remove target from the game, ignoring all resistances and status effects.",
+   "text": "(Magic) Remove target from the game, ignoring all abilities, passives, and status effects.",
    "color": [200,200,200],
    "color3": [253,117,34],
    "symbol1": "\u2217",
@@ -1166,6 +1166,69 @@ MOVES = [{
    "text": "Custom ability 8 (Double Click Menu Icon to Edit)",
    "color": [74,69,89],
    "symbol1": "8"
+ }, {
+   "id": "c9",
+   "cat": "custom",
+   "name": "custom9",
+   "long": "z]",
+   "text": "Custom ability 9 (Double Click Menu Icon to Edit)",
+   "color": [125,125,125],
+   "symbol1": "8"
+ }, {
+   "id": "c10",
+   "cat": "custom",
+   "name": "custom10",
+   "long": "z]",
+   "text": "Custom ability 10 (Double Click Menu Icon to Edit)",
+   "color": [200,200,200],
+   "symbol1": "A"
+ }, {
+   "id": "c11",
+   "cat": "custom",
+   "name": "custom11",
+   "long": "z]",
+   "text": "Custom ability 11 (Double Click Menu Icon to Edit)",
+   "color": [200,180,100],
+   "symbol1": "B"
+ }, {
+   "id": "c12",
+   "cat": "custom",
+   "name": "custom12",
+   "long": "z]",
+   "text": "Custom ability 12 (Double Click Menu Icon to Edit)",
+   "color": [255,0,0],
+   "symbol1": "C"
+ }, {
+   "id": "c13",
+   "cat": "custom",
+   "name": "custom13",
+   "long": "z]",
+   "text": "Custom ability 13 (Double Click Menu Icon to Edit)",
+   "color": [0,255,0],
+   "symbol1": "D"
+ }, {
+   "id": "c14",
+   "cat": "custom",
+   "name": "custom14",
+   "long": "z]",
+   "text": "Custom ability 14 (Double Click Menu Icon to Edit)",
+   "color": [0,0,255],
+   "symbol1": "D"
+ }, {
+   "id": "c15",
+   "cat": "custom",
+   "name": "custom15",
+   "long": "z]",
+   "text": "Custom ability 15 (Double Click Menu Icon to Edit)",
+   "color": [127,0,255],
+   "symbol1": "E"
+ }, {
+   "id": "c16",
+   "cat": "custom",
+   "name": "custom16",
+   "long": "z]",
+   "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
+   "symbol1": "F"
  }];
 
 /* Self reminder
