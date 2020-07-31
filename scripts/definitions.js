@@ -1264,6 +1264,8 @@ TOOLTIPS = {
     ts1: "Pen Size 3",
     ts2: "Pen Size 5",
     ts3: "Pen Size 10:\nI don't see a use of this outside erasers tbh",
+    ts4: "Pen Size 1:\nFor those who want high detail",
+    ts5: "Pen Size -2:\nWhat...",
     tf0: "Coloring of the base",
     tf1: "Coloring of the middle part (what do you call those? :v)",
     tf2: "Coloring of the \"head\" part",
