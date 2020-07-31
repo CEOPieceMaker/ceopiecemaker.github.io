@@ -1054,16 +1054,16 @@ MOVES = [{
    "name": "superjumpswap",
    "long": "b]mz:move/attack/swap",
    "text": "(Unstoppable) Move, Attack, or swap places with ally.",
-   "color": [255,210,0],
+   "color": [210,210,255],
    "hide": true
  }, {
    "id": "e1",
    "cat": "limited",
    "name": "annihilate",
    "text": "(Magic) Remove target from the game, ignoring all resistances and status effects.",
-   "color": [255,210,0],
+   "color": [200,200,200],
    "color3": [253,117,34],
-   "symbol1": "*",
+   "symbol1": "\u2217",
    "hide": true
  }, {
    "id": "c1",
