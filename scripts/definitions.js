@@ -1573,8 +1573,7 @@ MOVES = [{
    "cat": "custom",
    "name": "custom16",
    "long": "z]",
-   "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
-   "color": [NaN, NaN, NaN]
+   "text": "Custom ability 16 (Double Click Menu Icon to Edit)"
  }, {
     "id": "ce1",
     "cat": "custom",
