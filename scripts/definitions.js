@@ -1029,6 +1029,19 @@ MOVES = [{
    "symbol1": "\u2747",
    "hide": true
  }, {
+    "id": "52a",
+    "cat": "limited",
+    "name": "arcanerush",
+    "long": "c]mu:(RUSH)",
+    "text": "(Unblockable) Rush enemy, pushing it up to 3 spaces away from this unit and destroying the enemy if it collides with any unit or the field edge.",
+    "color": [255, 0, 0],
+    "color2": [200, 200, 200],
+    "color3": [0, 0, 0],
+    "color4": [0, 0, 0],
+    "symbol1": "\u25cb",
+    "symbol2": "\u2742",
+    "hide": true
+ }, {
     "id": "60b",
     "cat": "limited",
     "name": "jumpleap",
