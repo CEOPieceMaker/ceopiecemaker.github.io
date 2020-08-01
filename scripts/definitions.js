@@ -1134,12 +1134,11 @@ MOVES = [{
    "hide": true
  }, {
     "id": "7a",
-    "cat": "limbo",
+    "cat": "limited",
     "name": "moonflare",
     "long": "b]rz:attack",
-    "text": "(Invocation) Destroy target.",
+    "text": "(Magic) Destroy target, even if you can't act normally.",
     "color": [34, 117, 253],
-    "symbol1": "\u263e",
     "hide": true
  }, {
    "id": "35c",
