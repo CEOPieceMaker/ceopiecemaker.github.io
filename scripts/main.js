@@ -131,7 +131,8 @@ $(".moves svg").each(function() {
 });
 //$("#moves").append("<li class=\""+className+"\">"+MOVES[i].text+"</li>\n");
 
-// $(".moves .custom").prop("contenteditable", true); //let's not :v
+//$(".moves .custom").prop("contenteditable", true); //let's not :v
+
 $("#shactive").click(function() {
   if (this.innerHTML.match(/Show/ig)) {
     $("#action").addClass("show");
@@ -376,10 +377,19 @@ function setPassive(text, level) {
     setPassive(text, level);
   }
 }
+
+
 $("div.passives").keyup(function() {
-  if (cleanseText(this.innerHTML) == "") this.innerHTML = "";
+  if (cleanseText(this.innerHTML).length == 0) {this.innerHTML = ""; $('div.passives').empty();}
   setPassive(this.innerHTML, curPASSIVE);
 });
+$("div.passives").keydown(function() {
+  if (cleanseText(this.innerHTML).length == 0) {this.innerHTML = ""; $('div.passives').empty();}
+  setPassive(this.innerHTML, curPASSIVE);
+});
+/*
+main_gi: This has never updated instantly. This makes it look better.
+*/
 
 function parseText(text, i) {
   i = SLEVEL[i];
@@ -474,7 +484,7 @@ function setDisplay(level, cls) {
   $("#" + level + " .moves svg." + cls).css("display", "inline");
   var svgMove = $("#" + level + " .moves svg." + cls)[0];
   if (!svgMove.nextSibling || svgMove.nextSibling.tagName.toLowerCase() == "svg") {
-    svgMove.insertAdjacentHTML("afterend", "<p>" + svgMove.dataset.description + "</p>");
+    svgMove.insertAdjacentHTML("afterend", "<p contenteditable='true' spellcheck='false'>" + svgMove.dataset.description + "</p>");
   }
 }
 
@@ -534,6 +544,9 @@ var moose = {
   click: 0
 };
 var COLOR = ACTION;
+
+// main_gi: All this code was for the non-svg version.
+/*
 $("td.piece").mousedown(function() {
   moose.click++;
   clearTimeout(moose.reset);
@@ -588,7 +601,7 @@ $("td").mouseup(function() {
       setMove(level(this), setPos(v, level(this)), ACTION);
     } while ((v.x -= s.x) | (v.y -= s.y));
   }
-});
+});*/
 
 $(document).mouseup(function() {
   //mouse = {};
@@ -682,7 +695,8 @@ function screensave() {
     var c = $("#" + level + " canvas")[0];
     
     // NOTE: Probably revert to using src when the bug is fixed
-    $b.find("#" + level + " canvas").replaceWith("<img class=\"c\" width=\"" + $(c).width() + "\" height=\"" + $(c).height() + "\" style=\"background: url(" + c.toDataURL("image/png") + ")\"/>");
+    //$b.find("#" + level + " canvas").replaceWith("<img class=\"c\" width=\"" + $(c).width() + "\" height=\"" + $(c).height() + "\" style=\"background: url(" + c.toDataURL("image/png") + ")\"/>");
+    // main_gi: Commented out the above line because it was causing problems with the height of the +0 version being displaced.
 
     $b.find("#" + level + " .cost input").replaceWith("" + DATA[level].cost);
     //replace passives::after with passives. Used to circumvent whitespace bugs.
@@ -776,7 +790,18 @@ $("#imj").click(function() {
 });
 $("input, button").prop("disabled", false);
 
+
+$("#hsc").click(function() {
+  if ($(".cost").css("display") != "none") {
+    $(".cost").css("display", "none");
+  } else {
+    $(".cost").css("display", "initial");
+  }
+  
+});
+
 // All of these shit is created thanks to main_gi, the ultimate destroyer of the whole script of PM.
+// main_gi: You're welcome!
 
 function toCSV() {
   function ep(a) { //The EverythingParser: I'M SO FUCKING TIRED OF THINKING SOLUTIONS
