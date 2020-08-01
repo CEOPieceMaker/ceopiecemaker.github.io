@@ -1250,7 +1250,7 @@ MOVES = [{
     "long": "b]mu:move/ru:attack",
     "text": "(Unblockable) Teleport or (Magic) Destroy.",
     "color": [253, 117, 34],
-    "color3": [255, 255, 127],
+    "color3": [121, 19, 153],
     "symbol1": "\u25aa",
     "hide": true
  }, {
