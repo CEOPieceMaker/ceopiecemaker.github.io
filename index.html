@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
   <meta charset="utf-8">
-  <title>Grand PieceMaker, Revenge on the hatorz</title>
+  <title>V2 Grand PieceMaker, Revenge on the hatorz</title>
   <!--[if IE]>
     <script>window.location = "https://www.mozilla.org/en-US/";</script>
   <![endif]-->
@@ -30,8 +30,8 @@
 
   <div id="contents">
     <section id="base">
-      <canvas id="c" class="c" width="200" height="140" style="-webkit-user-drag: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></canvas>
-      <div id="name" class="name" contenteditable="true" tabindex="1">PieceName</div>
+      <canvas id="c" class="c" width="200" height="140" style="-webkit-user-drag: none; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0)"></canvas>
+      <div id="name" class="name" contenteditable="true" tabindex="1" spellcheck="false">Name</div>
       <svg width="258" height="258" id="svg0" class="board" draggable="false" xmlns="http://www.w3.org/2000/svg">
       <div class="cost">Cost:
         <input value="1" type="number" tabindex="2">
@@ -48,7 +48,7 @@
 
 
       <canvas class="c mirror" data-shadow="rgb(201,38,249)" width="200" height="140"></canvas>
-      <div class="name">PieceName+</div>
+      <div class="name" contenteditable="true" spellcheck="false">Name+</div>
 
       <svg width="258" height="258" id="svg1" class="board" draggable="false" xmlns="http://www.w3.org/2000/svg">
       <div class="cost">Cost:
@@ -65,7 +65,7 @@
     <section id="plusplus">
 
       <canvas class="c mirror" data-shadow="rgb(201,84,24)" width="200" height="140"></canvas>
-      <div class="name">PieceName++</div>
+      <div class="name" contenteditable="true" spellcheck="false">Name++</div>
 
       <svg width="258" height="258" id="svg2" class="board" draggable="false" xmlns="http://www.w3.org/2000/svg">
       <div class="cost">Cost:
@@ -82,7 +82,7 @@
     <section id="plusplusplus">
 
       <canvas class="c mirror" data-shadow="rgb(252,13,57)" width="200" height="140"></canvas>
-      <div class="name">PieceName+++</div>
+      <div class="name" contenteditable="true" spellcheck="false">Name+++</div>
 
       <svg width="258" height="258" id="svg3" class="board" draggable="false" xmlns="http://www.w3.org/2000/svg">
       <div class="cost">Cost:
@@ -99,7 +99,7 @@
     <div id="controls" class="panel">
       <div id="hidebutton"></div>
       <nav>
-        <a mode="active">Actions</a><a mode="passive">Passive</a><a mode="tools">Tools</a><a mode="share">Share</a>
+        <a mode="active">Actions</a><a mode="passive">Passive</a><a mode="tools">Drawing</a><a mode="share">Export</a>
       </nav>
       <div mode="share">
     <button id="saveimage">Save Image to Computer</button>
@@ -108,8 +108,9 @@
       <input id="savenoinfo" type="checkbox">Hide categories<br>
       <input id="savefirst" type="checkbox">First Tier only
       <input id="savecompact" type="checkbox">Compact View<br>
-      Note: Not all features work. These features will never be fixed. Switch to firefax. If that doesn't work switch to chrome. If that doesn't work switch to some other shitty browser.</div><hr>
+      If these features are broken change your browser I guess.</div><hr>
     <div class="note"><button id="exj">Export</button><button id="exjh">Export as URL</button><button id="imj">Import</button><br><textarea id="code" cols="36" rows="4"></textarea></div>
+    <div class="note"><button id="hsc">Hide/Show Cost (not on export)</button></div>
   </div>
   <div mode="tools">
     Drawing Tools
