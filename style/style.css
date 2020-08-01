@@ -243,7 +243,7 @@ section .moves svg {
 /* SVG BLOCKS */
 
 
-textarea, input {
+textarea { /* main_gi: removed "input" */
   border: none;
   background: none;
   border-radius: 7px;
@@ -268,19 +268,27 @@ textarea, input {
 textarea, input, button{
   color: #111;
 }
+.cost input {
+  color: rgb(68, 68, 68);
+}
 #code {
   margin: 0;
 }
 input[type=number]{
   width: 3em;
-  -moz-appearance:textfield;
-}/*
+  -moz-appearance: textfield;
+  border: none; background: none; text-align: left; font-family: 'Arial'; font-size: large; font-weight: bold;
+}
+/*
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }*/
 input[type=checkbox]{
   vertical-align:-3px;
+}
+input#uniprev {
+  font-family: 'fallspac';
 }
 ul {
   padding: 0;
@@ -315,7 +323,7 @@ ul {
 .passives::before,
 #passives li::before{
   position:absolute;
-  margin-top:4px;
+  margin-top: 7px;
   margin-left: -22px;
 }
 .cost + div > ul p{
@@ -342,7 +350,7 @@ div.passives{
   font-size: 12px;
   font-family: Consolis, evermono, monospac, fallspac;
   font-weight: bold;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.0px;
   line-height: 16px;
   white-space: pre-wrap;
 }
@@ -354,7 +362,7 @@ div.passives{
   font-size: 12px;
   font-family: Consolis, evermono, monospac, fallspac;
   font-weight: bold;
-  letter-spacing: -0.5px;
+  letter-spacing: -0px;
   line-height: 16px;
   white-space: pre-wrap;
 }
@@ -423,7 +431,7 @@ canvas, .cost+div{
 canvas {
   margin-top : -2px;
   width: 200px;
-  height: 140px;
+  height: 140px !important; /* main_gi: Such a hack, but the canvas kept going slightly off 140px otherwise, causing the +0 version to get offset */
 }
 .info {
   position: absolute;
@@ -489,7 +497,7 @@ nav {
   content: "";
 }
 #passives li {
-  padding: 5px;
+  padding: 2px;
   display: block;
 }
 #passives li.empty {
@@ -569,7 +577,7 @@ text {
   font-size: 12px;
   font-family: Consolis, evermono, monospac, fallspac;
   font-weight: bold;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.0px;
   white-space: pre-wrap;
 }
 
