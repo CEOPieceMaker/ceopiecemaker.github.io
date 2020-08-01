@@ -1029,6 +1029,26 @@ MOVES = [{
    "symbol1": "\u2747",
    "hide": true
  }, {
+    "id": "27b",
+    "cat": "limited",
+    "name": "magicportal",
+    "long": "pu]ru:Aset@pos=\\this",
+    "text": "(Magic) Ability Target is teleported to this empty location.",
+    "color": [155, 20, 208],
+    "color2": [255, 255, 255],
+    "symbol": "\u2609",
+    "hide": true
+ }, {
+    "id": "43b",
+    "cat": "variation",
+    "name": "rangedbeacon",
+    "long": "cu]rn:set@pos=Athis",
+    "text": "(Ranged) Target unit is teleported to Ability Target.",
+    "color": [155, 20, 208],
+    "color2": [255, 255, 255],
+    "symbol1": "\u2316",
+    "hide": true
+ }, {
     "id": "52a",
     "cat": "limited",
     "name": "arcanerush",
@@ -1226,12 +1246,12 @@ MOVES = [{
  }, {
     "id": "b9",
     "cat": "limited",
-    "name": "omniblock",
-    "long": "bv]:block@(**:*)&(LOSEABILTY)/(mn:move/attack)",
-    "text": "(Passive) Block one attack or ability from this location, and lose this ability. \n(Active) Move or Attack.",
-    "color": [0, 0, 0],
-    "color3": [255, 255, 0],
-    "symbol1": "\u2219",
+    "name": "teledestroy",
+    "long": "b]mu:move/ru:attack",
+    "text": "(Unblockable) Teleport or (Magic) Destroy,
+    "color": [253, 117, 34],
+    "color3": [255, 255, 127],
+    "symbol1": "\u25aa",
     "hide": true
  }, {
     "id": "b10",
@@ -1292,8 +1312,7 @@ MOVES = [{
     "text": "(Magic) Lock enemy unit, making them unable to act or be displaced for 3 turns.",
     "color": [100, 100, 150],
     "color3": [0, 0, 0],
-    "symbol1": "\u0311",
-    "symbol2": "\u25fd",
+    "symbol1": "\u00d7",
     "hide": true
  }, {
     "id": "b16",
@@ -1555,6 +1574,26 @@ MOVES = [{
    "name": "custom16",
    "long": "z]",
    "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
+   "color": [NaN, NaN, NaN],
+ }, {
+    "id": "ce1",
+    "cat": "custom",
+    "name": "customexperimental",
+    "long": "z]",
+    "text": "Experimental Ability (Do not click!)",
+    "color": [255, 0, 0],
+    "color2": [NaN, NaN, NaN],
+    "symbol1": "E",
+    "hide": true
+ }, {
+    "id": "ce2",
+    "cat": "custom",
+    "name": "custommoonfox",
+    "long": "z]",
+    "text": "Really Super Experimental Ability (Do not click!)",
+    "color": [253, 117, 34],
+    "symbol1": "\ue9fc",
+    "hide": true
  }];
 
 /* Self reminder
