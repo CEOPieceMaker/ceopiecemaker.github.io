@@ -1029,6 +1029,26 @@ MOVES = [{
    "symbol1": "\u2747",
    "hide": true
  }, {
+    "id": "60a",
+    "cat": "variation",
+    "name": "jumpleap",
+    "text": "(Unblockable) Move or Leap-Attack.",
+    "color": [50, 0, 100],
+    "color2": [121, 19, 153],
+    "color3": [0, 255, 0],
+    "symbol1": "\u2219",
+    "hide": true
+ }, {
+    "id": "60b",
+    "cat": "variation",
+    "name": "leaponly",
+    "text": "Leap-Attack only.",
+    "color": [0, 0, 0],
+    "color2": [150, 0, 0],
+    "color3": [255, 0, 0],
+    "symbol1": "\u2219",
+    "hide": true
+ }, {
    "id": "66a",
    "cat": "limited",
    "name": "oldvoid",
@@ -1067,6 +1087,22 @@ MOVES = [{
    "symbol1": "\u{1f5d8}",
    "hide": true
  }, {
+    "id": "4a",
+    "cat": "limited",
+    "name": "superjump",
+    "long": "b]mz:move/attack",
+    "text": "(Unstoppable) Move or Attack.",
+    "color": [200, 151, 24],
+    "hide": true
+ }, {
+    "id": "6a",
+    "cat": "limited",
+    "name": "fly",
+    "long": "b]mz:move",
+    "text": "(Unstoppable) Fly.",
+    "color": [0, 255, 200],
+    "hide": true
+ }, {
    "id": "5a",
    "cat": "limited",
    "name": "superjumpswap",
@@ -1074,6 +1110,15 @@ MOVES = [{
    "text": "(Unstoppable) Move, Attack, or swap places with ally.",
    "color": [210,210,255],
    "hide": true
+ }, {
+    "id": "7a",
+    "cat": "limbo",
+    "name": "moonflare",
+    "long": "b]rz:attack",
+    "text": "(Invocation) Destroy target.",
+    "color": [34, 117, 253],
+    "symbol1": "\u263e",
+    "hide": true
  }, {
    "id": "35c",
    "cat": "limited",
@@ -1094,14 +1139,294 @@ MOVES = [{
    "symbol1": "\u2219",
    "hide": true
  }, {
-   "id": "e1",
+   "id": "b1",
    "cat": "limited",
    "name": "annihilate",
+   "long": "c]rz:(REMOVE)",
    "text": "(Magic) Remove target from the game, ignoring all abilities, passives, and status effects.",
    "color": [200,200,200],
    "color3": [253,117,34],
    "symbol1": "\u2217",
    "hide": true
+ }, {
+    "id": "b2",
+    "cat": "limited",
+    "name": "clear",
+    "long": "ms]:*ally?status?deflag?&*ally?enchant?deflag?&deflag",
+    "text": "Clear unit and location, removing all status effects and location effects.",
+    "color": [220, 220, 220],
+    "color2": [255, 255, 255],
+    "color3": [0, 0, 0],
+    "symbol1": "\u2300",
+    "hide": true
+ }, {
+    "id": "b3",
+    "cat": "limited",
+    "name": "decimate",
+    "long": "c]ru:set@value-=3",
+    "text": "(Magic) Target loses 3 value. If unit has 3 value or less, destroy it instead.",
+    "color": [64, 0, 255],
+    "color2": [0, 0, 0],
+    "symbol1": "\ufe63",
+    "hide": true
+ }, {
+    "id": "b4",
+    "cat": "limited",
+    "name": "banish",
+    "long": "c]ru:*ally?set@pos=startpos",
+    "text": "(Magic) Teleport unit back to starting position.",
+    "color": [0, 0, 0],
+    "color2": [0, 127, 127],
+    "color3": [0, 255, 255],
+    "color4": [0, 255, 255],
+    "symbol1": "\u0058",
+    "symbol2": "\u2219",
+    "hide": true
+ }, {
+    "id": "b5",
+    "cat": "limited",
+    "name": "hobble",
+    "long": "b]mf:move",
+    "text": "Move only. Blocked by threatened squares.",
+    "color": [0, 0, 255],
+    "color2": [255, 255, 255],
+    "hide": true
+ }, {
+    "id": "b6",
+    "cat": "limited",
+    "name": "protosorcertarget",
+    "long": "s]ru:sorcerize#flag@3-!(target?!ally)",
+    "text": "(Magic) Enrage target, forcing them to target enemy units if they are capable of targeting any for 3 turns.",
+    "color": [255, 0, 0],
+    "color2": [0, 0, 0],
+    "symbol1": "\u00d7",
+    "hide": true
+ }, {
+    "id": "b7",
+    "cat": "limited",
+    "name": "protosorcerdestroy",
+    "long": "cs]ru:sorcerize#flag@3(t]:targeted?block@(**:*)&thisattack)",
+    "text": "(Magic) Weaken target, causing them to be destroyed by any ability for 3 turns.",
+    "color": [0, 0, 255],
+    "color2": [0, 0, 0],
+    "symbol1": "\uffec",
+    "hide": true
+ }, {
+    "id": "b8",
+    "cat": "limited",
+    "name": "protosorcerantienchant",
+    "long": "cs]ru:sorcerize#flag@3(@+(move:attack))",
+    "text": "(Magic) Disenchant target, allowing them to be attacked by Move for 3 turns.",
+    "color": [0, 0, 255],
+    "color2": [0, 0, 127],
+    "symbol1": "\uffec",
+    "hide": true
+ }, {
+    "id": "b9",
+    "cat": "limited",
+    "name": "omniblock",
+    "long": "bv]:block@(**:*)&(LOSEABILTY)/(mn:move/attack)",
+    "text": "(Passive) Block one attack or ability from this location, and lose this ability. \n(Active) Move or Attack.",
+    "color": [0, 0, 0],
+    "color3": [255, 255, 0],
+    "symbol1": "\u2219",
+    "hide": true
+ }, {
+    "id": "b10",
+    "cat": "limited",
+    "name": "provoke",
+    "long": "bt]:start?\(m*:attack)",
+    "text": "(Trigger) Enemy Unit: At the start of your turn, target unit instantly attacks this unit.",
+    "color": [255, 255, 255],
+    "color2": [0, 0, 0],
+    "color3": [255, 255, 255],
+    "symbol1": "\u25c7",
+    "hide": true
+ }, {
+    "id": "b11",
+    "cat": "limited",
+    "name": "bullrush",
+    "long": "c]mn:push#\\(mn:move@3(AWAY))",
+    "text": "Move to unit and push them up to 3 spaces away.",
+    "color": [87, 218, 40],
+    "color2": [255, 255, 255],
+    "symbol1": "\u2b1a",
+    "hide": true
+ }, {
+    "id": "b12",
+    "cat": "limited",
+    "name": "locationblock",
+    "long": "m]:flag@4(-move&(BLOCK))",
+    "text": "Marked location cannot be moved on if there isn't a unit there and blocks movement.",
+    "color": [0, 0, 0],
+    "color2": [255, 255, 255],
+    "symbol1": "\u2742",
+    "symbol2": "\u2747",
+    "hide": true
+ }, {
+    "id": "b13",
+    "cat": "limited",
+    "name": "bonusmove",
+    "long": "b]mn:move&(BONUS)",
+    "text": "[Bonus Action] Move only.",
+    "color": [0, 0, 255],
+    "color3": [255, 255, 255],
+    "symbol1": "\u22a1",
+    "hide": true
+ }, {
+    "id": "b14",
+    "cat": "limited",
+    "name": "pullunder",
+    "long": "c]ru:(EXILE)3@pos",
+    "text": "(Magic) Exile unit, then return them in 3 turns.",
+    "color": [0, 80, 150],
+    "color3": [0, 0, 0],
+    "symbol1": "\u2742",
+    "hide": true
+ }, {
+    "id": "b15",
+    "cat": "limited",
+    "name": "lock",
+    "text": "(Magic) Lock enemy unit, making them unable to act or be displaced for 3 turns.",
+    "color": [100, 100, 150],
+    "color3": [0, 0, 0],
+    "symbol1": "\u0311",
+    "symbol2": "\u25fd",
+    "hide": true
+ }, {
+    "id": "b16",
+    "cat": "limited",
+    "name": "dummypolymorph",
+    "text": "(Magic) Transform minion or champion into Dummy.",
+    "color": [255, 255, 0],
+    "color3": [0, 0, 0],
+    "symbol1": "\uea00",
+    "hide": true
+ }, {
+    "id": "b17",
+    "cat": "limited",
+    "name": "deepstrike",
+    "text": "Exile self and mark location for return in 3 turns. If location is occupied upon return the occupant is annihilated.",
+    "color": [0, 0, 0],
+    "color2": [255, 255, 255],
+    "symbol1": "\uec24",
+    "hide": true
+ }, {
+    "id": "b18",
+    "cat": "limited",
+    "name": "goto",
+    "long": "b]:move",
+    "text": "Teleport self to this empty location.",
+    "color": [102, 0, 102],
+    "hide": true
+ }, {
+    "id": "b19",
+    "cat": "limited",
+    "name": "setpos",
+    "long": "b]:move/attack",
+    "text": "Teleport self to this empty location or attack target.",
+    "color": [20, 60, 20],
+    "hide": true
+ }, {
+    "id": "b20",
+    "cat": "limited",
+    "name": "zap",
+    "long": "b]r:attack",
+    "text": "Destroy target.",
+    "color": [253, 69, 34],
+    "hide": true
+ }, {
+    "id": "b21",
+    "cat": "predux",
+    "name": "specialtykill",
+    "text": "(Magic) Enemy unit loses all abilities that aren’t a melee move or melee attack.",
+    "color": [0, 0, 0],
+    "color2": [255, 255, 255],
+    "symbol1": "\uea26",
+    "hide": true
+ }, {
+    "id": "b22",
+    "cat": "predux",
+    "name": "bind",
+    "text": "Bind enemy unit, removing all of its abilities on corresponding ability targets.",
+    "color": [0, 0, 0],
+    "color2": [255, 255, 255],
+    "symbol1": "\uec5d",
+    "hide": true
+ }, {
+    "id": "b23",
+    "cat": "predux",
+    "name": "freezeshot",
+    "text": "(Ranged) Destroy target and freeze adjacent units perpendicular to target for 1 turn. Cannot target units immune to freeze.",
+    "color": [107, 205, 253],
+    "color2": [255, 255, 255],
+    "content": "\u2316",
+    "hide": true
+ }, {
+    "id": "b24",
+    "cat": "predux",
+    "name": "invigorate",
+    "text": "(Magic) Invigorate ally unit, making them able to act regardless of negative status effects for 2 turns.",
+    "color": [0, 0, 0],
+    "color2": [58, 233, 93],
+    "symbol1": "\u274b",
+    "hide": true
+ }, {
+    "id": "b25",
+    "cat": "predux",
+    "name": "agility",
+    "text": "(Trigger) At the end of your turn teleport to this empty location before returning to your previous position at the end of your opponent's turn.",
+    "color": [121, 19, 153],
+    "color2": [255, 255, 255],
+    "symbol1": "\u25c7",
+    "symbol2": "\uea14",
+    "hide": true
+ }, {
+    "id": "b26",
+    "cat": "predux",
+    "name": "confuse",
+    "text": "(Magic) Confuse enemy unit for 3 turns, making them unable to target empty locations.",
+    "color": [160, 127, 253],
+    "symbol1": "\ue904",
+    "hide": true
+ }, {
+    "id": "b27",
+    "cat": "predux",
+    "name": "autominotaur",
+    "text": "(Trigger) Enemy King: Swap with target at the start of your turn.",
+    "color": [0, 0, 0],
+    "color2": [255, 255, 255],
+    "color3": [19, 121, 153],
+    "symbol1": "\uec32",
+    "hide": true
+ }, {
+    "id": "b28",
+    "cat": "predux",
+    "name": "morph",
+    "text": "(Magic) Transform self into most recently fallen unit of value X or less, where X is twice this unit's value.",
+    "color": [0, 0, 0],
+    "color2": [255, 255, 255],
+    "symbol1": "\uea22",
+    "hide": true
+ }, {
+    "id": "b29",
+    "cat": "predux",
+    "name": "finalblast",
+    "text": "(Magic) Remove target from the game, ignoring all abilities, passives, and status effects; poison ally King for 3 turns, and lose this ability.",
+    "color": [200, 200, 200],
+    "color3": [127, 59, 17],
+    "symbol1": "\u2728",
+    "hide": true
+ }, {
+    "id": "b30",
+    "cat": "predux",
+    "name": "finalrespite",
+    "text": "(Magic) Enchant self and target ally for 2 turns and lose 5 value. If this unit reaches 0 value this ability can't be used.",
+    "color": [0, 102, 255],
+    "color2": [0, 0, 0],
+    "color3": [0, 255, 255],
+    "symbol1": "\uea2a",
+    "hide": true
  }, {
    "id": "c1",
    "cat": "custom",
