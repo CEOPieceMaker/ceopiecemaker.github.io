@@ -1582,7 +1582,7 @@ MOVES = [{
     "long": "z]",
     "text": "Moonfox (Do not click!)",
     "color": [253, 117, 34],
-    "symbol1": "\ue9fc",
+    "symbol1": "\ue9f9",
     "hide": true
  }];
 
