@@ -1036,11 +1036,11 @@ MOVES = [{
     "text": "(Magic) Ability Target is teleported to this empty location.",
     "color": [155, 20, 208],
     "color2": [255, 255, 255],
-    "symbol": "\u2609",
+    "symbol1": "\u2609",
     "hide": true
  }, {
     "id": "43b",
-    "cat": "variation",
+    "cat": "limited",
     "name": "rangedbeacon",
     "long": "cu]rn:set@pos=Athis",
     "text": "(Ranged) Target unit is teleported to Ability Target.",
@@ -1574,7 +1574,7 @@ MOVES = [{
    "name": "custom16",
    "long": "z]",
    "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
-   "color": [NaN, NaN, NaN],
+   "color": [NaN, NaN, NaN]
  }, {
     "id": "ce1",
     "cat": "custom",
