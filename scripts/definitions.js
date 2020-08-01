@@ -1030,13 +1030,12 @@ MOVES = [{
    "hide": true
  }, {
     "id": "60b",
-    "cat": "variation",
+    "cat": "limited",
     "name": "jumpleap",
     "text": "(Unblockable) Move or Leap-Attack.",
-    "color": [50, 0, 100],
-    "color2": [121, 19, 153],
+    "color": [121, 19, 153],
     "color3": [0, 255, 0],
-    "symbol1": "\u2219",
+    "symbol1": "\u26AB",
     "hide": true
  }, {
    "id": "66a",
