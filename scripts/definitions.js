@@ -1362,7 +1362,7 @@ MOVES = [{
     "text": "(Ranged) Destroy target and freeze adjacent units perpendicular to target for 1 turn. Cannot target units immune to freeze.",
     "color": [107, 205, 253],
     "color2": [255, 255, 255],
-    "content": "\u2316",
+    "symbol1": "\u2316",
     "hide": true
  }, {
     "id": "b24",
