@@ -695,7 +695,7 @@ function screensave() {
     var c = $("#" + level + " canvas")[0];
     
     // NOTE: Probably revert to using src when the bug is fixed
-    //$b.find("#" + level + " canvas").replaceWith("<img class=\"c\" width=\"" + $(c).width() + "\" height=\"" + $(c).height() + "\" style=\"background: url(" + c.toDataURL("image/png") + ")\"/>");
+    $b.find("#" + level + " canvas").replaceWith("<img class=\"c\" width=\"" + $(c).width() + "\" height=\"" + $(c).height() + "\" style=\"background: url(" + c.toDataURL("image/png") + ")\"/>");
     // main_gi: Commented out the above line because it was causing problems with the height of the +0 version being displaced.
 
     $b.find("#" + level + " .cost input").replaceWith("" + DATA[level].cost);
