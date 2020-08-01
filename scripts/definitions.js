@@ -1247,7 +1247,7 @@ MOVES = [{
     "cat": "limited",
     "name": "teledestroy",
     "long": "b]mu:move/ru:attack",
-    "text": "(Unblockable) Teleport or (Magic) Destroy.",
+    "text": "(Unblockable) Teleport or (Magic) Destroy target.",
     "color": [253, 117, 34],
     "color3": [121, 19, 153],
     "symbol1": "\u25aa",
