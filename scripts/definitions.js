@@ -1454,7 +1454,7 @@ MOVES = [{
    "long": "b]mn:move/attack",
    "text": "move or attack",
    "nobox": true,
-   "color": [0,0,0],
+   "color": [0, 0, 0],
    "symbol1": "\u25a0",
    "hide": true
  }, {
@@ -1464,7 +1464,7 @@ MOVES = [{
    "long": "b]mn:move",
    "text": "move",
    "nobox": true,
-   "color": [97,119,224],
+   "color": [97, 119, 224],
    "symbol1": "\u25a0",
    "hide": true
  }, {
@@ -1474,7 +1474,7 @@ MOVES = [{
    "long": "b]mn:attack",
    "text": "attack",
    "nobox": true,
-   "color": [237,28,36],
+   "color": [237, 28, 36],
    "symbol1": "\u25a0",
    "hide": true
  }, {
@@ -1484,7 +1484,7 @@ MOVES = [{
    "long": "b]mu:move/attack",
    "text": "move or attack (unblockable)",
    "nobox": true,
-   "color": [0,0,0],
+   "color": [0, 0, 0],
    "symbol1": "\u25cf",
    "hide": true
  }, {
@@ -1494,7 +1494,7 @@ MOVES = [{
    "long": "b]mu:move",
    "text": "move (unblockable)",
    "nobox": true,
-   "color": [97,119,224],
+   "color": [97, 119, 224],
    "symbol1": "\u25cf",
    "hide": true
  }, {
@@ -1504,7 +1504,7 @@ MOVES = [{
    "long": "b]mu:attack",
    "text": "attack (unblockable)",
    "nobox": true,
-   "color": [237,28,36],
+   "color": [237, 28, 36],
    "symbol1": "\u25cf",
    "hide": true
  }, {
@@ -1514,8 +1514,8 @@ MOVES = [{
    "long": "b]mn:startpos?move",
    "text": "move (only from starting position)",
    "nobox": true,
-   "color": [97,119,224],
-   "color2": [255,255,255],
+   "color": [97, 119, 224],
+   "color4": [255, 255, 255],
    "symbol1": "\u25a0",
    "symbol2": "\u0405",
    "hide": true
@@ -1526,8 +1526,8 @@ MOVES = [{
    "long": "b]mu:startpos?move",
    "text": "move (unblockable) (only from starting position)",
    "nobox": true,
-   "color": [97,119,224],
-   "color2": [255,255,255],
+   "color": [97, 119, 224],
+   "color4": [255, 255, 255],
    "symbol1": "\u25cf",
    "symbol2": "\u0405",
    "hide": true
@@ -1538,8 +1538,8 @@ MOVES = [{
    "long": "b]mn:move/attack/swap",
    "text": "move or attack or swap ally",
    "nobox": true,
-   "color": [0,0,0],
-   "color2": [255,255,255],
+   "color": [0, 0, 0],
+   "color4": [255, 255, 255],
    "symbol1": "\u25a0",
    "symbol2": "\u{1f5d8}",
    "hide": true
@@ -1550,7 +1550,7 @@ MOVES = [{
    "long": "b]rn:(USE_ABILITY)",
    "text": "use ability",
    "nobox": true,
-   "color": [255,242,0],
+   "color": [255, 242, 0],
    "symbol1": "\u25a0",
    "hide": true
  }, {
@@ -1560,8 +1560,8 @@ MOVES = [{
    "long": "b]mu:move/attack/swap",
    "text": "move or attack or swap ally (unblockable)",
    "nobox": true,
-   "color": [0,0,0],
-   "color2": [255,255,255],
+   "color": [0, 0, 0],
+   "color4": [255, 255, 255],
    "symbol1": "\u25cf",
    "symbol2": "\u{1f5d8}",
    "hide": true
@@ -1572,7 +1572,7 @@ MOVES = [{
    "long": "b]ru:(USE_ABILITY)",
    "text": "use ability (unblockable)",
    "nobox": true,
-   "color": [255,242,0],
+   "color": [255, 242, 0],
    "symbol1": "\u25cf",
    "hide": true
  }, {
