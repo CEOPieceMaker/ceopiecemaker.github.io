@@ -1248,7 +1248,7 @@ MOVES = [{
     "cat": "limited",
     "name": "teledestroy",
     "long": "b]mu:move/ru:attack",
-    "text": "(Unblockable) Teleport or (Magic) Destroy,
+    "text": "(Unblockable) Teleport or (Magic) Destroy.",
     "color": [253, 117, 34],
     "color3": [255, 255, 127],
     "symbol1": "\u25aa",
@@ -1573,13 +1573,24 @@ MOVES = [{
    "cat": "custom",
    "name": "custom16",
    "long": "z]",
-   "text": "Custom ability 16 (Double Click Menu Icon to Edit)"
+   "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
+   "color": [NaN, NaN, NaN]
  }, {
-    "id": "moonfox",
+    "id": "ce1",
+    "cat": "custom",
+    "name": "customexperimental",
+    "long": "z]",
+    "text": "Experimental Ability (Do not click!)",
+    "color": [255, 0, 0],
+    "color2": [NaN, NaN, NaN],
+    "symbol1": "E",
+    "hide": true
+ }, {
+    "id": "ce2",
     "cat": "custom",
     "name": "custommoonfox",
     "long": "z]",
-    "text": "Moonfox (Do not click!)",
+    "text": "Really Super Experimental Ability (Do not click!)",
     "color": [253, 117, 34],
     "symbol1": "\ue9fc",
     "hide": true
