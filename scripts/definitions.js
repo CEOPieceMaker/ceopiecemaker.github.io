@@ -1621,7 +1621,7 @@ TOOLTIPS = {
     ts3: "Pen Size 10:\nI don't see a use of this outside erasers tbh",
     ts4: "Pen Size 1:\nFor those who are perfectionists",
     ts5: "Pen Size 0:\nI hope you like shapes with no outlines...",
-    ts6: "Pen Size 20:\nI really don't see the point of this tbh",
+    ts6: "Pen Size 1/2:\nIn case you are StratShotPlayer",
     ts7: "Pen Size 4:\nThick but not too thick",
     tf0: "Coloring of the base",
     tf1: "Coloring of the middle part (what do you call those? :v)",
