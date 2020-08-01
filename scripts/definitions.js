@@ -1576,21 +1576,11 @@ MOVES = [{
    "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
    "color": [NaN, NaN, NaN]
  }, {
-    "id": "ce1",
-    "cat": "custom",
-    "name": "customexperimental",
-    "long": "z]",
-    "text": "Experimental Ability (Do not click!)",
-    "color": [255, 0, 0],
-    "color2": [NaN, NaN, NaN],
-    "symbol1": "E",
-    "hide": true
- }, {
-    "id": "ce2",
+    "id": "moonfox",
     "cat": "custom",
     "name": "custommoonfox",
     "long": "z]",
-    "text": "Really Super Experimental Ability (Do not click!)",
+    "text": "Moonfox (Do not click!)",
     "color": [253, 117, 34],
     "symbol1": "\ue9fc",
     "hide": true
