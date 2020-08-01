@@ -1173,7 +1173,7 @@ MOVES = [{
    "long": "z]",
    "text": "Custom ability 9 (Double Click Menu Icon to Edit)",
    "color": [125,125,125],
-   "symbol1": "8"
+   "symbol1": "9"
  }, {
    "id": "c10",
    "cat": "custom",
@@ -1265,7 +1265,7 @@ TOOLTIPS = {
     ts2: "Pen Size 5",
     ts3: "Pen Size 10:\nI don't see a use of this outside erasers tbh",
     ts4: "Pen Size 1:\nFor those who want high detail",
-    ts5: "Pen Size -2:\nWhat...",
+    ts5: "Pen Size 0:\nI hope you like shapes with no outlines...",
     tf0: "Coloring of the base",
     tf1: "Coloring of the middle part (what do you call those? :v)",
     tf2: "Coloring of the \"head\" part",
