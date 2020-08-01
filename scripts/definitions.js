@@ -1516,7 +1516,7 @@ MOVES = [{
    "color3": [97,119,224],
    "color4": [255,255,255],
    "symbol1": "\u25a0",
-   "symbol2" "\u0405",
+   "symbol2": "\u0405",
    "nobox": true,
    "hide": true
  }, {
@@ -1528,7 +1528,7 @@ MOVES = [{
    "color3": [97,119,224],
    "color4": [255,255,255],
    "symbol1": "\u25cf",
-   "symbol2" "\u0405",
+   "symbol2": "\u0405",
    "nobox": true,
    "hide": true
  }, {
@@ -1540,7 +1540,7 @@ MOVES = [{
    "color3": [0,0,0],
    "color4": [255,255,255],
    "symbol1": "\u25a0",
-   "symbol2" "\u{1f5d8}",
+   "symbol2": "\u{1f5d8}",
    "nobox": true,
    "hide": true
  }, {
@@ -1554,20 +1554,20 @@ MOVES = [{
    "nobox": true,
    "hide": true
  }, {
-   "id": "fc9a",
-   "cat": "favorchessvariant",
+   "id": "fc11",
+   "cat": "favorchess",
    "name": "favorjumpswap",
    "long": "b]mu:move/attack/swap",
    "text": "move or attack or swap ally (unblockable)",
    "color3": [0,0,0],
    "color4": [255,255,255],
    "symbol1": "\u25cf",
-   "symbol2" "\u{1f5d8}",
+   "symbol2": "\u{1f5d8}",
    "nobox": true,
    "hide": true
  }, {
-   "id": "fc10a",
-   "cat": "favorchessvariant",
+   "id": "fc12",
+   "cat": "favorchess",
    "name": "favorunblockableability",
    "long": "b]ru:(USE_ABILITY)",
    "text": "use ability (unblockable)",
