@@ -1453,9 +1453,9 @@ MOVES = [{
    "name": "favormoveattack",
    "long": "b]mn:move/attack",
    "text": "move or attack",
-   "color3": [0,0,0],
+   "nobox": true,
+   "color": [0,0,0],
    "symbol1": "\u25a0",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc2",
@@ -1463,9 +1463,9 @@ MOVES = [{
    "name": "favormove",
    "long": "b]mn:move",
    "text": "move",
-   "color3": [97,119,224],
+   "nobox": true,
+   "color": [97,119,224],
    "symbol1": "\u25a0",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc3",
@@ -1473,9 +1473,9 @@ MOVES = [{
    "name": "favorattack",
    "long": "b]mn:attack",
    "text": "attack",
-   "color3": [237,28,36],
+   "nobox": true,
+   "color": [237,28,36],
    "symbol1": "\u25a0",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc4",
@@ -1483,9 +1483,9 @@ MOVES = [{
    "name": "favorjump",
    "long": "b]mu:move/attack",
    "text": "move or attack (unblockable)",
-   "color3": [0,0,0],
+   "nobox": true,
+   "color": [0,0,0],
    "symbol1": "\u25cf",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc5",
@@ -1493,9 +1493,9 @@ MOVES = [{
    "name": "favorteleport,
    "long": "b]mu:move",
    "text": "move (unblockable)",
-   "color3": [97,119,224],
+   "nobox": true,
+   "color": [97,119,224],
    "symbol1": "\u25cf",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc6",
@@ -1503,9 +1503,9 @@ MOVES = [{
    "name": "favorjumpattack,
    "long": "b]mu:attack",
    "text": "attack (unblockable)",
-   "color3": [237,28,36],
+   "nobox": true,
+   "color": [237,28,36],
    "symbol1": "\u25cf",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc7",
@@ -1513,11 +1513,11 @@ MOVES = [{
    "name": "favormovestart",
    "long": "b]mn:startpos?move",
    "text": "move (only from starting position)",
-   "color3": [97,119,224],
-   "color4": [255,255,255],
+   "nobox": true,
+   "color": [97,119,224],
+   "color2": [255,255,255],
    "symbol1": "\u25a0",
    "symbol2": "\u0405",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc8",
@@ -1525,11 +1525,11 @@ MOVES = [{
    "name": "favorteleportstart",
    "long": "b]mu:startpos?move",
    "text": "move (unblockable) (only from starting position)",
-   "color3": [97,119,224],
-   "color4": [255,255,255],
+   "nobox": true,
+   "color": [97,119,224],
+   "color2": [255,255,255],
    "symbol1": "\u25cf",
    "symbol2": "\u0405",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc9",
@@ -1537,11 +1537,11 @@ MOVES = [{
    "name": "favormoveattackswap",
    "long": "b]mn:move/attack/swap",
    "text": "move or attack or swap ally",
-   "color3": [0,0,0],
-   "color4": [255,255,255],
+   "nobox": true,
+   "color": [0,0,0],
+   "color2": [255,255,255],
    "symbol1": "\u25a0",
    "symbol2": "\u{1f5d8}",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc10",
@@ -1549,9 +1549,9 @@ MOVES = [{
    "name": "favorability",
    "long": "b]rn:(USE_ABILITY)",
    "text": "use ability",
-   "color3": [255,242,0],
+   "nobox": true,
+   "color": [255,242,0],
    "symbol1": "\u25a0",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc11",
@@ -1559,11 +1559,11 @@ MOVES = [{
    "name": "favorjumpswap",
    "long": "b]mu:move/attack/swap",
    "text": "move or attack or swap ally (unblockable)",
-   "color3": [0,0,0],
-   "color4": [255,255,255],
+   "nobox": true,
+   "color": [0,0,0],
+   "color2": [255,255,255],
    "symbol1": "\u25cf",
    "symbol2": "\u{1f5d8}",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "fc12",
@@ -1571,9 +1571,9 @@ MOVES = [{
    "name": "favorunblockableability",
    "long": "b]ru:(USE_ABILITY)",
    "text": "use ability (unblockable)",
-   "color3": [255,242,0],
+   "nobox": true,
+   "color": [255,242,0],
    "symbol1": "\u25cf",
-   "nobox": "true",
    "hide": true
  }, {
    "id": "c1",
@@ -1701,7 +1701,7 @@ MOVES = [{
    "name": "custom16",
    "long": "z]",
    "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
-   "nobox": "true"
+   "nobox": true
  }, {
     "id": "moonfox",
     "cat": "custom",
