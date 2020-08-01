@@ -1573,7 +1573,7 @@ MOVES = [{
    "name": "custom16",
    "long": "z]",
    "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
-   "color": [NaN, NaN, NaN]
+   "nobox": "true"
  }, {
     "id": "moonfox",
     "cat": "custom",
