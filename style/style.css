@@ -511,6 +511,7 @@ nav {
   right: 0;
   z-index: 4;
   transition: right 0.2s;
+  overflow: auto;
 }
 .slide#controls{
   pointer-events: none;
