@@ -1455,7 +1455,7 @@ MOVES = [{
    "text": "move or attack",
    "color3": [0,0,0],
    "symbol1": "\u25a0",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc2",
@@ -1465,7 +1465,7 @@ MOVES = [{
    "text": "move",
    "color3": [97,119,224],
    "symbol1": "\u25a0",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc3",
@@ -1475,7 +1475,7 @@ MOVES = [{
    "text": "attack",
    "color3": [237,28,36],
    "symbol1": "\u25a0",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc4",
@@ -1485,7 +1485,7 @@ MOVES = [{
    "text": "move or attack (unblockable)",
    "color3": [0,0,0],
    "symbol1": "\u25cf",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc5",
@@ -1495,7 +1495,7 @@ MOVES = [{
    "text": "move (unblockable)",
    "color3": [97,119,224],
    "symbol1": "\u25cf",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc6",
@@ -1505,7 +1505,7 @@ MOVES = [{
    "text": "attack (unblockable)",
    "color3": [237,28,36],
    "symbol1": "\u25cf",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc7",
@@ -1517,7 +1517,7 @@ MOVES = [{
    "color4": [255,255,255],
    "symbol1": "\u25a0",
    "symbol2": "\u0405",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc8",
@@ -1529,7 +1529,7 @@ MOVES = [{
    "color4": [255,255,255],
    "symbol1": "\u25cf",
    "symbol2": "\u0405",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc9",
@@ -1541,7 +1541,7 @@ MOVES = [{
    "color4": [255,255,255],
    "symbol1": "\u25a0",
    "symbol2": "\u{1f5d8}",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc10",
@@ -1551,7 +1551,7 @@ MOVES = [{
    "text": "use ability",
    "color3": [255,242,0],
    "symbol1": "\u25a0",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc11",
@@ -1563,7 +1563,7 @@ MOVES = [{
    "color4": [255,255,255],
    "symbol1": "\u25cf",
    "symbol2": "\u{1f5d8}",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "fc12",
@@ -1573,7 +1573,7 @@ MOVES = [{
    "text": "use ability (unblockable)",
    "color3": [255,242,0],
    "symbol1": "\u25cf",
-   "nobox": true,
+   "nobox": "true",
    "hide": true
  }, {
    "id": "c1",
@@ -1701,7 +1701,7 @@ MOVES = [{
    "name": "custom16",
    "long": "z]",
    "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
-   "nobox": true
+   "nobox": "true"
  }, {
     "id": "moonfox",
     "cat": "custom",
