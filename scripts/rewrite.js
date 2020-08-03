@@ -270,10 +270,12 @@ function getSpell(index) {
 }
 
 function resolveMarkedTile(i, level) { // main_gi: Does something based on the index of the marked tile, a number from 0-255.
-  if (i == false) {return} // Center = (0, 0) infinite loop, do not want
+  if (i == false) {return}
   // main_gi: Split this to x and y where (0, 0) is the center
   let x = (i % 15) - 7
   let y = Math.floor(i / 15) - 7
+  if (x == 0 && y == 0) {return} // Center = (0, 0) infinite loop, do not want
+
   // Top left is (-7, -7), bottom right is (7, 7)
   let curX = x;
   let curY = y;
@@ -292,7 +294,7 @@ function resolveMarkedTile(i, level) { // main_gi: Does something based on the i
 //$(document).on("contextmenu", function () {
 //  return !rightClicked
 //});
-// main_gi: This is supposed to prevent a context menu from popping up if you right clicked on the grid, then left the grid and released right click. It doesn't work.
+// main_gi: This was supposed to prevent a context menu from popping up if you right clicked on the grid, then left the grid and released right click. It doesn't work.
 
 
 $(document).on("mouseup dragend", function () {
