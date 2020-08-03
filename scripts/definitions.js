@@ -1110,12 +1110,22 @@ MOVES = [{
  }, {
    "id": "53a",
    "cat": "limited",
-   "name": "attackswap",
+   "name": "jumpattackswap",
    "long": "b]mu:attack/swap",
    "text": "(Unblockable) Attack or swap places with ally.",
    "color": [255,0,0],
    "color2": [127,0,0],
    "color3": [255,255,255],
+   "symbol1": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "53b",
+   "cat": "limited",
+   "name": "attackswap",
+   "long": "b]mn:attack/swap",
+   "text": "Attack or swap places with ally.",
+   "color": [252,13,27],
+   "color3": [0,0,0],
    "symbol1": "\u{1f5d8}",
    "hide": true
  }, {
