@@ -927,7 +927,7 @@ MOVES = [{
    "id": "64a",
    "cat": "variation",
    "name": "diagonalpathmove",
-   "text": "(Path) Attack only.",
+   "text": "(Path) Move only.",
    "color": [0,0,255],
    "color3": [0,0,0],
    "symbol1": "\ue703",
