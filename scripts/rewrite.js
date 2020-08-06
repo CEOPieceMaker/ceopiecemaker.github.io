@@ -4,6 +4,13 @@ var lineDrawingMode = false;
 var markedTile = false;
 var curLevel = -1; // main_gi This is such a hack to implement, I wish I could do it in another way other than declaring tons of vars.
 var rightClicked = false;
+var noTierUpdate = false;
+
+$("#duht").click(function() { // main_gi: Don't Update Higher Tiers
+  noTierUpdate = !noTierUpdate;
+  $("#duht")[0].innerHTML = "Don't Autoupdate Higher Tiers " + "(" + (noTierUpdate?"on":"off") + ")"
+
+});
 
 function updateSVG (level) {
   mysvg = document.getElementById("svg" + level);
@@ -126,7 +133,7 @@ function initializeBoards() {
 
     mouse.down = this.dataset.level;
     if (this.dataset.index == 112) {
-      lineDrawingMode = true;
+      lineDrawingMode = true; // main_gi: Specifically my addition, allows you to draw lines with grid
       curLevel = this.dataset.level
       return;
     }
@@ -248,8 +255,9 @@ function changeSpell(i, l) {
     setDisplay(LEVELS[l], MOVES[IMOVE[config.id]].name);
   }
 
-  if (l == 3) return;
+  if (l == 3 || noTierUpdate) return;
   // Peek nextMove
+  // main_gi: That means update the higher tier boards.
   updateSVG(+l+1);
   var nextMove = getSpell(i);
   if (! curMove.dataset && ! nextMove.dataset ) changeSpell(i, +l+1);
@@ -290,6 +298,41 @@ function resolveMarkedTile(i, level) { // main_gi: Does something based on the i
   }
 }
 
+
+function clearBoard(l) {
+  updateSVG(l) // main_gi: GOD DAMN IT I SPENT LIKE 40 MINUTES NOT UNDERSTANDING WHY GETSPELL WASN'T WORKING IT WAS CAUSE I HAD TO SET THIS GLOBALVAR WHICH CHANGES THE RETURN VALUE OF GETSPELL
+  for (var i=0; i<225; i++) {
+
+  var curMove = getSpell(i);
+  var levMoves = DATA[LEVELS[l]].moves;
+  var indexStr = (+i+225).toString(15).slice(1);
+  // Delete curMove
+    if (curMove.dataset) {
+      var id = curMove.dataset.id;
+      // Assuming levMoves[id] exists. If it doesn't, this section shouldn't run to begin with.
+      levMoves[id] = levMoves[id].replace(new RegExp(indexStr + "(?=(..)*$)", "g"), "");
+      if (levMoves[id] == "") {
+        delete levMoves[id];
+        removeDisplay(LEVELS[l], MOVES[IMOVE[id]].name);
+      }
+      curMove.remove();
+    }
+
+  }
+}
+
+$("#clear1").click(function() {
+  clearBoard(0)
+});
+$("#clear2").click(function() {
+  clearBoard(1)
+});
+$("#clear3").click(function() {
+  clearBoard(2)
+});
+$("#clear4").click(function() {
+  clearBoard(3)
+});
 
 //$(document).on("contextmenu", function () {
 //  return !rightClicked
