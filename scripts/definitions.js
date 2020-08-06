@@ -935,7 +935,7 @@ MOVES = [{
  }, {
    "id": "31b",
    "cat": "limbo",
-   "name": "hiroshima",
+   "name": "ximaera",
    "long": "b]mu:move/*ally?swap",
    "text": "(Unblockable) Teleport or swap places with unit.",
    "color": [19,121,153],
@@ -1178,6 +1178,27 @@ MOVES = [{
    "color": [0,0,0],
    "color3": [127,0,255],
    "symbol1": "\u2219",
+   "hide": true
+ }, {
+   "id": "0d",
+   "cat": "limited",
+   "name": "blockableswap",
+   "long": "b]mn:swap",
+   "text": "Swap places with ally.",
+   "color": [127,127,127],
+   "color2": [255,255,255],
+   "color3": [0,0,0],
+   "symbol1": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "31c",
+   "cat": "limited",
+   "name": "blockableximaera",
+   "long": "b]mn:move/*ally?swap",
+   "text": "Move or swap places with unit.",
+   "color": [19,121,153],
+   "color2": [255,255,255],
+   "color3": [0,0,0],
    "hide": true
  }, {
    "id": "b1",
