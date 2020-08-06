@@ -1331,7 +1331,7 @@ MOVES = [{
     "cat": "limited",
     "name": "bonusmove",
     "long": "b]mn:move&(BONUS)",
-    "text": "[Bonus Action] Move only.",
+    "text": "Move only, then take an extra turn if you haven't already taken an extra turn.",
     "color": [0,0,255],
     "color3": [255,255,255],
     "symbol1": "\u22a1",
