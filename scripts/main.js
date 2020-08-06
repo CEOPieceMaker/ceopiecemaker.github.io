@@ -380,11 +380,11 @@ function setPassive(text, level) {
 
 
 $("div.passives").keyup(function() {
-  if (cleanseText(this.innerHTML).length == 0) {this.innerHTML = ""; $('div.passives').empty();}
+  if (cleanseText(this.innerHTML).replace("\n", "").length == 0) {this.innerHTML = ""}
   setPassive(this.innerHTML, curPASSIVE);
 });
 $("div.passives").keydown(function() {
-  if (cleanseText(this.innerHTML).length == 0) {this.innerHTML = ""; $('div.passives').empty();}
+  if (cleanseText(this.innerHTML).replace("\n", "").length == 0) {this.innerHTML = ""} // main_gi: attempt to clear passives if empty
   setPassive(this.innerHTML, curPASSIVE);
 });
 /*
@@ -697,6 +697,7 @@ function screensave() {
     // NOTE: Probably revert to using src when the bug is fixed
     $b.find("#" + level + " canvas").replaceWith("<img class=\"c\" width=\"" + $(c).width() + "\" height=\"" + $(c).height() + "\" style=\"background: url(" + c.toDataURL("image/png") + ")\"/>");
     // main_gi: Commented out the above line because it was causing problems with the height of the +0 version being displaced.
+    // main_gi: Uncommented because apparently causes the whole thing not to work
 
     $b.find("#" + level + " .cost input").replaceWith("" + DATA[level].cost);
     //replace passives::after with passives. Used to circumvent whitespace bugs.
@@ -791,14 +792,17 @@ $("#imj").click(function() {
 $("input, button").prop("disabled", false);
 
 
-$("#hsc").click(function() {
+$("#hsc").click(function() { // main_gi: Hide/show cost
   if ($(".cost").css("display") != "none") {
     $(".cost").css("display", "none");
+    $("#hsc")[0].innerHTML = "Hide/Show Cost (hidden)";
   } else {
     $(".cost").css("display", "initial");
+    $("#hsc")[0].innerHTML = "Hide/Show Cost (shown)";
   }
   
 });
+
 
 // All of these shit is created thanks to main_gi, the ultimate destroyer of the whole script of PM.
 // main_gi: You're welcome!
