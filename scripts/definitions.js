@@ -1538,7 +1538,7 @@ MOVES = [{
     "name": "diagonalpathdestroy",
     "text": "(Path, Ranged) Destroy target.",
     "color": [0,0,0],
-    "color3": [153,77,0],
+    "color2": [153,77,0],
     "symbol1": "\ue703",
     "hide": true
   }, {
