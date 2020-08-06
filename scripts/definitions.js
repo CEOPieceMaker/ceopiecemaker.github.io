@@ -1538,9 +1538,49 @@ MOVES = [{
     "name": "diagonalpathdestroy",
     "text": "(Path, Ranged) Destroy target.",
     "color": [0,0,0],
-    "color2": [153,77,0],
+    "color3": [153,77,0],
     "symbol1": "\ue703",
     "hide": true
+  }, {
+   "id": "b37",
+   "cat": "limited",
+   "name": "verticalpathmoveattackswap",
+   "text": "(Path) Move, Attack, or swap places with ally.",
+   "color": [0,0,0],
+   "color4": [255,210,0],
+   "symbol1": "\u{1f5d8}",
+   "symbol2": "\ue702",
+   "hide": true
+ }, {
+   "id": "b38",
+   "cat": "limited",
+   "name": "horizontalpathmoveattackswap",
+   "text": "(Path) Move, Attack, or swap places with ally.",
+   "color": [0,0,0],
+   "color4": [255,210,0],
+   "symbol1": "\u{1f5d8}",
+   "symbol2": "\ue700",
+   "hide": true
+ }, {
+   "id": "b39",
+   "cat": "limited",
+   "name": "antidiagonalpathmoveattackswap",
+   "text": "(Path) Move, Attack, or swap places with ally.",
+   "color": [0,0,0],
+   "color4": [255,210,0],
+   "symbol1": "\u{1f5d8}",
+   "symbol2": "\ue701",
+   "hide": true
+ }, {
+   "id": "b40",
+   "cat": "limited",
+   "name": "diagonalpathmoveattackswap",
+   "text": "(Path) Move, Attack, or swap places with ally.",
+   "color": [0,0,0],
+   "color4": [255,210,0],
+   "symbol1": "\u{1f5d8}",
+   "symbol2": "\ue703",
+   "hide": true
  }, {
    "id": "c1",
    "cat": "custom",
