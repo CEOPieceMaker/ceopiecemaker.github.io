@@ -1397,7 +1397,7 @@ MOVES = [{
     "cat": "limited",
     "name": "enchantedximaera",
     "long": "1bs]mu:move/*ally?swap&(thisenchant#flag@1&(ENCHANT))",
-    "text": "[Pay 1]: (Unblockable) Teleport or swap places with unit, and enchant self for 1 turn, making them immune to melee death.",
+    "text": "[Pay 1]: (Unblockable) Teleport or swap places with unit, and enchant self for 1 turn, becoming immune to melee death.",
     "color": [0,102,255],
     "color2": [0,0,0],
     "color3": [0,255,255],
