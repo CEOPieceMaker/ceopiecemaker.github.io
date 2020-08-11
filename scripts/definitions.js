@@ -1600,11 +1600,29 @@ MOVES = [{
    "id": "b42",
    "cat": "limited",
    "name": "ximaeracastle",
-   "long": "c]:ally?swap&(MOVETOGETHER)",
+   "long": "c]:*ally?swap&(MOVETOGETHER)",
    "text": "(Unblockable) Swap places with unit, then move this unit and target unit together.",
    "color": [19,121,153],
    "color2": [255,255,255],
    "symbol1": "\u2656",
+   "hide": true
+ }, {
+   "id": "b43",
+   "cat": "limited",
+   "name": "spellcharge",
+   "text": "(Magic) Teleport self to this location, destroying any enemy on that location.",
+   "color": [20,151,24],
+   "symbol1": "\u25c8",
+   "hide": true
+ }, {
+   "id": "b44",
+   "cat": "limited",
+   "name": "overtake",
+   "text": "(Unblockable) Teleport to empty location, destroying enemy units in between.",
+   "color": [127,127,127],
+   "color2": [0,0,0],
+   "color3": [255,0,0],
+   "symbol1": "\u25cb",
    "hide": true
  }, {
    "id": "c1",
