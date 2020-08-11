@@ -1628,7 +1628,7 @@ MOVES = [{
    "id": "b45",
    "cat": "limited",
    "name": "meteoricjump",
-   "text": "[Pay 2]: (Unblockable) Move or Attack, and push all adjacent units 1 space away.",
+   "text": "(Unblockable) Teleport, or Attack and push all units adjacent to destination 1 space away.",
    "color": [20,151,24],
    "color3": [0,0,0],
    "symbol1": "\uea78",
