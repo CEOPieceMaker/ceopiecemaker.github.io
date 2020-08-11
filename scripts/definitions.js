@@ -1634,6 +1634,15 @@ MOVES = [{
    "symbol1": "\uea78",
    "hide": true
  }, {
+   "id": "b46",
+   "cat": "limited",
+   "name": "moveleapmove",
+   "text": "Move or Leap-Move.",
+   "color": [0,0,255],
+   "color3": [0,255,255],
+   "symbol1": "\u26AB",
+   "hide": true
+ }, {
    "id": "c1",
    "cat": "custom",
    "name": "custom1",
