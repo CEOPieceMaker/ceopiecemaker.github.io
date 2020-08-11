@@ -1610,7 +1610,7 @@ MOVES = [{
    "id": "b43",
    "cat": "limited",
    "name": "spellcharge",
-   "text": "(Magic) Teleport self to this location, destroying any enemy on that location.",
+   "text": "[Pay 1]: (Magic) Move or Attack.",
    "color": [20,151,24],
    "symbol1": "\u25c8",
    "hide": true
