@@ -1610,7 +1610,7 @@ MOVES = [{
    "id": "b43",
    "cat": "limited",
    "name": "spellcharge",
-   "text": "[Pay 1]: (Magic) Move or Attack.",
+   "text": "[Pay 1]: (Magic) Spellcharge, teleporting to location and destroying any enemy on that location.",
    "color": [20,151,24],
    "symbol1": "\u25c8",
    "hide": true
@@ -1623,6 +1623,15 @@ MOVES = [{
    "color2": [0,0,0],
    "color3": [255,0,0],
    "symbol1": "\u25cb",
+   "hide": true
+ }, {
+   "id": "b45",
+   "cat": "limited",
+   "name": "meteoricjump",
+   "text": "[Pay 2]: (Unblockable) Move or Attack, and push all adjacent units 1 space away.",
+   "color": [20,151,24],
+   "color3": [0,0,0],
+   "symbol1": "\uea78",
    "hide": true
  }, {
    "id": "c1",
