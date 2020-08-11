@@ -1588,6 +1588,25 @@ MOVES = [{
    "symbol2": "\ue703",
    "hide": true
  }, {
+   "id": "b41",
+   "cat": "limited",
+   "name": "jumpstart",
+   "long": "b]mu:startpos?move/attack",
+   "text": "(Unblockable) Move or Attack from starting position.",
+   "color": [20,151,24],
+   "symbol1": "\u274b",
+   "hide": true
+ }, {
+   "id": "b42",
+   "cat": "limited",
+   "name": "ximaeracastle",
+   "long": "c]:ally?swap&(MOVETOGETHER)",
+   "text": "(Unblockable) Swap places with unit, then move this unit and target unit together.",
+   "color": [19,121,153],
+   "color2": [255,255,255],
+   "symbol1": "\u2656",
+   "hide": true
+ }, {
    "id": "c1",
    "cat": "custom",
    "name": "custom1",
@@ -1743,8 +1762,10 @@ PASSIVES = ["Does not block movement.",
     "(Status-Immune)",
     "(Trigger-Immune)",
     "(Displacement-Immune)",
+    "(Location-Immune)",
     "Promotes to PieceName[+].",
     "On Death: Lose 2[+1] morale.",
+    "Blocks one ability.",
     "Can't be targeted beyond Range 2."
 ];
 LABELS = {
