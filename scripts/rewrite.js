@@ -5,12 +5,32 @@ var markedTile = false;
 var curLevel = -1; // main_gi This is such a hack to implement, I wish I could do it in another way other than declaring tons of vars.
 var rightClicked = false;
 var noTierUpdate = false;
+var autoHorizontalSymmetry = true;
+var autoVerticalSymmetry = false;
 
 $("#duht").click(function() { // main_gi: Don't Update Higher Tiers
   noTierUpdate = !noTierUpdate;
   $("#duht")[0].innerHTML = "Don't Autoupdate Higher Tiers " + "(" + (noTierUpdate?"on":"off") + ")"
 
 });
+$("#ahs").click(function() { // main_gi: Automatic Horizontal Symmetry
+  autoHorizontalSymmetry = !autoHorizontalSymmetry;
+  $("#ahs")[0].innerHTML = "Automatic Horizontal Symmetry " + "(" + (autoHorizontalSymmetry?"on":"off") + ")"
+
+});
+$("#avs").click(function() { // main_gi: Automatic Vertical Symmetry
+  autoVerticalSymmetry = !autoVerticalSymmetry;
+  $("#avs")[0].innerHTML = "Automatic Vertical Symmetry " + "(" + (autoVerticalSymmetry?"on":"off") + ")"
+
+});
+
+function x (i) {
+  return (i % 15) - 7
+}
+function y (i) {
+  return Math.floor(i / 15) - 7
+}
+function fixxy (x, y) {return (x+7) + (y+7)*15} // gets x and y back
 
 function updateSVG (level) {
   mysvg = document.getElementById("svg" + level);
@@ -142,6 +162,13 @@ function initializeBoards() {
     if (curMove.dataset && curMove.dataset.id == config.id) mouse.mode = "remove"; // Changes functionality to erase
 
     changeSpell(this.dataset.index, this.dataset.level);
+    let i = this.dataset.index
+    if (autoHorizontalSymmetry && x(i) != 0)   {changeSpell(fixxy(-x(i), y(i)), this.dataset.level)}
+    if (autoVerticalSymmetry   && y(i) != 0)   {changeSpell(fixxy(x(i), -y(i)), this.dataset.level)}
+    if (autoHorizontalSymmetry && autoVerticalSymmetry && x(i) != 0 && y(i) != 0)
+      {changeSpell(fixxy(-x(i), -y(i)), this.dataset.level)}
+
+
   });
 
   $(".tile").on("mouseover", function (e) {
@@ -156,7 +183,16 @@ function initializeBoards() {
 
     if (this.dataset.index == 112) return;
     changeSpell(this.dataset.index, this.dataset.level);
+    let i = this.dataset.index
+    if (autoHorizontalSymmetry && x(i) != 0)   {changeSpell(fixxy(-x(i), y(i)), this.dataset.level)}
+    if (autoVerticalSymmetry   && y(i) != 0)   {changeSpell(fixxy(x(i), -y(i)), this.dataset.level)}
+    if (autoHorizontalSymmetry && autoVerticalSymmetry && x(i) != 0 && y(i) != 0)
+      {changeSpell(fixxy(-x(i), -y(i)), this.dataset.level)}
+
+
+
   });
+
 
   $(".tile").on("contextmenu", function () {
     mouse.mode = "remove";
@@ -228,6 +264,7 @@ function setSpellOnBoard(i) {
 }
 
 function changeSpell(i, l) {
+  updateSVG(l)
   var curMove = getSpell(i);
   var levMoves = DATA[LEVELS[l]].moves;
   var indexStr = (+i+225).toString(15).slice(1);
