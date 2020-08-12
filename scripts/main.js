@@ -409,7 +409,7 @@ function cleanseText(text) {
 
 // Piece data to be saved/restored
 var DATA = {
-  name: "PieceName",
+  name: "Name",
   labels: {
     rank: "Minion",
     faction: "Basic",
@@ -799,6 +799,16 @@ $("#hsc").click(function() { // main_gi: Hide/show cost
   } else {
     $(".cost").css("display", "initial");
     $("#hsc")[0].innerHTML = "Hide/Show Cost (shown)";
+  }
+  
+});
+$("#hst").click(function() { // main_gi: Hide/show type
+  if ($(".info").css("display") != "none") {
+    $(".info").css("display", "none");
+    $("#hst")[0].innerHTML = "Hide/Show Type (hidden)";
+  } else {
+    $(".info").css("display", "initial");
+    $("#hst")[0].innerHTML = "Hide/Show Type (shown)";
   }
   
 });
