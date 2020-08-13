@@ -1353,7 +1353,7 @@ MOVES = [{
     "text": "(Magic) Lock enemy unit, making them unable to act or be displaced for 3 turns.",
     "color": [100,100,150],
     "color3": [0,0,0],
-    "symbol1": "\u00d7",
+    "symbol1": "\ue0a2",
     "hide": true
  }, {
     "id": "b16",
@@ -1687,7 +1687,7 @@ MOVES = [{
    "text": "(Magic) Chill enemy unit for 5 turns, freezing them if they act.",
    "color": [107,205,253],
    "color2": [255,255,255],
-   "color3": [205,205,253],
+   "color3": [0,0,255],
    "symbol1": "\u2744",
    "hide": true
  }, {
