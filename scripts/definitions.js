@@ -1677,7 +1677,7 @@ MOVES = [{
    "text": "(Magic) Empower ally unit, allowing them to destroy an adjacent enemy unit for 3 turns.",
    "color": [255,127,127],
    "color2": [255,255,255],
-   "symbol1": "\ufe56",
+   "symbol1": "\u2747",
    "symbol2": "\u26aa",
    "hide": true
  }, {
