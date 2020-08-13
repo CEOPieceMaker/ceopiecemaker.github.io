@@ -349,7 +349,7 @@ MOVES = [{
    "cat": "official",
    "name": "thunder",
    "long": "1m]:flag@4&(ru:attack)",
-   "text": "[Pay 1]: Mark location to be destroyed by Magic 4 turns after activating.",
+   "text": "[Pay 1]: (Magic) After 4 turns any unit in the marked location is destroyed.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u26a1"
@@ -1698,6 +1698,18 @@ MOVES = [{
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u25a7",
+   "hide": true
+ }, {
+   "id": "b53",
+   "cat": "limited",
+   "name": "forcefield",
+   "text": "[Pay 3]: (Magic) Marked location can't be targeted by abilities other than Move for 3 turns.",
+   "color": [0,0,255],
+   "color2": [0,0,0],
+   "color3": [0,102,255],
+   "color4": [0,255,255],
+   "symbol1": "\u25a1",
+   "symbol2": "\ue905",
    "hide": true
  }, {
    "id": "c1",
