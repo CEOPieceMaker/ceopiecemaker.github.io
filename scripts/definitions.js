@@ -1320,7 +1320,7 @@ MOVES = [{
     "cat": "limited",
     "name": "locationblock",
     "long": "m]:flag@4(-move&(BLOCK))",
-    "text": "Marked location can't be targeted by Move and blocks movement for 4 turns.",
+    "text": "(Magic) Marked location can't be targeted by Move and blocks movement for 4 turns.",
     "color": [0,0,0],
     "color2": [255,255,255],
     "symbol1": "\u2742",
