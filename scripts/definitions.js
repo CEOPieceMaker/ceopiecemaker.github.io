@@ -1039,6 +1039,49 @@ MOVES = [{
    "symbol1": "\u{1f5d8}",
    "hide": true
  }, {
+   "id": "53a",
+   "cat": "limited",
+   "name": "jumpattackswap",
+   "long": "b]mu:attack/swap",
+   "text": "(Unblockable) Attack or swap places with ally.",
+   "color": [255,0,0],
+   "color2": [127,0,0],
+   "color3": [255,255,255],
+   "symbol1": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "53b",
+   "cat": "limited",
+   "name": "attackswap",
+   "long": "b]mn:attack/swap",
+   "text": "Attack or swap places with ally.",
+   "color": [252,13,27],
+   "color3": [0,0,0],
+   "symbol1": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "0d",
+   "cat": "limited",
+   "name": "blockableswap",
+   "long": "b]mn:swap",
+   "text": "Swap places with ally.",
+   "color": [127,127,127],
+   "color2": [255,255,255],
+   "color3": [0,0,0],
+   "symbol1": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "31c",
+   "cat": "limited",
+   "name": "blockableximaera",
+   "long": "b]mn:move/*ally?swap",
+   "text": "Move or swap places with unit.",
+   "color": [19,121,153],
+   "color2": [255,255,255],
+   "color3": [0,0,0],
+   "symbol1": "\u{1f5d8}",
+   "hide": true
+ }, {
     "id": "27b",
     "cat": "limited",
     "name": "magicportal",
@@ -1108,27 +1151,6 @@ MOVES = [{
    "symbol1": "\ue907",
    "hide": true
  }, {
-   "id": "53a",
-   "cat": "limited",
-   "name": "jumpattackswap",
-   "long": "b]mu:attack/swap",
-   "text": "(Unblockable) Attack or swap places with ally.",
-   "color": [255,0,0],
-   "color2": [127,0,0],
-   "color3": [255,255,255],
-   "symbol1": "\u{1f5d8}",
-   "hide": true
- }, {
-   "id": "53b",
-   "cat": "limited",
-   "name": "attackswap",
-   "long": "b]mn:attack/swap",
-   "text": "Attack or swap places with ally.",
-   "color": [252,13,27],
-   "color3": [0,0,0],
-   "symbol1": "\u{1f5d8}",
-   "hide": true
- }, {
     "id": "4a",
     "cat": "limited",
     "name": "superjump",
@@ -1178,28 +1200,6 @@ MOVES = [{
    "color": [0,0,0],
    "color3": [127,0,255],
    "symbol1": "\u2219",
-   "hide": true
- }, {
-   "id": "0d",
-   "cat": "limited",
-   "name": "blockableswap",
-   "long": "b]mn:swap",
-   "text": "Swap places with ally.",
-   "color": [127,127,127],
-   "color2": [255,255,255],
-   "color3": [0,0,0],
-   "symbol1": "\u{1f5d8}",
-   "hide": true
- }, {
-   "id": "31c",
-   "cat": "limited",
-   "name": "blockableximaera",
-   "long": "b]mn:move/*ally?swap",
-   "text": "Move or swap places with unit.",
-   "color": [19,121,153],
-   "color2": [255,255,255],
-   "color3": [0,0,0],
-   "symbol1": "\u{1f5d8}",
    "hide": true
  }, {
    "id": "b1",
