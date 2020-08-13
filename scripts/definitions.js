@@ -1320,7 +1320,7 @@ MOVES = [{
     "cat": "limited",
     "name": "locationblock",
     "long": "m]:flag@4(-move&(BLOCK))",
-    "text": "Marked location cannot be moved on if there isn't a unit there and blocks movement.",
+    "text": "Marked location cannot be targeted by Move and blocks movement for 4 turns.",
     "color": [0,0,0],
     "color2": [255,255,255],
     "symbol1": "\u2742",
