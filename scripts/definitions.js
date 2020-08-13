@@ -1681,6 +1681,25 @@ MOVES = [{
    "symbol2": "\u26aa",
    "hide": true
  }, {
+   "id": "b51",
+   "cat": "limited",
+   "name": "chill",
+   "text": "(Magic) Chill enemy unit for 5 turns, freezing them if they act.",
+   "color": [107,205,253],
+   "color2": [255,255,255],
+   "color3": [205,205,253],
+   "symbol1": "\u2744",
+   "hide": true
+ }, {
+   "id": "b52",
+   "cat": "limited",
+   "name": "overlap",
+   "text": "Move to location, overlapping any unit on that location until that location is unoccupied.",
+   "color": [0,0,0],
+   "color2": [255,255,255],
+   "symbol1": "\u25a7",
+   "hide": true
+ }, {
    "id": "c1",
    "cat": "custom",
    "name": "custom1",
