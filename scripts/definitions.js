@@ -1697,7 +1697,7 @@ MOVES = [{
    "text": "Move to location, overlapping any unit on that location until that location is unoccupied.",
    "color": [0,0,0],
    "color2": [255,255,255],
-   "symbol1": "\u25a7",
+   "symbol1": "\uf220",
    "hide": true
  }, {
    "id": "b53",
