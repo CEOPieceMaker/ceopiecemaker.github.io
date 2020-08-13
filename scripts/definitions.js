@@ -1671,6 +1671,16 @@ MOVES = [{
    "symbol1": "\u{1f5d8}",
    "hide": true
  }, {
+   "id": "b50",
+   "cat": "limited",
+   "name": "empower",
+   "text": "(Magic) Empower ally unit, allowing them to destroy an adjacent enemy unit for 3 turns.",
+   "color": [255,127,127],
+   "color2": [255,255,255],
+   "symbol1": "\ufe56",
+   "symbol2": "\u26aa",
+   "hide": true
+ }, {
    "id": "c1",
    "cat": "custom",
    "name": "custom1",
