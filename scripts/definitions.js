@@ -1341,7 +1341,7 @@ MOVES = [{
     "cat": "limited",
     "name": "pullunder",
     "long": "c]ru:(EXILE)3@pos",
-    "text": "(Magic) Exile unit, then return them in 3 turns.",
+    "text": "(Magic) Exile unit, then return them in at least 3 turns when location is unoccupied.",
     "color": [0,80,150],
     "color3": [0,0,0],
     "symbol1": "\u2742",
