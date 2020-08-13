@@ -1643,6 +1643,34 @@ MOVES = [{
    "symbol1": "\u26AB",
    "hide": true
  }, {
+   "id": "b47",
+   "cat": "limited",
+   "name": "attackany",
+   "text": "Attack enemy or ally.",
+   "color": [255,0,0],
+   "color2": [0,0,0],
+   "symbol1": "\u2747",
+   "hide": true
+ }, {
+   "id": "b48",
+   "cat": "limited",
+   "name": "jumpattackany",
+   "text": "(Unblockable) Attack enemy or ally.",
+   "color": [127,0,0],
+   "color2": [0,0,0],
+   "symbol1": "\u2747",
+   "hide": true
+ }, {
+   "id": "b49",
+   "cat": "limited",
+   "name": "movementswitch",
+   "text": "Switch the caster's Move actions to Attack, and vice versa.",
+   "color": [0,0,255],
+   "color2": [255,255,0],
+   "color3": [255,0,0],
+   "symbol1": "\u{1f5d8}",
+   "hide": true
+ }, {
    "id": "c1",
    "cat": "custom",
    "name": "custom1",
