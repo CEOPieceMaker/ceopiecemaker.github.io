@@ -1712,6 +1712,17 @@ MOVES = [{
    "symbol2": "\ue905",
    "hide": true
  }, {
+   "id": "b54",
+   "cat": "limited",
+   "name": "invokepathblocker",
+   "text": "(Passive) Abilities can't be cast through this location. Invoke to toggle between on and off.",
+   "color": [0,0,0],
+   "color2": [255,255,255],
+   "color4": [255,0,0],
+   "symbol1": "\ue700",
+   "symbol2": "x",
+   "hide": true
+ }, {
    "id": "c1",
    "cat": "custom",
    "name": "custom1",
