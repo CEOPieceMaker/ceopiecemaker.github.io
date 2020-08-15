@@ -1428,7 +1428,9 @@ MOVES = [{
     "text": "(Ranged) Destroy target and freeze adjacent units perpendicular to target for 1 turn. Cannot target units immune to freeze.",
     "color": [107,205,253],
     "color2": [255,255,255],
-    "symbol1": "\u2316",
+    "color3": [0,0,255],
+    "symbol1": "\u21f9",
+    "symbol2": "\u2316",
     "hide": true
  }, {
     "id": "b24",
@@ -1437,7 +1439,9 @@ MOVES = [{
     "text": "(Magic) Invigorate ally unit, making them able to act regardless of negative status effects for 2 turns.",
     "color": [0,0,0],
     "color2": [58,233,93],
-    "symbol1": "\u274b",
+    "color4": [58,233,93],
+    "symbol1": "\u2bce",
+    "symbol2": "\u2bcd",
     "hide": true
  }, {
     "id": "b25",
@@ -1446,8 +1450,9 @@ MOVES = [{
     "text": "(Trigger) At the end of your turn teleport to this empty location before returning to your previous position at the end of your opponent's turn.",
     "color": [121,19,153],
     "color2": [255,255,255],
-    "symbol1": "\u25c7",
-    "symbol2": "\uea14",
+    "color3": [0,127,127],
+    "symbol1": "\uea14",
+    "symbol2": "\u25c7",
     "hide": true
  }, {
     "id": "b26",
@@ -1474,7 +1479,9 @@ MOVES = [{
     "text": "(Magic) Transform self into most recently fallen unit of value X or less, where X is twice this unit's value.",
     "color": [0,0,0],
     "color2": [255,255,255],
-    "symbol1": "\uea22",
+    "color4": [255,255,255],
+    "symbol1": "\uea04",
+    "symbol2": "\uea22",
     "hide": true
  }, {
     "id": "b29",
@@ -1492,8 +1499,10 @@ MOVES = [{
     "text": "(Magic) Enchant self and target ally for 2 turns and lose 5 value. If this unit reaches 0 value this ability can't be used.",
     "color": [0,102,255],
     "color2": [0,0,0],
-    "color3": [0,255,255],
-    "symbol1": "\uea2a",
+    "color3": [0,0,0],
+    "color4": [0,255,255],
+    "symbol1": "\u2b1b",
+    "symbol2": "\uea2a",
     "hide": true
  }, {
     "id": "b31",
