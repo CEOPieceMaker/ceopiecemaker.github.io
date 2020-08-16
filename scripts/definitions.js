@@ -73,7 +73,7 @@ MOVES = [{
    "cat": "official",
    "name": "skeleton",
    "long": "4p]ru:summon@SKELETON&set@value=0",
-   "text": "[Pay 5]: (Magic) Summon Value 0 Skeleton.",
+   "text": "[Pay 4]: (Magic) Summon Value 0 Skeleton.",
    "color": [102,102,102],
    "color3": [0,0,0],
    "symbol1": "\u26e7"
@@ -189,8 +189,8 @@ MOVES = [{
    "id": "23",
    "cat": "official",
    "name": "moon",
-   "long": "pt]:meleedeath?summon@this&set@value-=10",
-   "text": "(Trigger) On Melee Death: Revive into this empty location with value decreased by 10. If this unit's value is less than 10 this ability cannot activate.",
+   "long": "pt]:meleedeath?summon@this&set@value-=12",
+   "text": "(Trigger) On Melee Death: Revive into this empty location with value decreased by 12. If this unit's value is less than 12 this ability cannot activate.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u263d"
@@ -526,8 +526,8 @@ MOVES = [{
  }, {
    "id": "60",
    "cat": "official",
-   "name": "moveleapattack",
-   "text": "Move or Leap-Attack.",
+   "name": "chainleapattack",
+   "text": "(Unblockable) Move or begin Leap-Attack chain, landing one space over the enemy and repeating consecutively in the same direction.",
    "color": [0,0,255],
    "color3": [255,0,0],
    "symbol1": "\u26AB"
@@ -567,7 +567,7 @@ MOVES = [{
    "id": "65",
    "cat": "official",
    "name": "null",
-   "text": "(Magic) Target enemy value becomes 0.",
+   "text": "(Magic) Target unit can no longer block movement and their value becomes 0.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\ue907"
@@ -575,7 +575,7 @@ MOVES = [{
    "id": "66",
    "cat": "official",
    "name": "void",
-   "text": "[Pay 1]: (Ranged) Convert target enemy default moveset into basic move/teleport abilities, and negate their augments, if any.",
+   "text": "[Pay 2]: (Ranged) Convert target enemy default moveset into basic move/teleport abilities, and negate their augments, if any.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\uea81"
@@ -1082,6 +1082,16 @@ MOVES = [{
    "symbol1": "\u{1f5d8}",
    "hide": true
  }, {
+   "id": "18a",
+   "cat": "limited",
+   "name": "actualsorcer",
+   "long": "3b]ru:attack",
+   "text": "[Pay 3] (Magic) Destroy target.",
+   "color": [255,0,0],
+   "color2": [255,255,255],
+   "symbol1": "\uffec",
+   "hide": true
+ }, {
     "id": "27b",
     "cat": "limited",
     "name": "magicportal",
@@ -1117,10 +1127,10 @@ MOVES = [{
  }, {
     "id": "60b",
     "cat": "limited",
-    "name": "jumpleap",
-    "text": "(Unblockable) Move or Leap-Attack.",
-    "color": [121,19,153],
-    "color3": [0,255,0],
+    "name": "moveleapattack",
+    "text": "Move or Leap-Attack.",
+    "color": [0,0,255],
+    "color3": [255,127,127],
     "symbol1": "\u26AB",
     "hide": true
  }, {
@@ -1135,8 +1145,8 @@ MOVES = [{
  }, {
    "id": "65a",
    "cat": "limited",
-   "name": "newnull",
-   "text": "(Magic) Target enemy becomes unable to block movement and their value becomes 0.",
+   "name": "oldnull",
+   "text": "(Magic) Target enemy value becomes 0.",
    "color": [255,255,255],
    "color2": [0,0,0],
    "symbol1": "\ue907",
@@ -1144,10 +1154,10 @@ MOVES = [{
  }, {
    "id": "65b",
    "cat": "limited",
-   "name": "newnullany",
-   "text": "(Magic) Target unit becomes unable to block movement and their value becomes 0.",
-   "color": [255,255,0],
-   "color2": [0,0,0],
+   "name": "nullany",
+   "text": "(Magic) Target unit can no longer block movement and their value becomes 0.",
+   "color": [0,0,0],
+   "color2": [255,255,0],
    "symbol1": "\ue907",
    "hide": true
  }, {
