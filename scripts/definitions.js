@@ -567,7 +567,7 @@ MOVES = [{
    "id": "65",
    "cat": "official",
    "name": "null",
-   "text": "(Magic) Target unit can no longer block movement and their value becomes 0.",
+   "text": "(Magic) Target enemy can no longer block movement and their value becomes 0.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\ue907"
@@ -1086,7 +1086,7 @@ MOVES = [{
    "cat": "limited",
    "name": "actualsorcer",
    "long": "3b]ru:attack",
-   "text": "[Pay 3] (Magic) Destroy target.",
+   "text": "[Pay 3]: (Magic) Destroy target.",
    "color": [255,0,0],
    "color2": [255,255,255],
    "symbol1": "\uffec",
