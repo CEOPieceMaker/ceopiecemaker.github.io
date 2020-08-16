@@ -1082,7 +1082,7 @@ MOVES = [{
    "symbol1": "\u{1f5d8}",
    "hide": true
  }, {
-   "id": "18a",
+   "id": "18e",
    "cat": "limited",
    "name": "actualsorcer",
    "long": "3b]ru:attack",
