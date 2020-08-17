@@ -231,7 +231,7 @@ MOVES = [{
    "text": "Teleport Ability Target to this empty location.",
    "color": [102,0,154],
    "color2": [255,255,255],
-   "color3": [192,0,255],
+   "color3": [215,147,255],
    "color4": [0,0,0],
    "symbol1": "\u25cf",
    "symbol2": "o" /*25e6*/
@@ -242,8 +242,8 @@ MOVES = [{
    "long": "1c]rn:push#\\(mn:move@3(AWAY))",
    "text": "[Pay 1]: (Ranged) Push unit up to 3 spaces away from caster.",
    "color": [87,218,40],
-   "color2": [255,255,255],
-   "symbol1": "\u25cc"
+   "color2": [212,255,216],
+   "symbol1": "\u25fd"
  }, {
    "id": "29",
    "cat": "official",
