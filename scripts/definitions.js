@@ -243,6 +243,7 @@ MOVES = [{
    "text": "[Pay 1]: (Ranged) Push unit up to 3 spaces away from caster.",
    "color": [87,218,40],
    "color2": [212,255,216],
+   "color3": [0,204,0],
    "symbol1": "\u25fd"
  }, {
    "id": "29",
@@ -1321,9 +1322,10 @@ MOVES = [{
     "name": "bullrush",
     "long": "c]mn:push#\\(mn:move@3(AWAY))",
     "text": "Move to unit and push them up to 3 spaces away.",
-    "color": [87,218,40],
-    "color2": [255,255,255],
-    "symbol1": "\u2b1a",
+    "color": [218,87,40],
+    "color2": [255,212,216],
+    "color3": [204,0,0],
+    "symbol1": "\u25fd",
     "hide": true
  }, {
     "id": "b12",
