@@ -1910,7 +1910,7 @@ PASSIVES = ["Does not block movement.",
 LABELS = {
     rank: ["Minion", "Champion", "King", "Outcast"],
     faction: ["Basic", "Clan", "Arcane", "Forest", "Unique", "Hero"],
-    rarity: ["Common", "Rare", "Epic", "Legendary"]
+    rarity: ["Common", "Rare", "Epic", "Legendary", "Mythic"]
 }
 LEVELS = ["base", "plus", "plusplus", "plusplusplus"];
 
