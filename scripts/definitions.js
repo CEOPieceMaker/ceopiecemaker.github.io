@@ -1539,8 +1539,8 @@ MOVES = [{
     "cat": "limited",
     "name": "verticalpathdestroy",
     "text": "(Path, Ranged) Destroy target.",
-    "color": [0,0,0],
-    "color2": [153,77,0],
+    "color": [255,0,0],
+    "color2": [255,255,255],
     "symbol1": "\ue702",
     "hide": true
  }, {
@@ -1548,8 +1548,8 @@ MOVES = [{
     "cat": "limited",
     "name": "horizontalpathdestroy",
     "text": "(Path, Ranged) Destroy target.",
-    "color": [0,0,0],
-    "color2": [153,77,0],
+    "color": [255,0,0],
+    "color2": [255,255,255],
     "symbol1": "\ue700",
     "hide": true
  }, {
@@ -1557,8 +1557,8 @@ MOVES = [{
     "cat": "limited",
     "name": "antidiagonalpathdestroy",
     "text": "(Path, Ranged) Destroy target.",
-    "color": [0,0,0],
-    "color2": [153,77,0],
+    "color": [255,0,0],
+    "color2": [255,255,255],
     "symbol1": "\ue701",
     "hide": true
  }, {
@@ -1566,8 +1566,8 @@ MOVES = [{
     "cat": "limited",
     "name": "diagonalpathdestroy",
     "text": "(Path, Ranged) Destroy target.",
-    "color": [0,0,0],
-    "color2": [153,77,0],
+    "color": [255,0,0],
+    "color2": [255,255,255],
     "symbol1": "\ue703",
     "hide": true
   }, {
