@@ -1792,7 +1792,51 @@ MOVES = [{
    "text": "move or attack (unblockable)",
    "nobox": true,
    "color3": [0,0,0],
+   "symbol1": "\u25cf",
+   "hide": true
+ }, {
+   "id": "fc5",
+   "cat": "favor",
+   "name": "favorchessjumpmove",
+   "long": "b]mu:move",
+   "text": "move (unblockable)",
+   "nobox": true,
+   "color3": [97,119,224],
+   "symbol1": "\u25cf",
+   "hide": true
+ }, {
+   "id": "fc6",
+   "cat": "favor",
+   "name": "favorchessjumpattack",
+   "long": "b]mu:attack",
+   "text": "attack (unblockable)",
+   "nobox": true,
+   "color3": [237,28,36],
+   "symbol1": "\u25cf",
+   "hide": true
+ }, {
+   "id": "fc7",
+   "cat": "favor",
+   "name": "favorchessmovestart",
+   "long": "b]mn:startpos?move",
+   "text": "move (only from starting position)",
+   "nobox": true,
+   "color3": [97,119,224],
+   "color4": [255,255,255],
    "symbol1": "\u25a0",
+   "symbol2": "\u0405",
+   "hide": true
+ }, {
+   "id": "fc8",
+   "cat": "favor",
+   "name": "favorchessjumpmovestart",
+   "long": "b]mu:startpos?move",
+   "text": "move (unblockable) (only from starting position)",
+   "nobox": true,
+   "color3": [97,119,224],
+   "color4": [255,255,255],
+   "symbol1": "\u25cf",
+   "symbol2": "\u0405",
    "hide": true
  }, {
    "id": "fc9",
@@ -1805,6 +1849,108 @@ MOVES = [{
    "color4": [255,255,255],
    "symbol1": "\u25a0",
    "symbol2": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "fc10",
+   "cat": "favor",
+   "name": "favorchessmoveswap",
+   "long": "b]mn:move/swap",
+   "text": "move or swap ally",
+   "nobox": true,
+   "color3": [97,119,224],
+   "color4": [255,255,255],
+   "symbol1": "\u25a0",
+   "symbol2": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "fc11",
+   "cat": "favor",
+   "name": "favorchessmoveattackswap",
+   "long": "b]mn:attack/swap",
+   "text": "attack or swap ally",
+   "nobox": true,
+   "color3": [237,28,36],
+   "color4": [255,255,255],
+   "symbol1": "\u25a0",
+   "symbol2": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "fc12",
+   "cat": "favor",
+   "name": "favorchessswap",
+   "long": "b]mn:swap",
+   "text": "swap ally",
+   "nobox": true,
+   "color3": [127,127,127],
+   "color4": [255,255,255],
+   "symbol1": "\u25a0",
+   "symbol2": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "fc13",
+   "cat": "favor",
+   "name": "favorchessjumpswap",
+   "long": "b]mu:move/attack/swap",
+   "text": "move or attack or swap ally (unblockable)",
+   "nobox": true,
+   "color3": [0,0,0],
+   "color4": [255,255,255],
+   "symbol1": "\u25cf",
+   "symbol2": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "fc14",
+   "cat": "favor",
+   "name": "favorchessjumpmoveswap",
+   "long": "b]mu:move/swap",
+   "text": "move or swap ally (unblockable)",
+   "nobox": true,
+   "color3": [97,119,224],
+   "color4": [255,255,255],
+   "symbol1": "\u25cf",
+   "symbol2": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "fc15",
+   "cat": "favor",
+   "name": "favorchessjumpattackswap",
+   "long": "b]mu:attack/swap",
+   "text": "attack or swap ally (unblockable)",
+   "nobox": true,
+   "color3": [237,28,36],
+   "color4": [255,255,255],
+   "symbol1": "\u25cf",
+   "symbol2": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "fc16",
+   "cat": "favor",
+   "name": "favorchessswapjump",
+   "long": "b]mu:swap",
+   "text": "swap ally (unblockable)",
+   "nobox": true,
+   "color3": [127,127,127],
+   "color4": [255,255,255],
+   "symbol1": "\u25cf",
+   "symbol2": "\u{1f5d8}",
+   "hide": true
+ }, {
+   "id": "fc17",
+   "cat": "favor",
+   "name": "favorchessuseability",
+   "text": "use ability",
+   "nobox": true,
+   "color3": [255,242,0],
+   "symbol1": "\u25a0",
+   "hide": true
+ }, {
+   "id": "fc18",
+   "cat": "favor",
+   "name": "favorchessunblockableuseability",
+   "text": "use ability (unblockable)",
+   "nobox": true,
+   "color3": [255,242,0],
+   "symbol1": "\u25cf",
    "hide": true
  }, {
    "id": "c1",
