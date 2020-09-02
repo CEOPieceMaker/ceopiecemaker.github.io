@@ -1745,7 +1745,7 @@ MOVES = [{
    "symbol1": "\ue700",
    "symbol2": "x",
    "hide": true
-}, {
+ }, {
    "id": "6zz",
    "cat": "exile",
    "name": "jumpmove",
@@ -1753,6 +1753,18 @@ MOVES = [{
    "text": "(Unblockable) Move only.",
    "color": [0,0,255],
    "color2": [0,0,127],
+   "hide": true
+ }, {
+   "id": "fc7",
+   "cat": "custom",
+   "name": "favorchessmoveattackswap",
+   "long": "b]mu:move/attack/swap",
+   "text": "move or attack or swap ally",
+   "nobox": true,
+   "color3": [0,0,0],
+   "color4": [255,255,255],
+   "symbol1": "\u25a0",
+   "symbol2": "\u{1f5d8}",
    "hide": true
  }, {
    "id": "c1",
