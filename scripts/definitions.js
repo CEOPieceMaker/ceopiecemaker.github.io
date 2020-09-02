@@ -1755,10 +1755,50 @@ MOVES = [{
    "color2": [0,0,127],
    "hide": true
  }, {
-   "id": "fc7",
-   "cat": "custom",
+   "id": "fc1",
+   "cat": "favor",
+   "name": "favorchessmoveattack",
+   "long": "b]mn:move/attack",
+   "text": "move or attack",
+   "nobox": true,
+   "color3": [0,0,0],
+   "symbol1": "\u25a0",
+   "hide": true
+ }, {
+   "id": "fc2",
+   "cat": "favor",
+   "name": "favorchessmove",
+   "long": "b]mn:move",
+   "text": "move",
+   "nobox": true,
+   "color3": [97,119,224],
+   "symbol1": "\u25a0",
+   "hide": true
+ }, {
+   "id": "fc3",
+   "cat": "favor",
+   "name": "favorchessattack",
+   "long": "b]mn:attack",
+   "text": "attack",
+   "nobox": true,
+   "color3": [237,28,36],
+   "symbol1": "\u25a0",
+   "hide": true
+ }, {
+   "id": "fc4",
+   "cat": "favor",
+   "name": "favorchessjump",
+   "long": "b]mu:move/attack",
+   "text": "move or attack (unblockable)",
+   "nobox": true,
+   "color3": [0,0,0],
+   "symbol1": "\u25a0",
+   "hide": true
+ }, {
+   "id": "fc9",
+   "cat": "favor",
    "name": "favorchessmoveattackswap",
-   "long": "b]mu:move/attack/swap",
+   "long": "b]mn:move/attack/swap",
    "text": "move or attack or swap ally",
    "nobox": true,
    "color3": [0,0,0],
