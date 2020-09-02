@@ -1749,8 +1749,8 @@ MOVES = [{
    "id": "6zz",
    "cat": "exile",
    "name": "jumpmove",
-   "long": "b]mu:attack",
-   "text": "(Unblockable) Attack only.",
+   "long": "b]mu:move",
+   "text": "(Unblockable) Move only.",
    "color": [0,0,255],
    "color2": [0,0,127],
    "hide": true
