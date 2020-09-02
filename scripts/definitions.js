@@ -73,7 +73,7 @@ MOVES = [{
    "cat": "official",
    "name": "skeleton",
    "long": "4p]ru:summon@SKELETON&set@value=0",
-   "text": "[Pay 4]: (Magic) Summon Value 0 Skeleton.",
+   "text": "[Pay 4]: (Magic) Summon value 0 Skeleton.",
    "color": [102,102,102],
    "color3": [0,0,0],
    "symbol1": "\u26e7"
