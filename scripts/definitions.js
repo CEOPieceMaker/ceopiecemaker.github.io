@@ -1745,6 +1745,15 @@ MOVES = [{
    "symbol1": "\ue700",
    "symbol2": "x",
    "hide": true
+}, {
+   "id": "6zz",
+   "cat": "exile",
+   "name": "jumpmove",
+   "long": "b]mu:attack",
+   "text": "(Unblockable) Attack only.",
+   "color": [0,0,255],
+   "color2": [0,0,127],
+   "hide": true
  }, {
    "id": "c1",
    "cat": "custom",
