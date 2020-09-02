@@ -1865,7 +1865,7 @@ MOVES = [{
  }, {
    "id": "fc11",
    "cat": "favor",
-   "name": "favorchessmoveattackswap",
+   "name": "favorchessattackswap",
    "long": "b]mn:attack/swap",
    "text": "attack or swap ally",
    "nobox": true,
