@@ -1531,7 +1531,7 @@ MOVES = [{
     "id": "b32",
     "cat": "limited",
     "name": "moraleboost",
-    "text": "[Pay 12]: (Magic) Morale Boost unit for 15 turns, making them give you 1 morale each turn.",
+    "text": "[Pay 12]: (Magic) Morale Boost ally for 15 turns, making them give you 1 morale each turn.",
     "color": [0,255,0],
     "color2": [0,0,0],
     "symbol1": "\ufe62",
