@@ -2072,7 +2072,8 @@ MOVES = [{
    "name": "custom15",
    "long": "z]",
    "text": "Custom ability 15 (Double Click Menu Icon to Edit)",
-   "color": [255,255,0],
+   "color": [255,255,255],
+   "color2": [235,235,235],
    "symbol1": "F"
  }, {
    "id": "c16",
@@ -2080,7 +2081,9 @@ MOVES = [{
    "name": "custom16",
    "long": "z]",
    "text": "Custom ability 16 (Double Click Menu Icon to Edit)",
-   "nobox": true
+   "nobox": true,
+   "color3": [0,0,0],
+   "symbol1": "\ue23e"
  }, {
     "id": "moonfox",
     "cat": "custom",
