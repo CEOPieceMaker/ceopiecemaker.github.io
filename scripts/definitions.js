@@ -1521,18 +1521,20 @@ MOVES = [{
  }, {
     "id": "b31",
     "cat": "limited",
-    "name": "useability",
-    "text": "(Ranged) Use Ability.",
-    "color": [255,255,0],
+    "name": "powersquare",
+    "text": "(Magic) Mark location as power square or refresh power square.",
+    "color": [0,255,0],
     "color2": [255,255,255],
-    "symbol1": "\u2316",
+    "symbol1": "\u2655",
     "hide": true
  }, {
     "id": "b32",
     "cat": "limited",
-    "name": "magicuseability",
-    "text": "(Magic) Use Ability.",
-    "color": [255,255,0],
+    "name": "moraleboost",
+    "text": "[Pay 12]: (Magic) Morale Boost unit for 15 turns, making them give you 1 morale each turn.",
+    "color": [0,255,0],
+    "color2": [0,0,0],
+    "symbol1": "\ufe62",
     "hide": true
  }, {
     "id": "b33",
