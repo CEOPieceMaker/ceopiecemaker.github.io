@@ -1083,6 +1083,14 @@ MOVES = [{
    "symbol1": "\u{1f5d8}",
    "hide": true
  }, {
+   "id": "0e",
+   "cat": "limited",
+   "name": "teleportswapenemy",
+   "long": "b]mu:move/!ally?swap",
+   "text": "(Unblockable) Teleport or swap places with enemy.",
+   "color": [255,0,100],
+   "hide": true
+ }, {
    "id": "18e",
    "cat": "limited",
    "name": "actualsorcer",
