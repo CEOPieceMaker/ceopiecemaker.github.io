@@ -484,7 +484,7 @@ paper.install(window);
 			},
 			enchant: {
 				gradient: {
-					stops: ["#0ff", ["#00f", 0.8]],
+					stops: ["rgba(0,255,255,0.4)", ["rgba(0,0,255,0.4)", 0.8]],
 					radial: true
 				},
 				origin: path.position,
