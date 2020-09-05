@@ -411,9 +411,41 @@ paper.install(window);
 				},
 				origin: path.position,
 				destination: path.bounds.leftCenter
+			},
+			dark: {
+				gradient: {
+					stops: ["#888", ["#444", 0.8]],
+					radial: true
+				},
+				origin: path.position,
+				destination: path.bounds.leftCenter
+			},
+			red: {
+				gradient: {
+					stops: ["#c88", ["#844", 0.8]],
+					radial: true
+				},
+				origin: path.position,
+				destination: path.bounds.leftCenter
+			},
+			green: {
+				gradient: {
+					stops: ["#8c8", ["#484", 0.8]],
+					radial: true
+				},
+				origin: path.position,
+				destination: path.bounds.leftCenter
+			},
+			blue: {
+				gradient: {
+					stops: ["#88c", ["#448", 0.8]],
+					radial: true
+				},
+				origin: path.position,
+				destination: path.bounds.leftCenter
 			}
 		}
-		__fills = ["base","stand","head","grey"];
+		__fills = ["base","stand","head","grey","dark","red","green","blue"];
 		path.fillColor = __grads[__fills[sketch.fill]];
 	}
 
