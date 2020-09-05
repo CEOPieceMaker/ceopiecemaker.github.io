@@ -412,7 +412,7 @@ paper.install(window);
 				origin: path.position,
 				destination: path.bounds.leftCenter
 			},
-			dark: {
+			black: {
 				gradient: {
 					stops: ["#888", ["#444", 0.8]],
 					radial: true
@@ -445,7 +445,7 @@ paper.install(window);
 				destination: path.bounds.leftCenter
 			}
 		}
-		__fills = ["base","stand","head","grey","dark","red","green","blue"];
+		__fills = ["base","stand","head","grey","black","red","green","blue"];
 		path.fillColor = __grads[__fills[sketch.fill]];
 	}
 
