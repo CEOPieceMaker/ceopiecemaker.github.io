@@ -499,7 +499,7 @@ paper.install(window);
 			},
 			chaos: {
 				gradient: {
-					stops: ["#000", ["rgba(255,255,255,0)", 0.8]],
+					stops: ["#000", ["rgba(0,0,0,0)", 0.8]],
 					radial: true
 				},
 				origin: path.position,
