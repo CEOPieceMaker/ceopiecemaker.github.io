@@ -443,9 +443,70 @@ paper.install(window);
 				},
 				origin: path.position,
 				destination: path.bounds.leftCenter
+			},
+			yellow: {
+				gradient: {
+					stops: ["#cc8", ["#884", 0.8]],
+					radial: true
+				},
+				origin: path.position,
+				destination: path.bounds.leftCenter
+			},
+			cyan: {
+				gradient: {
+					stops: ["#8cc", ["#488", 0.8]],
+					radial: true
+				},
+				origin: path.position,
+				destination: path.bounds.leftCenter
+			},
+			pink: {
+				gradient: {
+					stops: ["#c8c", ["#848", 0.8]],
+					radial: true
+				},
+				origin: path.position,
+				destination: path.bounds.leftCenter
+			},
+			shadow: {
+				gradient: {
+					stops: ["#333", ["#111", 0.2], ["#111", 0.8], "#333"],
+				},
+				origin: path.bounds.leftCenter,
+				destination: path.bounds.rightCenter
+			},
+			white: {
+				gradient: {
+					stops: ["#fff", "#fff"],
+				},
+				origin: path.bounds.leftCenter,
+				destination: path.bounds.rightCenter
+			},
+			enchant: {
+				gradient: {
+					stops: ["#0ff", ["#00f", 0.8]],
+					radial: true
+				},
+				origin: path.position,
+				destination: path.bounds.leftCenter
+			},
+			rainbow: {
+				gradient: {
+					stops: ["#f00", ["#f80", 0.125], ["#ff0", 0.25], ["#0f0", 0.375], ["#0ff", 0.5], ["#00f", 0.625], ["#80f", 0.75], ["#f0f", 0.875], "#f00"],
+				},
+				origin: path.bounds.leftCenter,
+				destination: path.bounds.rightCenter
+			},
+			chaos: {
+				gradient: {
+					stops: ["#000", ["rgba(255,255,255,0)", 0.8]],
+					radial: true
+				},
+				origin: path.position,
+				destination: path.bounds.leftCenter
 			}
 		}
-		__fills = ["base","stand","head","grey","black","red","green","blue"];
+		__fills = ["base","stand","head","grey","black","red","green","blue","yellow","cyan","pink","shadow","white","enchant","rainbow","chaos"];
 		path.fillColor = __grads[__fills[sketch.fill]];
 	}
 
