@@ -510,7 +510,7 @@ paper.install(window);
 		path.fillColor = __grads[__fills[sketch.fill]];
 	}
 
-	__sizes = [2,3,5,10];
+	__sizes = [0,0.5,1,2,3,4,5,10];
 	$(document).keyup(function (e) {
 		if(!sketch)return;
 		var $e = $(e.target);
