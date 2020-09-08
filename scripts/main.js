@@ -1086,3 +1086,13 @@ $("#action svg, .cusmodalbody .moves.gallery svg").mouseleave(function () {
   tooltip.style.visibility = "hidden";
 });
 if ($("#code").val()) validate($("#code").val());
+
+$("confirmToolSize").click(function() {
+  let customToolSize = $("#customToolSize").val().trim();
+  sketch.set("size", customToolSize)
+})
+
+$("confirmToolColor").click(function() {
+  let customToolColor = $("#customToolColor").val().trim();
+  sketch.set("color", customToolColor)
+})
