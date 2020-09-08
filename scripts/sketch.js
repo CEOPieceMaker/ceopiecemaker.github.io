@@ -504,9 +504,17 @@ paper.install(window);
 				},
 				origin: path.position,
 				destination: path.bounds.leftCenter
+			},
+			testing: {
+				gradient: {
+					stops: ["rgba (61, 202, 250, 0.87)", ["rgba (250, 137, 25, 1)", 0.4], ["rgba (61, 202, 250, 0.87)", 0.8]],
+					radial: true
+				},
+				origin: path.position,
+				destination: path.bounds.leftCenter
 			}
 		}
-		__fills = ["base","stand","head","grey","black","red","green","blue","yellow","cyan","pink","shadow","white","enchant","rainbow","chaos"];
+		__fills = ["base","stand","head","grey","black","red","green","blue","yellow","cyan","pink","shadow","white","enchant","rainbow","chaos","testing"];
 		path.fillColor = __grads[__fills[sketch.fill]];
 	}
 
