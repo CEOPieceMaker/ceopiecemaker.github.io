@@ -2174,6 +2174,10 @@ TOOLTIPS = {
     do1: "Redo:\nRedo an undone Path.",
     do2: "Download:\nUseless.",
     do3: "Clear:\nRemove all Paths. Cannot be undone.",
+    customToolSize: "Input a custom tool size here.\nTakes a number.",
+    confirmToolSize: "Confirm your custom tool size with this button.",
+    customToolColor: "Input a custom tool color here.\nTakes a hex code.",
+    confirmToolColor: "Confirm your custom tool color with this button.",
 };
 
 var translation = ["進むや取ることができる。",
