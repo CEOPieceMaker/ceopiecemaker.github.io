@@ -133,7 +133,30 @@
       <nav>
         Custom Size: <textarea id="customToolSize" placeholder="3" rows="1" cols="12"></textarea><button id="confirmToolSize">Confirm</button>
       </nav>
-    <div class="left">Fill Color (Shape only)</div>
+    <div class="left">Tool Type</div>
+      <nav>
+        <a id="tt0" href="#c" data-tool="marker">Marker</a>
+        <a id="tt1" href="#c" data-tool="line">Line</a>
+        <a id="tt2" href="#c" data-tool="vector">Path</a>
+      </nav>
+      <nav>
+        <a id="tt3" href="#c" data-tool="eraser">Eraser</a>
+        <a id="tt4" href="#c" data-tool="leraser">Line Eraser</a>
+        <a id="tt5" href="#c" data-tool="vshape">Shape</a>
+      </nav>
+    <div class="left">Tool Color</div>
+      <nav>
+        <a id="tc0" href="#c" data-color="#000">Black</a>
+        <a id="tc1" href="#c" data-color="#FFF">White</a>
+        <a id="tc2" href="#c" data-color="#C926F9">Purple</a>
+        <a id="tc3" href="#c" data-color="#C95418">Orange</a>
+        <a id="tc4" href="#c" data-color="#FC0D39">Red</a>
+      </nav>
+      <nav>
+        Custom Color: <textarea id="customToolColor" placeholder="#000000" rows="1" cols="12"></textarea><button id="confirmToolColor">Confirm</button>
+      </nav>
+    <details class="left">
+      <summary>Fill Color (Shape only)</summary>
       <nav>
         <a id="tf0" href="#c" data-fill="0">Base</a>
         <a id="tf1" href="#c" data-fill="1">Support</a>
@@ -158,28 +181,7 @@
         <a id="tf14" href="#c" data-fill="14">Rainbow</a>
         <a id="tf15" href="#c" data-fill="15">Chaos</a>
      </nav>
-    <div class="left">Tool Type</div>
-      <nav>
-        <a id="tt0" href="#c" data-tool="marker">Marker</a>
-        <a id="tt1" href="#c" data-tool="line">Line</a>
-        <a id="tt2" href="#c" data-tool="vector">Path</a>
-      </nav>
-      <nav>
-        <a id="tt3" href="#c" data-tool="eraser">Eraser</a>
-        <a id="tt4" href="#c" data-tool="leraser">Line Eraser</a>
-        <a id="tt5" href="#c" data-tool="vshape">Shape</a>
-      </nav>
-    <div class="left">Tool Color</div>
-      <nav>
-        <a id="tc0" href="#c" data-color="#000">Black</a>
-        <a id="tc1" href="#c" data-color="#FFF">White</a>
-        <a id="tc2" href="#c" data-color="#C926F9">Purple</a>
-        <a id="tc3" href="#c" data-color="#C95418">Orange</a>
-        <a id="tc4" href="#c" data-color="#FC0D39">Red</a>
-      </nav>
-      <nav>
-        Custom Color: <textarea id="customToolColor" placeholder="#000000" rows="1" cols="12"></textarea><button id="confirmToolColor">Confirm</button>
-      </nav>
+    </details>
     <div class="left">Operations</div>
       <nav>
         <a id="do0" href="#c" data-operation="undo">Undo</a>
