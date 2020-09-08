@@ -2135,14 +2135,12 @@ LABELS = {
 LEVELS = ["base", "plus", "plusplus", "plusplusplus"];
 
 TOOLTIPS = {
-    ts0: "Pen Size 2",
-    ts1: "Pen Size 3",
-    ts2: "Pen Size 5",
-    ts3: "Pen Size 10:\nI don't see a use of this outside erasers tbh",
-    ts4: "Pen Size 1:\nFor those who are perfectionists",
+    ts0: "Pen Size 1:\nFor those who are perfectionists",
+    ts1: "Pen Size 2:\nA thin pen for fine detail.",
+    ts2: "Pen Size 3:\nThe default pen size.",
+    ts3: "Pen Size 5:\nA thick pen for coloring things in.",
+    ts4: "Pen Size 10:\nI don't see a use of this outside erasers tbh",
     ts5: "Pen Size 0:\nI hope you like shapes with no outlines...",
-    ts6: "Pen Size 1/2:\nIn case you are StratShotPlayer",
-    ts7: "Pen Size 4:\nThick but not too thick",
     tf0: "Coloring of the base",
     tf1: "Coloring of the middle part (what do you call those? :v)",
     tf2: "Coloring of the \"head\" part",
@@ -2174,10 +2172,6 @@ TOOLTIPS = {
     do1: "Redo:\nRedo an undone Path.",
     do2: "Download:\nUseless.",
     do3: "Clear:\nRemove all Paths. Cannot be undone.",
-    customToolSize: "Input a custom tool size here.\nTakes a number.",
-    confirmToolSize: "Confirm your custom tool size with this button.",
-    customToolColor: "Input a custom tool color here.\nTakes a hex code.",
-    confirmToolColor: "Confirm your custom tool color with this button.",
 };
 
 var translation = ["進むや取ることができる。",
