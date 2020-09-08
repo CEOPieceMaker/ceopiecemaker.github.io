@@ -2165,6 +2165,7 @@ TOOLTIPS = {
     tf13: "Enchantment overlay",
     tf14: "Rainbow gradient, for those who want REALLY colorful pieces",
     tf15: "Fading black radial gradient, like the black ChaosPortal",
+    tf16: "A potential user-submitted gradient.\nGo on the CEO Discord for a chance of your gradient to be in the piecemaker!",
     tt0: "Marker Tool:\nSmooths out after drawing.",
     tt1: "Line Tool",
     tt2: "Path Tool:\nHold Shift to start a new path.\nClick and drag to add new points.\nRelease Shift to finish.",
