@@ -2125,14 +2125,14 @@ PASSIVES = ["Does not block movement.",
     "Promotes to PieceName[+].",
     "On Death: Lose 2[+1] morale.",
     "Blocks one ability.",
-    "Can't be targeted beyond Range 2."
-    "Cannot move until turn 3."
-    "Stealth"
-    "Armored"
-    "Berserk"
-    "Central"
-    "Deployed"
-    "Withdraw"
+    "Can't be targeted beyond Range 2.",
+    "Cannot move until turn 3.",
+    "Stealth",
+    "Armored",
+    "Berserk",
+    "Central",
+    "Deployed",
+    "Withdraw",
     "Indestructible"
 ];
 LABELS = {
