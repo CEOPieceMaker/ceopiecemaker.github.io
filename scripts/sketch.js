@@ -509,7 +509,7 @@ paper.install(window);
 				gradient: {
 					stops: ["#c89e6f", ["#ddb646", 0.5], "#c89e6f"],
 				},
-				origin: path.topLeft,
+				origin: path.bounds.topLeft,
 				destination: path.bounds.bottomRight
 			}
 		}
