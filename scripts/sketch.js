@@ -507,7 +507,7 @@ paper.install(window);
 			},
 			testing: {
 				gradient: {
-					stops: ["#71f843", ["#154704", 0.1], ["#71f843", 0.9]],
+					stops: [["#154704", 0.1], ["#71f843", 0.9]],
 				},
 				origin: path.bounds.topRight,
 				destination: path.bounds.bottomLeft
