@@ -394,7 +394,7 @@ paper.install(window);
 					stops: ["#eee", "#ccc"],
 				},
 				origin: path.bounds.topCenter,
-				destination: path.bounds.bottomCenter,
+				destination: path.bounds.bottomCenter
 			},
 			head: {
 				gradient: {
@@ -507,11 +507,10 @@ paper.install(window);
 			},
 			testing: {
 				gradient: {
-					stops: [["#00ffff", 0.05], ["#40e0d0", 0.2], "#008000"],
-					radial: true
+					stops: ["#00ff00", ["#763b00", 0.3], "#733b00"],
 				},
-				origin: path.position,
-				destination: path.bounds.leftCenter
+				origin: path.bounds.topCenter,
+				destination: path.bounds.bottomCenter
 			}
 		}
 		__fills = ["base","stand","head","grey","black","red","green","blue","yellow","cyan","pink","shadow","white","enchant","rainbow","chaos","testing"];
