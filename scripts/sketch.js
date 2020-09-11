@@ -507,11 +507,11 @@ paper.install(window);
 			},
 			testing: {
 				gradient: {
-					stops: [["rgba(255,255,255,0.85)", 0.3], ["rgba(64,208,64,1)", 0.9]],
+					stops: [["rgba(255,255,255,0.85)", 0.1], ["rgba(64,208,64,0.8)", 0.6]],
 					radial: true
 				},
 				origin: path.position,
-				destination: path.bounds.leftCenter
+				destination: path.bounds.topLeft
 			}
 		}
 		__fills = ["base","stand","head","grey","black","red","green","blue","yellow","cyan","pink","shadow","white","enchant","rainbow","chaos","testing"];
