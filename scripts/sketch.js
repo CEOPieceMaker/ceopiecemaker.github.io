@@ -507,7 +507,7 @@ paper.install(window);
 			},
 			testing: {
 				gradient: {
-					stops: [["rgba(255,255,255,0.85)", 0.2], "rgba(64,208,64,0.8)"],
+					stops: [["rgba(255,255,255,0.85)", 0.2], "rgba(64,208,64,0.9)"],
 					radial: true
 				},
 				origin: path.position,
