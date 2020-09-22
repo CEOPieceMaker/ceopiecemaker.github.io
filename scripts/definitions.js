@@ -3,6 +3,7 @@
  * id  : used for Indexing/Export code. Changes kept to minimum.
  * cat : Deprecated(never used).
  * text: In-game description.
+ * color(234): Border, Fill, Sym1, Sym2 color respectively.
  * Others self-explanatory.
  */
 MOVES = [{
@@ -190,7 +191,7 @@ MOVES = [{
    "cat": "official",
    "name": "moon",
    "long": "pt]:meleedeath?summon@this&set@value-=10",
-   "text": "(Trigger) On Melee Death: Revive into this empty location with value decreased by 10. If this unit's value is less than 10 this ability cannot activate.",
+   "text": "(Trigger) On Melee Death: Revive into this empty location with value decreased by 12. If this unit's value is less than 12 this ability cannot activate.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\u263d"
@@ -526,8 +527,8 @@ MOVES = [{
  }, {
    "id": "60",
    "cat": "official",
-   "name": "moveleapattack",
-   "text": "Move or Leap-Attack.",
+   "name": "moveleapchain",
+   "text": "Move or begin Leap-Attack chain, landing one space over the enemy and repeating consecutively in the same direction.",
    "color": [0,0,255],
    "color3": [255,0,0],
    "symbol1": "\u26AB"
@@ -566,8 +567,8 @@ MOVES = [{
  }, {
    "id": "65",
    "cat": "official",
-   "name": "null",
-   "text": "(Magic) Target enemy value becomes 0.",
+   "name": "nullblock",
+   "text": "(Magic) Target enemy can no longer block movement and their value becomes 0.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\ue907"
@@ -824,7 +825,7 @@ MOVES = [{
    "hide": true
  }, {
    "id": "44b",
-   "cat": "variation",
+   "cat": "legacy",
    "name": "gravityfreeze",
    "long": "1cu]ru:\\(mn:move@A-(AWAY))&freeze#flag@3-move",
    "text": "[Pay 2]: (Magic) Move target unit in the direction of Ability Target until blocked or Ability Target is reached, then freeze target for 1 turn.",
@@ -889,12 +890,31 @@ MOVES = [{
  }, {
    "id": "60a",
    "cat": "variation",
+   "name": "leapchain",
+   "text": "Begin Leap-Attack chain, landing one space over the enemy and repeating consecutively in the same direction.",
+   "color": [127,127,127],
+   "color2": [255, 255, 255],
+   "color3": [255,0,0],
+   "symbol1": "\u26AB",
+   "hide": true
+ }, {
+   "id": "60b",
+   "cat": "legacy",
+   "name": "moveleapattack",
+   "text": "Move or Leap-Attack.",
+   "color": [0,0,255],
+   "color3": [255,0,0],
+   "symbol1": "o",
+   "hide": true
+ }, {
+   "id": "60c",
+   "cat": "variation",
    "name": "leapattack",
    "text": "Leap-Attack only.",
    "color": [127,127,127],
    "color2": [255, 255, 255],
    "color3": [255,0,0],
-   "symbol1": "\u26AB",
+   "symbol1": "o",
    "hide": true
  }, {
    "id": "61a",
@@ -933,6 +953,16 @@ MOVES = [{
    "symbol1": "\ue703",
    "hide": true
  }, {
+   "id": "65a",
+   "cat": "legacy",
+   "name": "null",
+   "text": "(Magic) Target enemy value becomes 0.",
+   "color": [0,0,0],
+   "color2": [255,255,255],
+   "color3": [153,153,153],
+   "symbol1": "\ue907",
+   "hide": true
+ }, {
    "id": "31b",
    "cat": "limbo",
    "name": "hiroshima",
@@ -947,6 +977,7 @@ MOVES = [{
    "long": "cs]ru:flag@3&charm#set@ally",
    "text": "(Magic) Flirt with enemy minion, charming them in 3 turns.",
    "color": [255,0,255],
+   "color3": [153,0,153],
    "symbol1": "\u2665",
    "hide": true
  }, {
@@ -956,6 +987,7 @@ MOVES = [{
    "long": "s]ru:(thispoison#flag@3&attack)&poison#flag@3&attack",
    "text": "(Magic) Poison self and enemy unit, destroying them in 3 turns.",
    "color": [0,101,24],
+   "color3": [0,76,18],
    "symbol1": "\uea27",
    "hide": true
  }, {
@@ -966,7 +998,7 @@ MOVES = [{
    "text": "(Magic) Levitate unit for 2 turns, making them unable to use or be targeted by normal Attacks.",
    "color": [121,19,153],
    "color3": [255,255,0],
-   "symbol1": "^",
+   "symbol1": "\u028c",
    "hide": true
  }, {
    "id": "a4",
@@ -1160,9 +1192,9 @@ var translation = ["進むや取ることができる。",
 "(魔法) 目標をでたらめに選んだ生駒に変化する。",
 "(魔法) 目標をでたらめに選んだ地点に移送する。",
 "(防御不能) このマスに進んで、隣の駒をでたらめに移送する。",
-"[コスト ３] 。",
+"[コスト３] 。",
 "(魔法) 味方を加護し、２ターンまで近距離で取られなくなる。",
-"[コスト １]: (魔法) 敵駒を「ユウレイ」に変化する。",
+"[コスト１]: (魔法) 敵駒を「ユウレイ」に変化する。",
 "(防御不能) 元地点からテレポートすることができる。",
 "(条件付き) 近距離で取られるとき、可能ならここで味方の「スライム」を召喚する。",
 "(条件付き) 近距離で取られるとき、可能なら１０コストを減ってここで復活する。",
@@ -1170,34 +1202,34 @@ var translation = ["進むや取ることができる。",
 "(条件付き) 敵駒がいるとき、手番の始まりで目標を取る。",
 "指定された目標",
 "「指定された目標」をこのマスに移送する。",
-"[コスト １]: (遠距離) 目標を３マスまで吹っ飛ばす。",
-"[コスト ６]: (遠距離) 同じコスト「わかれたフタゴ」二つに、このマスに分割する。",
+"[コスト１]: (遠距離) 目標を３マスまで吹っ飛ばす。",
+"[コスト６]: (遠距離) 同じコスト「わかれたフタゴ」二つに、このマスに分割する。",
 "(魔法) このマスに「王将」を移送する。",
 "(防御不能) テレポートするや味方と入れ替えることができる。",
 "(魔法) 自分を破壊して、最近取られた、この駒のコストの二倍以下の味方の成駒を復活する。",
-"[コスト １]: (条件付き) 味方がいるとき、可能なら手番の始まりで目標を癒し、邪魔効果をなくする。",
-"[コスト ２]: (魔法) 味方の「ドクロ」を強化し、あるいは敵生駒を味方の「ガイコツ」に変化する。",
+"[コスト１]: (条件付き) 味方がいるとき、可能なら手番の始まりで目標を癒し、邪魔効果をなくする。",
+"[コスト２]: (魔法) 味方の「ドクロ」を強化し、あるいは敵生駒を味方の「ガイコツ」に変化する。",
 "(受動) 一回だけ攻撃をブロックする。\n(能動) 進むや取ることができる。",
 "(条件付き) 取られるとき、この範囲の敵全体を凍り付く。",
 "(魔法) 自分をここに破壊して、敵駒を凍り付き、３ターンまで何もできなくなる。",
 "(制止不能) 「コウモリ」に変化して、このマスに飛び越す。",
 "一回だけ、味方の成駒と取り変えて、二つ駒を中間に移動する。",
-"[コスト １]: 位置をマークして、４ターン後でいる駒を「魔法」で撃つ。",
+"[コスト１]: 位置をマークして、４ターン後でいる駒を「魔法」で撃つ。",
 "(魔法, 条件付き) 敵駒がいるとき、可能なら敵手番の終わりで目標を１マスで近くに移動する。",
 "(遠距離) 目標を撃つ。",
 "(魔法) 目標を「指定された目標」に移送する",
-"[コスト １]: (魔法) 目標を「指定された目標」までに移動する。",
+"[コスト１]: (魔法) 目標を「指定された目標」までに移動する。",
 "(条件付き) 味方の成駒が敵ターゲットされるとき、自分を目標と入り替えて攻撃を受けてしまう。",
 "(魔法) 敵駒の種類に変化する。",
 "(魔法) 目標を１マスまで吹っ飛ばして、２ターンで凍り付ける。",
 "(受動) このマスの駒で近距離で取られるとき、攻撃者と共に取られる。",
-"[コスト １]: (魔法) 目標を３マスまで吹っ飛ばす。",
+"[コスト１]: (魔法) 目標を３マスまで吹っ飛ばす。",
 "(遠距離) 敵駒を魅惑され,３ターンまで敵手番の終わりで攻撃者へ移動してしまう。",
 "(魔法) 自分を破壊し、この位置をマークする。この位置は２０ターン後で:\n敵駒がいれば、「魔法」で撃つ。\n味方の駒がいれば、２ターンで加護する。\n何もいなければ、自分を復活する。",
 "敵駒を３マスまで吹っ飛ばす。何と衝突すれば、敵駒を取ることができる。",
 "(防御不能) このマスの駒を取る。",
-"[コスト １]: (魔法) 「石柱」を召喚し、あるいは敵駒を石化し、４ターンまで何もできなくなる。",
-"[コスト ３]: (魔法) 位置をマークして、６ターン後でいる駒を撃って、そして隣の駒を１マスまで吹っ飛ばす。"];
+"[コスト１]: (魔法) 「石柱」を召喚し、あるいは敵駒を石化し、４ターンまで何もできなくなる。",
+"[コスト３]: (魔法) 位置をマークして、６ターン後でいる駒を撃って、そして隣の駒を１マスまで吹っ飛ばす。"];
 
 /* K It's over
 

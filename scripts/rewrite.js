@@ -31,7 +31,7 @@ function makeSpellSVG () {
     gTag.insertAdjacentHTML('beforeend', makeSVGTagContent("text", {
       x: 6,
       y: 6,
-      "font-family": "'monospac', 'fallspac'",
+      "font-family": "'sym-0', 'sym-1', 'sym-2'",
       "font-size": 9,
       "text-anchor": "middle",
       "dominant-baseline": "middle",
@@ -45,7 +45,7 @@ function makeSpellSVG () {
     gTag.insertAdjacentHTML('beforeend', makeSVGTagContent("text", {
       x: 6,
       y: 6,
-      "font-family": "'monospac', 'fallspac'",
+      "font-family": "'sym-0', 'sym-1', 'sym-2'",
       "font-size": 9,
       "text-anchor": "middle",
       "dominant-baseline": "middle",
