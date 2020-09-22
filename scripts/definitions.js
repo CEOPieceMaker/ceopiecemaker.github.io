@@ -243,8 +243,8 @@ MOVES = [{
    "long": "1c]rn:push#\\(mn:move@3(AWAY))",
    "text": "[Pay 1]: (Ranged) Push unit up to 3 spaces away from caster.",
    "color": [87,218,40],
-   "color2": [255,255,255],
-   "symbol1": "\u25cc"
+   "color2": [200,255,200],
+   "symbol1": "\u25fd"
  }, {
    "id": "29",
    "cat": "official",
@@ -567,7 +567,7 @@ MOVES = [{
  }, {
    "id": "65",
    "cat": "official",
-   "name": "nullblock",
+   "name": "nullghost",
    "text": "(Magic) Target enemy can no longer block movement and their value becomes 0.",
    "color": [0,0,0],
    "color2": [255,255,255],
@@ -576,7 +576,7 @@ MOVES = [{
    "id": "66",
    "cat": "official",
    "name": "void",
-   "text": "[Pay 1]: (Ranged) Convert target enemy default moveset into basic move/teleport abilities, and negate their augments, if any.",
+   "text": "[Pay 2]: (Ranged) Convert target enemy default moveset into basic move/teleport abilities, and negate their augments, if any.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\uea81"
