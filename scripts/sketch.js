@@ -312,7 +312,7 @@ paper.install(window);
 		if(!sketch.painting)return;
 		if(!view.bounds.contains(e.point))return;
 		sketch.action[sketch.action.length-1]=[
-			e.point(),
+			e.point,
 			[0,0],
 			[0,0]
 		];
