@@ -358,7 +358,7 @@ $("#ctrlclear").click(function() {
 });
 
 function appendPassive(text) {
-  var oldtext = $("#" + curPASSIVE + " .passives").attr("data-description") && $("#" + curPASSIVE + " .passives").attr("data-description").concat("\n") || "";
+  var oldtext = $("#" + curPASSIVE + " .passives").attr("data-raw") && $("#" + curPASSIVE + " .passives").attr("data-description").concat("\n") || "";
   $("#" + curPASSIVE + " .passives").text(oldtext + text);
   setPassive(oldtext + text, curPASSIVE);
 }
