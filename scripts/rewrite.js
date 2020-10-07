@@ -121,7 +121,7 @@ function initializeBoards() {
     if (this.dataset.index == 112) return;
 
     var curMove = getSpell(this.dataset.index);
-    if (curMove.dataset && curMove.dataset.id == config.id) mouse.mode = "remove";
+    if (e.buttons == 2 || curMove.dataset && curMove.dataset.id == config.id) mouse.mode = "remove";
 
     mouse.down = this.dataset.level;
     changeSpell(this.dataset.index, this.dataset.level);
@@ -137,7 +137,6 @@ function initializeBoards() {
   });
 
   $(".tile").on("contextmenu", function () {
-    mouse.mode = "remove";
     return false;
   });
 
