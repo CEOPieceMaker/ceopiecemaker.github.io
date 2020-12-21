@@ -591,6 +591,7 @@ MOVES = [{
    "long": "b]mu:move/*ally?swap",
    "text": "(Unblockable) Teleport or swap places with unit.",
    "color": [51,153,153],
+   "color3": [0,0,0],
    "symbol1": "\u{1f5d8}"
  }, {
    "id": "0a",
