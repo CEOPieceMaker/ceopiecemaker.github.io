@@ -26,35 +26,35 @@ MOVES = [{
    "name": "attack",
    "long": "b]mn:attack",
    "text": "Attack only.",
-   "color": [252,13,27]
+   "color": [255,0,0]
  }, {
    "id": "4",
    "cat": "official",
    "name": "jump",
    "long": "b]mu:move/attack",
    "text": "(Unblockable) Move or Attack.",
-   "color": [20,151,24]
+   "color": [0,153,0]
  }, {
    "id": "5",
    "cat": "official",
    "name": "jumpswap",
    "long": "b]mu:move/attack/swap",
    "text": "(Unblockable) Move, Attack, or swap places with ally.",
-   "color": [255,210,0]
+   "color": [255,215,0]
  }, {
    "id": "6",
    "cat": "official",
    "name": "teleport",
    "long": "b]mu:move",
    "text": "(Unblockable) Teleport.",
-   "color": [121,19,153]
+   "color": [122,0,155]
  }, {
    "id": "7",
    "cat": "official",
    "name": "magic",
    "long": "b]ru:attack",
    "text": "(Magic) Destroy target.",
-   "color": [253,117,34]
+   "color": [255,117,0]
  }, {
    "id": "8",
    "cat": "official",
@@ -84,7 +84,8 @@ MOVES = [{
    "name": "movestart",
    "long": "b]mn:startpos?move",
    "text": "Move from starting position.",
-   "color": [11,36,251],
+   "color": [0,0,255],
+   "color2": [161,161,255],
    "symbol1": "\u274b"
  }, {
    "id": "12",
@@ -174,7 +175,8 @@ MOVES = [{
    "name": "teleportstart",
    "long": "b]mu:startpos?move",
    "text": "(Unblockable) Teleport from starting position.",
-   "color": [121,19,153],
+   "color": [122,0,155],
+   "color2": [220,161,255],
    "symbol1": "\u274b"
  }, {
    "id": "22",
@@ -223,7 +225,7 @@ MOVES = [{
    "text": "Ability Target.",
    "color": [0,0,0],
    "color2": [255,255,255],
-   "symbol1": "\u2609"
+   "symbol1": "\uf12d" //
  }, {
    "id": "27",
    "cat": "official",
@@ -235,7 +237,7 @@ MOVES = [{
    "color3": [192,0,255],
    "color4": [0,0,0],
    "symbol1": "\u25cf",
-   "symbol2": "o" /*25e6*/
+   "symbol2": "o" 
  }, {
    "id": "28",
    "cat": "official",
@@ -270,7 +272,7 @@ MOVES = [{
    "name": "teleportswap",
    "long": "b]mu:move/swap",
    "text": "(Unblockable) Teleport or swap places with ally.",
-   "color": [121,19,153],
+   "color": [122,0,155],
    "color3": [0,0,0],
    "symbol1": "\u{1f5d8}"
  }, {
@@ -316,7 +318,9 @@ MOVES = [{
    "long": "st]:death?minion?freeze#flag@3-move",
    "text": "(Trigger) On Death: Freeze enemy minions in this area.",
    "color": [107,205,253],
-   "symbol1": "\u25fc"
+   "color4": [107,255,255],
+   "symbol1": "\u25fe",
+   "symbol2": "\u25fd"
  }, {
    "id": "37",
    "cat": "official",
@@ -324,9 +328,9 @@ MOVES = [{
    "long": "bs]ru:thisattack&freeze#flag@3-move",
    "text": "(Magic) Destroy self at target location and Freeze enemy unit for 3 turns, making them unable to act.",
    "color": [107,205,253],
-   "color3": [181,230,254],
-   "color4": [107,205,253],
-   "symbol2": "\u2738"
+   "color4": [107,255,255],
+   "symbol1": "\u2738",
+   "symbol2": "\u2b1d"
  }, {
    "id": "38",
    "cat": "official",
@@ -366,21 +370,21 @@ MOVES = [{
  }, {
    "id": "42",
    "cat": "official",
-   "name": "shoot",
-   "long": "b]rn:attack",
-   "text": "(Ranged) Destroy target.",
-   "color": [255,0,0],
-   "color2": [255,255,255],
-   "symbol1": "\u2316"
- }, {
-   "id": "43",
-   "cat": "official",
    "name": "beacon",
    "long": "cu]ru:set@pos=Athis",
    "text": "(Magic) Teleport unit to Ability Target.",
    "color": [155,20,208],
    "color2": [255,255,255],
    "symbol1": "\u25ef"
+ }, {
+   "id": "43",
+   "cat": "official",
+   "name": "shoot",
+   "long": "b]rn:attack",
+   "text": "(Ranged) Destroy target.",
+   "color": [255,0,0],
+   "color2": [255,255,255],
+   "symbol1": "\u2316"
  }, {
    "id": "44",
    "cat": "official",
@@ -581,6 +585,14 @@ MOVES = [{
    "color2": [255,255,255],
    "symbol1": "\uea81"
  }, {
+   "id": "67",
+   "cat": "official",
+   "name": "illusion",
+   "long": "b]mu:move/*ally?swap",
+   "text": "(Unblockable) Teleport or swap places with unit.",
+   "color": [51,153,153],
+   "symbol1": "\u{1f5d8}"
+ }, {
    "id": "0a",
    "cat": "variation",
    "name": "swap",
@@ -719,7 +731,7 @@ MOVES = [{
    "color": [155,20,208],
    "color2": [255,255,255],
    "color4": [0,0,0],
-   "symbol1": "\u2609",
+   "symbol1": "\uf12d",
    "symbol2": "\u{1f5d8}",
    "hide": true
  }, {
@@ -811,7 +823,7 @@ MOVES = [{
    "color": [155,20,208],
    "color2": [255,255,255],
    "symbol1": "\u25ef",
-   "symbol2": "o" /*25e6*/,
+   "symbol2": "o",
    "hide": true
  }, {
    "id": "44a",
@@ -963,14 +975,6 @@ MOVES = [{
    "symbol1": "\ue907",
    "hide": true
  }, {
-   "id": "31b",
-   "cat": "limbo",
-   "name": "hiroshima",
-   "long": "b]mu:move/*ally?swap",
-   "text": "(Unblockable) Teleport or swap places with unit.",
-   "color": [19,121,153],
-   "hide": true
- }, {
    "id": "a1",
    "cat": "adoption",
    "name": "flirt",
@@ -996,7 +1000,7 @@ MOVES = [{
    "name": "levitate",
    "long": "s]ru:flag@2-((mn:attack)/\\mn:attack)",
    "text": "(Magic) Levitate unit for 2 turns, making them unable to use or be targeted by normal Attacks.",
-   "color": [121,19,153],
+   "color": [122,0,155],
    "color3": [255,255,0],
    "symbol1": "\u028c",
    "hide": true
@@ -1018,7 +1022,7 @@ MOVES = [{
    "text": "Remove this unit's other Ability Targets, then this location becomes this unit's Ability Target.",
    "color": [0,0,0],
    "color2": [127,127,255],
-   "symbol1": "\u2609",
+   "symbol1": "\uf12d",
    "hide": true
  }, {
    "id": "a6",
@@ -1028,7 +1032,7 @@ MOVES = [{
    "text": "Move or Attack. Cannot be blocked by Ally units.",
    "color": [0,0,0],
    "symbol1": "\u25e0",
-   "symbol2": "o" /*25e6*/,
+   "symbol2": "o",
    "hide": true
  }, {
    "id": "a7",
@@ -1131,6 +1135,10 @@ MOVES = [{
 \\ "\ufe62" Targets all
 \\ "\u22c6" Magic
 \\ "\u2295" Ranged
+\\
+\\ if use of KreativeSquare is no longer possible, prefer these changes:
+\\ "o" => "\u25e6"
+\\ "\uf12d" => "\u2609"
 */
 
 PASSIVES = ["Does not block movement.",
