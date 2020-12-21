@@ -370,7 +370,7 @@ MOVES = [{
  }, {
    "id": "42",
    "cat": "official",
-   "name": "beacon",
+   "name": "teleporttotarget",
    "long": "cu]ru:set@pos=Athis",
    "text": "(Magic) Teleport unit to Ability Target.",
    "color": [155,20,208],
@@ -388,7 +388,7 @@ MOVES = [{
  }, {
    "id": "44",
    "cat": "official",
-   "name": "gravity",
+   "name": "movetotarget",
    "long": "1cu]ru:\\(mn:move@A-(AWAY))",
    "text": "[Pay 1]: (Magic) Move target unit toward Ability Target.",
    "color": [0,63,255],
@@ -586,6 +586,15 @@ MOVES = [{
    "symbol1": "\uea81"
  }, {
    "id": "67",
+   "cat": "official",
+   "name": "gravitywell",
+   "text": "[Pay 2]: (Magic) Create gravity well at target location, pulling in all units that are directly 2 spaces away.",
+   "color": [0,0,0],
+   "color2": [255,255,255],
+   "color3": [77,29,95],
+   "symbol1": "\uea81"
+ }, {
+   "id": "68",
    "cat": "official",
    "name": "illusion",
    "long": "b]mu:move/*ally?swap",
@@ -818,7 +827,7 @@ MOVES = [{
  }, {
    "id": "43a",
    "cat": "variation",
-   "name": "beaconally",
+   "name": "teleporttotargetally",
    "long": "cu]ru:set@pos=Athis",
    "text": "(Magic) Target ally is teleported to Ability Target.",
    "color": [155,20,208],
@@ -829,7 +838,7 @@ MOVES = [{
  }, {
    "id": "44a",
    "cat": "variation",
-   "name": "antigravity",
+   "name": "antimovetotarget",
    "long": "1cu]ru:\\(mn:Amove@\this)",
    "text": "[Pay 1]: (Magic) Ability Target is moved to this unblocked empty space.",
    "color": [0,63,255],
@@ -839,7 +848,7 @@ MOVES = [{
  }, {
    "id": "44b",
    "cat": "legacy",
-   "name": "gravityfreeze",
+   "name": "movetotargetfreeze",
    "long": "1cu]ru:\\(mn:move@A-(AWAY))&freeze#flag@3-move",
    "text": "[Pay 2]: (Magic) Move target unit in the direction of Ability Target until blocked or Ability Target is reached, then freeze target for 1 turn.",
    "color": [0,127,255],
