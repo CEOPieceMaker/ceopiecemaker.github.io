@@ -229,15 +229,15 @@ MOVES = [{
  }, {
    "id": "27",
    "cat": "official",
-   "name": "portal",
-   "long": "u]:Aset@pos=\this",
+   "name": "teleporttarget",
+   "long": "u]:Aset@pos=\\this",
    "text": "Teleport Ability Target to this empty location.",
-   "color": [102,0,154],
+   "color": [153,0,204],
    "color2": [255,255,255],
-   "color3": [192,0,255],
+   "color3": [229,133,255],
    "color4": [0,0,0],
-   "symbol1": "\u25cf",
-   "symbol2": "o" 
+   "symbol1": "\u25CF",
+   "symbol2": "+" 
  }, {
    "id": "28",
    "cat": "official",
@@ -409,7 +409,7 @@ MOVES = [{
    "name": "envy",
    "long": "c]ru:thisset@type=\this&thisset@tier=\this",
    "text": "(Magic) Transform into target enemy unit type.",
-   "color": [127,192,127],
+   "color": [0, 204, 0],
    "color2": [255,255,255],
    "color3": [0,0,0],
    "symbol1": "\u2b50"
@@ -579,8 +579,8 @@ MOVES = [{
  }, {
    "id": "66",
    "cat": "official",
-   "name": "void",
-   "text": "[Pay 2]: (Ranged) Convert target enemy default moveset into basic move/teleport abilities, and negate their augments, if any.",
+   "name": "voidinflate",
+   "text": "[Pay 2]: (Ranged) Convert target enemy default moveset into basic move/teleport abilities, negate their augments, and increase their value by 2.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\uea81"
@@ -591,7 +591,7 @@ MOVES = [{
    "text": "[Pay 2]: (Magic) Create gravity well at target location, pulling in all units that are directly 2 spaces away.",
    "color": [0,0,0],
    "color2": [255,255,255],
-   "color3": [77,29,95],
+   "color3": [143,39,175], // [77,29,95], [206,48,255]. check later.
    "symbol1": "\uea81"
  }, {
    "id": "68",
@@ -735,7 +735,7 @@ MOVES = [{
  }, {
    "id": "27a",
    "cat": "variation",
-   "name": "swapportal",
+   "name": "swapwithtarget",
    "long": "pu]ru:A\\swap",
    "text": "(Magic) Swap unit with Ability Target.",
    "color": [155,20,208],
@@ -983,6 +983,16 @@ MOVES = [{
    "color2": [255,255,255],
    "color3": [153,153,153],
    "symbol1": "\ue907",
+   "hide": true
+ }, {
+   "id": "66a",
+   "cat": "legacy",
+   "name": "void",
+   "text": "[Pay 2]: (Ranged) Convert target enemy default moveset into basic move/teleport abilities, and negate their augments, if any.",
+   "color": [0,0,0],
+   "color2": [255,255,255],
+   "color3": [153,153,153],
+   "symbol1": "\uea81",
    "hide": true
  }, {
    "id": "a1",
