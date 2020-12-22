@@ -60,7 +60,7 @@ MOVES = [{
    "cat": "official",
    "name": "plant",
    "long": "2p]ru:transform@SAPLING/summon@SAPLING",
-   "text": "[Pay 1]: (Magic) Summon Sapling or transform enemy into ally Sapling.",
+   "text": "[Pay 2]: (Magic) Summon Sapling or transform enemy into ally Sapling.",
    "color": [0,101,24]
  }, {
    "id": "9",
@@ -455,7 +455,7 @@ MOVES = [{
    "id": "51",
    "cat": "official",
    "name": "butterfly",
-   "text": "(Magic) Destroy self and mark location with effect after 20 turns, depending on target: Destroy by Magic if enemy, Enchant for 2 turns if ally, or revive this unit if empty.",
+   "text": "(Unstoppable) Destroy self and mark location with effect after 20 turns, depending on target: Destroy by Magic if enemy, Enchant for 2 turns if ally, or revive this unit if empty.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\uE906"
@@ -994,6 +994,15 @@ MOVES = [{
    "color3": [153,153,153],
    "symbol1": "\uea81",
    "hide": true
+ }, {
+   "id": "67",
+   "cat": "official",
+   "name": "antigravitywell",
+   "text": "[Pay 2]: (Magic) Create gravity well at target location, pulling in all units that are directly 2 spaces away.",
+   "color": [0,0,0],
+   "color2": [255,255,255],
+   "color3": [39,175,143], // check later.
+   "symbol1": "\uea81"
  }, {
    "id": "a1",
    "cat": "adoption",
