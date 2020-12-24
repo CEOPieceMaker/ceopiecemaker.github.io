@@ -326,7 +326,7 @@ MOVES = [{
    "cat": "official",
    "name": "freezestrike",
    "long": "bs]ru:thisattack&freeze#flag@3-move",
-   "text": "(Magic) Destroy self at target location and Freeze enemy unit for 3 turns, making them unable to act.",
+   "text": "(Magic) Destroy self at target location and Freeze unit for 3 turns, making them unable to act.",
    "color": [107,205,253],
    "color4": [107,255,255],
    "symbol1": "\u2738",
@@ -447,7 +447,7 @@ MOVES = [{
    "cat": "official",
    "name": "compel",
    "long": "cs]rn:compel#flag@2(ct]start?mn:move@-1(AWAY)",
-   "text": "(Ranged) Compel enemy unit, making them move in the direction of this ability at the start of each turn, for 3 turns.",
+   "text": "(Ranged) Compel enemy unit, making them move in the direction of this ability at the start of their turn, for 3 turns.",
    "color": [255,63,255],
    "color2": [255,255,255],
    "symbol1": "\u2661"
@@ -455,7 +455,7 @@ MOVES = [{
    "id": "51",
    "cat": "official",
    "name": "butterfly",
-   "text": "(Unstoppable) Destroy self and mark location with effect after 20 turns, depending on target: Destroy by Magic if enemy, Enchant for 2 turns if ally, or revive this unit if empty.",
+   "text": "(Unstoppable) Destroy self and mark location. After 20 turns destroy enemy unit in the marked location, enchant ally for 2 turns, or summon butterfly of equal tier if marked location is empty.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\uE906"
@@ -580,7 +580,7 @@ MOVES = [{
    "id": "66",
    "cat": "official",
    "name": "voidinflate",
-   "text": "[Pay 2]: (Ranged) Convert target enemy default moveset into basic move/teleport abilities, negate their augments, and increase their value by 2.",
+   "text": "[Pay 2]: (Ranged) Convert target enemy moveset into move/teleport abilities, negate their augments, and increase their value by 2.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "symbol1": "\uea81"
@@ -988,21 +988,22 @@ MOVES = [{
    "id": "66a",
    "cat": "legacy",
    "name": "void",
-   "text": "[Pay 2]: (Ranged) Convert target enemy default moveset into basic move/teleport abilities, and negate their augments, if any.",
+   "text": "[Pay 2]: (Ranged) Convert target enemy moveset into move/teleport abilities, and negate their augments, if any.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "color3": [153,153,153],
    "symbol1": "\uea81",
    "hide": true
  }, {
-   "id": "67",
-   "cat": "official",
+   "id": "67a",
+   "cat": "variation",
    "name": "antigravitywell",
    "text": "[Pay 2]: (Magic) Create gravity well at target location, pulling in all units that are directly 2 spaces away.",
    "color": [0,0,0],
    "color2": [255,255,255],
    "color3": [39,175,143], // check later.
-   "symbol1": "\uea81"
+   "symbol1": "\uea81",
+   "hide": true
  }, {
    "id": "a1",
    "cat": "adoption",
