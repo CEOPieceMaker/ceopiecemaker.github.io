@@ -1269,7 +1269,7 @@ var translation = ["進むや取ることができる。",
 "[コスト１]: (魔法) 「石柱」を召喚し、あるいは敵駒を石化し、４ターンまで何もできなくなる。",
 "[コスト３]: (魔法) 位置をマークして、６ターン後でここにいる駒を撃ち、隣の駒を１マスまで吹っ飛ばす。"];
 
-///* K It's over
+/* K It's over
 
 _.forEach(translation, function(m, ix) {
    MOVES[ix].text = m;
