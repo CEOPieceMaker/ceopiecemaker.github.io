@@ -24,6 +24,11 @@
 }
 
 @font-face {
+	font-family: "sym-1-5";
+	src: url("../fonts/KreativeSquareSM2.ttf");
+}
+
+@font-face {
 	font-family: "sym-2";
 	src: url("../fonts/acbfont.woff");
 }
@@ -180,7 +185,7 @@ li::before,
 	width: 12px;
 	height: 12px;
 	display: flex;
-	font-family: sym-0, sym-1, sym-2, evermono;
+	font-family: sym-0, sym-1, sym-1-5, sym-2, evermono;
 	font-size: 17px;
 	line-height: 0;
 	word-break: break-all;
@@ -265,7 +270,7 @@ input {
 	resize: none;
 	vertical-align: 1px;
 	font-size: 14px;
-	font-family: Consolis, evermono, sym-0, sym-1, sym-2;
+	font-family: Consolis, evermono, sym-0, sym-1, sym-1-5, sym-2;
 	font-weight: bold;
 }
 
@@ -379,7 +384,7 @@ div.passives {
 .cost+div>ul p {
 	overflow-wrap: break-word;
 	font-size: 12px;
-	font-family: Consolis, evermono, sym-0, sym-1, sym-2;
+	font-family: Consolis, evermono, sym-0, sym-1, sym-1-5, sym-2;
 	font-weight: bold;
 	letter-spacing: -0.5px;
 	line-height: 16px;
@@ -395,7 +400,7 @@ div.passives:focus,
 	content: attr(data-description);
 	overflow-wrap: break-word;
 	font-size: 12px;
-	font-family: Consolis, evermono, sym-0, sym-1, sym-2;
+	font-family: Consolis, evermono, sym-0, sym-1, sym-1-5, sym-2;
 	font-weight: bold;
 	letter-spacing: -0.5px;
 	line-height: 16px;
@@ -659,7 +664,7 @@ circle.piece {
 	pointer-events: none;
 	overflow-wrap: break-word;
 	font-size: 12px;
-	font-family: Consolis, evermono, sym-0, sym-1, sym-2;
+	font-family: Consolis, evermono, sym-0, sym-1, sym-1-5, sym-2;
 	font-weight: bold;
 	letter-spacing: -0.5px;
 	white-space: pre-wrap;
